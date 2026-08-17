@@ -1,0 +1,17 @@
+{
+  "name": "comparch-fall-2026",
+  "description": "Course website for CS 423/520 Computer Architecture, Bilkent University, Fall 2026",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "start": "npm run build && npx live-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAL-Research/comparch-fall-2026.git"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "handlebars": "^4.7.7"
+  }
+}
