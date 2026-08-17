@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS 423/520 Computer Architecture — Bilkent University, Fall 2026</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        .course-hero { background: #8c1d40; color: #fff; padding: 3rem 0 2.5rem 0; }
+        .course-hero a { color: #fff; }
+        .section-title { border-bottom: 3px solid #8c1d40; padding-bottom: .3rem; margin-top: 2.5rem; }
+        .badge-term { background: rgba(255,255,255,.2); font-weight: 500; }
+        .lecture-list { margin-bottom: 0; padding-left: 1.1rem; }
+        .lecture-list li { margin-bottom: .15rem; }
+        .mat { white-space: nowrap; font-size: .85em; color: #6c757d; }
+        .mat a { text-decoration: none; }
+        tr.week-header td { background: #8c1d4014; font-weight: 600; }
+        tr.hw-row td { background: #fdf3e7; font-size: .95em; }
+        tr.exam-row td { background: #f6e3ea; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#661530;">
+        <div class="container">
+            <a class="navbar-brand" href="#">CS 423/520 — Fall 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav" aria-controls="courseNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="courseNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#announcements">Announcements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#homework">Homework</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="readings.html">Readings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courseinfo">Course Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://sal-research.github.io/teaching.html"><i class="fa fa-arrow-left"></i> All Courses</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="course-hero">
+        <div class="container">
+            <h1 class="mb-1">CS 423/520 — Computer Architecture</h1>
+            <p class="fs-5 mb-2">Bilkent University, Department of Computer Engineering</p>
+            <span class="badge badge-term fs-6"><i class="fa fa-calendar"></i> Fall 2026</span>
+            <span class="badge badge-term fs-6"><i class="fa fa-user"></i> Instructor: Abdullah Giray Yağlıkçı</span>
+            <span class="badge badge-term fs-6"><i class="fa fa-graduation-cap"></i> Bilkent 3 credits / 5 ECTS</span>
+        </div>
+    </header>
+
+    <main class="container pb-5">
+
+        <h2 id="announcements" class="section-title">Announcements</h2>
+        <ul>
+            <li><em>Homework handouts, lecture slides, and lecture videos will be posted on this page throughout the semester — check the <a href="#schedule">schedule</a> regularly.</em></li>
+        </ul>
+
+        <h2 id="homework" class="section-title">Homeworks</h2>
+        <p>Four homework assignments (40% total) plus one bonus homework. Handouts, git repositories, and submission links will be posted here when each homework is assigned.</p>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead><tr><th>Homework</th><th>Topic</th><th>Assigned</th><th>Deadline</th><th>Handout</th><th>Git Repo</th><th>Submission</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>HW 1</td>
+                        <td>Single-Cycle vs In-Order Pipeline Architectures</td>
+                        <td>Sep 24</td>
+                        <td>Oct 15</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <td>HW 2</td>
+                        <td>Caching, Prefetching, and Branch Prediction</td>
+                        <td>Oct 15</td>
+                        <td>Oct 29</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <td>HW 3</td>
+                        <td>Out-of-Order and Speculative Execution (Bonus: Spectre and Meltdown)</td>
+                        <td>Oct 29</td>
+                        <td>Nov 19</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <td>HW 4</td>
+                        <td>Memory Scheduling</td>
+                        <td>Nov 19</td>
+                        <td>Dec 10</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <td>Bonus HW</td>
+                        <td>Paper Reviews</td>
+                        <td>Oct 5</td>
+                        <td>Dec 21</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><em>Late submission cut-off for all labs: December 21, 2026.</em></p>
+
+        <h2 id="schedule" class="section-title">Schedule</h2>
+        <p>Slides (PPTX and PDF) and lecture videos will be linked next to each lecture as the semester progresses.</p>
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead><tr><th style="min-width:7.5rem;">Date</th><th>Lectures</th></tr></thead>
+                <tbody>
+                    <tr class="week-header"><td colspan="2">Week 1: Introduction and Foundation</td></tr>
+                    <tr>
+                        <td>Sep 17</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L1a: Course Info and Logistics
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L1b: Computer Organization and Design Principles: Introduction and Basics
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="week-header"><td colspan="2">Week 2: Pipelined Microarchitecture Fundamentals</td></tr>
+                    <tr>
+                        <td>Sep 21</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L2a: ISA Design Principles
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L2b: Performance Evaluation
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L2c: Trends, Tradeoffs and Design Fundamentals of Computer Architecture
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sep 24</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L3a: In-Order Pipelined CPU Design, Hazards, and Data Forwarding
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L3b: Precise Exceptions and Interrupts
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-pen-to-square"></i> <b>HW 1 assigned</b>: Single-Cycle vs In-Order Pipeline Architectures — handout: TBA · repo: TBA</td></tr>
+                    <tr class="week-header"><td colspan="2">Week 3: Out-of-Order Execution</td></tr>
+                    <tr>
+                        <td>Sep 28</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L4a: Out-of-Order Pipeline Design
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L4b: Tomasulo&#x27;s Algorithm
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L4c: High Performance Substrate (HPS) and Checkpoint Repair
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA · <a href="readings.html#smith1985precise"><i class="fa fa-book-open"></i> Readings</a>]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oct 1</td>
+                        <td>
+                            <em>No lecture</em>
+                        </td>
+                    </tr>
+                    <tr class="week-header"><td colspan="2">Week 4: Memory Subsystem</td></tr>
+                    <tr>
+                        <td>Oct 5</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L5a: Von Neumann Architecture and Memory Subsystem Overview
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L5b: Virtual Memory and Translation Lookaside Buffer
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L5c: Critical Paper Reviews in Computer Architecture
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-pen-to-square"></i> <b>Bonus HW assigned</b>: Paper Reviews — handout: TBA · repo: TBA</td></tr>
+                    <tr>
+                        <td>Oct 8</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L6a: Simplescalar and Superscalar
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L6b: Dataflow
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="week-header"><td colspan="2">Week 5: Memory Stalls, Pipeline Stalls</td></tr>
+                    <tr>
+                        <td>Oct 12</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L7a: Cache Organization and Design
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L7b: DRAM Architecture
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L7c: Memory Request Scheduling
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oct 15</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L8a: Pipeline Stalls, Loop unrolling
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L8b: Prefetching
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L8c: Branch Prediction
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-flag-checkered"></i> <b>HW 1 due</b> — submission: TBA &nbsp;·&nbsp; <i class="fa fa-pen-to-square"></i> <b>HW 2 assigned</b>: Caching, Prefetching, and Branch Prediction — handout: TBA · repo: TBA</td></tr>
+                    <tr class="week-header"><td colspan="2">Week 6: Speculative Execution</td></tr>
+                    <tr>
+                        <td>Oct 19</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L9: Speculative Execution from a Security Perspective <em>(potential guest lecture)</em>
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L9: Runahead Execution
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oct 22</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L10: Speculative Execution from a Security Perspective <em>(potential guest lecture)</em>
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L10: Runahead Execution
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-hourglass-half"></i> <b>Homework 2 continues</b></td></tr>
+                    <tr class="week-header"><td colspan="2">Week 7: Multi-Core Architectures</td></tr>
+                    <tr>
+                        <td>Oct 26</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L11a: Multi-Core Architecture
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L11b: Memory Consistency
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oct 29</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L12a: Cache Coherency
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L12b: Cache Pollution
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-flag-checkered"></i> <b>HW 2 due</b> — submission: TBA &nbsp;·&nbsp; <i class="fa fa-pen-to-square"></i> <b>HW 3 assigned</b>: Out-of-Order and Speculative Execution (Bonus: Spectre and Meltdown) — handout: TBA · repo: TBA</td></tr>
+                    <tr class="week-header"><td colspan="2">Week 8: Parallel Execution and GPU Architecture</td></tr>
+                    <tr>
+                        <td>Nov 2</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L13a: Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L13b: GPU Architecture and Predicated Execution
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nov 5</td>
+                        <td>
+                            <em>No lectures</em>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-hourglass-half"></i> <b>Homework 3 continues</b></td></tr>
+                    <tr class="week-header"><td colspan="2">Week 9: Midterm Week</td></tr>
+                    <tr>
+                        <td>Nov 9</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>LR1: Review Session
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="exam-row"><td>Nov 12</td><td><i class="fa fa-file-pen"></i> Midterm Exam</td></tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-hourglass-half"></i> <b>Homework 3 continues</b></td></tr>
+                    <tr class="week-header"><td colspan="2">Week 10: Memory Robustness</td></tr>
+                    <tr>
+                        <td>Nov 16</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L14a: Data Retention and Refresh
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L14b: Read Disturbance I: RowHammer, RowPress, and ColumnPress
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nov 19</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L15a: Read Disturbance II: Mitigations
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L15b: Memory Performance and Cold Boot Attacks
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-flag-checkered"></i> <b>HW 3 due</b> — submission: TBA &nbsp;·&nbsp; <i class="fa fa-pen-to-square"></i> <b>HW 4 assigned</b>: Memory Scheduling — handout: TBA · repo: TBA</td></tr>
+                    <tr class="week-header"><td colspan="2">Week 11: Emerging and Killed Memory Architectures</td></tr>
+                    <tr>
+                        <td>Nov 23</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L16a: Phase-Change Memory, STT-MRAM, Resistive Memory
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L16b: Monolithic 3D Integration
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nov 26</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L17: NAND Flash Memory
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="week-header"><td colspan="2">Week 12: Memory-Centric Computation</td></tr>
+                    <tr>
+                        <td>Nov 30</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L18a: Processing Near and Using Memory
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L18b: Processing Near and Using Flash Memory
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dec 3</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L19: Memory Centric Computing <em>(guest lecture by Geraldo F. de Oliveira Jr., Huawei Zurich)</em>
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-hourglass-half"></i> <b>Homework 4 continues</b></td></tr>
+                    <tr class="week-header"><td colspan="2">Week 13: System on Chip</td></tr>
+                    <tr>
+                        <td>Dec 7</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L20a: Accelerators, Systolic Arrays
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L20b: Neuromorphic Computation
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dec 10</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L21a: On-Chip Networks
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L21b: Interrupts and Polling
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-flag-checkered"></i> <b>HW 4 due</b> — submission: TBA</td></tr>
+                    <tr class="week-header"><td colspan="2">Week 14: Application-Oriented Architectures</td></tr>
+                    <tr>
+                        <td>Dec 14</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L22a: Neural Networks and LLM Accelerators
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L22b: Architecture Solutions to Bioinformatics Workloads
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Dec 17</td>
+                        <td>
+                            
+                            <ul class="lecture-list">
+                                <li>L23a: Agent-based Simulations
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                                <li>L23b: Graph Accelerators
+                                    <span class="mat">[PPTX: TBA · PDF: TBA · Video: TBA]</span>
+                                    
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="week-header"><td colspan="2">Week 15: Final Exam</td></tr>
+                    <tr>
+                        <td>Dec 21</td>
+                        <td>
+                            <em>Review Session</em>
+                        </td>
+                    </tr>
+                    <tr class="hw-row"><td></td><td><i class="fa fa-flag-checkered"></i> <b>Bonus HW due</b> — submission: TBA &nbsp;·&nbsp; <i class="fa fa-clock"></i> <b>Late Submission Cut-Off for All Labs</b></td></tr>
+                    <tr class="exam-row"><td>Dec 24</td><td><i class="fa fa-file-pen"></i> Final Exam</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 id="courseinfo" class="section-title">Course Information</h2>
+        <p>Basic hardware structure of modern computing platforms: memory systems, storage systems, interconnects, multiprocessors, accelerators, hardware/software cooperation. Key issues in performance, efficiency, scalability, reliability, security, safety, predictability, and quality of service.</p>
+        <p><b>Learning outcomes:</b> Understand fundamental principles and the state of the art in computer architecture. Implement and hands-on learn various parts of a modern computing system.</p>
+
+            <h3 id="logistics" class="section-title">Catalog Information</h3>
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr><td><b>Prerequisite</b></td><td>CS 224</td></tr>
+                        <tr><td><b>Contact Hours</b></td><td>4 hours of lecture per week</td></tr>
+                        <tr><td><b>Textbook</b></td><td>Recommended: <em>Computer Architecture, Fifth Edition: A Quantitative Approach</em>, John L. Hennessy and David A. Patterson, 2011, Morgan Kaufmann</td></tr>
+                        <tr><td><b>GenAI Policy</b></td><td>Allowed as helpers in coding, preparing data visualization scripts, and proofreading the final text. <b>Not allowed</b> for completely taking over any tasks (e.g., implementing mechanisms, conducting simulations, data analysis, and critical paper reviews).</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><b>Minimum requirement to qualify for the final exam:</b> the midterm grade must be more than 50%.</p>
+
+            <h3 id="grading" class="section-title">Grading</h3>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead><tr><th>Component</th><th>Type</th><th>Count</th><th>Total Contribution</th></tr></thead>
+                    <tbody>
+                        <tr><td>Midterm</td><td>Essay/written</td><td>1</td><td>30%</td></tr>
+                        <tr><td>Final</td><td>Essay/written</td><td>1</td><td>30%</td></tr>
+                        <tr><td>Homework</td><td>Hands-on assignments</td><td>4</td><td>40%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="contact" class="section-title">Contact</h3>
+            <p>Course coordinator: <a href="https://agyaglikci.github.io">Abdullah Giray Yağlıkçı</a> &mdash; <a href="mailto:giray@cispa.de">giray@cispa.de</a></p>
+            <p>This course is offered by the Department of Computer Engineering at Bilkent University. Course website hosted by the <a href="https://sal-research.github.io">Secure and Sustainable System Scaling Lab</a>.</p>
+
+
+
+
+    </main>
+
+    <footer class="py-4 text-center text-muted border-top">
+        <div class="container">
+            CS 423/520 Computer Architecture &mdash; Bilkent University, Fall 2026
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
