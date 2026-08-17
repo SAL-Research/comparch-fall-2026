@@ -203,7 +203,7 @@ module.exports = {
           date: 'Oct 5',
           lectures: [
             { title: 'Von Neumann Architecture and Memory Subsystem Overview', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Virtual Memory and Translation Lookaside Buffer', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Critical Paper Reviews in Computer Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
           events: [{ type: 'assigned', hw: 'bonus1' }],
@@ -211,8 +211,8 @@ module.exports = {
         {
           date: 'Oct 8',
           lectures: [
+            { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Dataflow', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Virtual Memory and Translation Lookaside Buffer', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
       ],
