@@ -127,7 +127,6 @@ module.exports = {
             { title: 'Speculative Execution from a Security Perspective', note: 'potential guest lecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Runahead Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
-          events: [{ type: 'note', icon: 'hourglass-half', text: 'Homework 2 continues' }],
         },
       ],
     },
@@ -167,7 +166,6 @@ module.exports = {
         {
           date: 'Nov 5',
           note: 'No lectures',
-          events: [{ type: 'note', icon: 'hourglass-half', text: 'Homework 3 continues' }],
         },
       ],
     },
@@ -183,7 +181,6 @@ module.exports = {
         {
           date: 'Nov 12',
           exam: 'Midterm Exam',
-          events: [{ type: 'note', icon: 'hourglass-half', text: 'Homework 3 continues' }],
         },
       ],
     },
@@ -243,7 +240,6 @@ module.exports = {
           lectures: [
             { title: 'Memory Centric Computing', note: 'guest lecture by Geraldo F. de Oliveira Jr., Huawei Zurich', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
-          events: [{ type: 'note', icon: 'hourglass-half', text: 'Homework 4 continues' }],
         },
       ],
     },

@@ -27,7 +27,7 @@ module.exports = {
     email: 'giray@cispa.de',
   },
   announcements: [
-    'Homework handouts, lecture slides, and lecture videos will be posted on this page throughout the semester — check the <a href="#schedule">schedule</a> regularly.',
+    'Homework handouts, lecture slides, and lecture videos will be posted on this page throughout the semester — check the <a href="index.html#schedule">schedule</a> regularly.',
   ],
   description: [
     'Basic hardware structure of modern computing platforms: memory systems, storage systems, interconnects, multiprocessors, accelerators, hardware/software cooperation. Key issues in performance, efficiency, scalability, reliability, security, safety, predictability, and quality of service.',
