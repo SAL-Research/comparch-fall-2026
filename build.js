@@ -12,7 +12,13 @@ const fs = require('fs-extra');
 const path = require('path');
 const handlebars = require('handlebars');
 
-const METADATA_FILE = './src/metadata/metadata-comparch-fall_2026.js';
+// Course metadata is split across three files, merged in order:
+// core course info, the weekly schedule, and the reading materials.
+const METADATA_FILES = [
+  './src/metadata/metadata-comparch-fall_2026.js',
+  './src/metadata/metadata-comparch-fall_2026-schedule.js',
+  './src/metadata/metadata-comparch-fall_2026-readings.js',
+];
 const templatesDir = path.join(__dirname, 'src', 'templates');
 const assetsDir = path.join(__dirname, 'assets');
 const outputDir = path.join(__dirname, 'dist');
@@ -39,6 +45,9 @@ handlebars.registerHelper('or', function () {
  *   lecture gets `readings_anchor` for linking into readings.html
  */
 function prepareCourseMetadata(metadata) {
+  // Sidebar abstract: the first description paragraph, linked to info.html
+  metadata.description_abstract = (metadata.description || [])[0] || null;
+
   const homeworkByKey = {};
   (metadata.homeworks || []).forEach(hw => { homeworkByKey[hw.key] = hw; });
   const readingByKey = {};
@@ -47,9 +56,22 @@ function prepareCourseMetadata(metadata) {
     reading.relevant_lectures = [];
   });
 
+  // Resolve "Sep 17"-style day dates to ISO dates using the year in `term`
+  // (e.g. "Fall 2026"), so the page can compare schedule dates to today.
+  const MONTHS = { Jan: '01', Feb: '02', Mar: '03', Apr: '04', May: '05', Jun: '06', Jul: '07', Aug: '08', Sep: '09', Oct: '10', Nov: '11', Dec: '12' };
+  const yearMatch = /\d{4}/.exec(metadata.term || '');
+  const year = yearMatch ? yearMatch[0] : null;
+  function isoDate(date) {
+    const m = /^([A-Z][a-z]{2}) (\d{1,2})$/.exec(date || '');
+    if (!m || !MONTHS[m[1]] || !year) return null;
+    return `${year}-${MONTHS[m[1]]}-${String(m[2]).padStart(2, '0')}`;
+  }
+
   let lectureDay = 0;
   (metadata.weeks || []).forEach((week, weekIndex) => {
     week.number = weekIndex + 1;
+    const firstDay = (week.days || []).find(day => isoDate(day.date));
+    week.start_iso = firstDay ? isoDate(firstDay.date) : null;
     (week.days || []).forEach(day => {
       const numbered = (day.lectures || []).filter(l => !l.number && !l.exam);
       if (numbered.length > 0) {
@@ -87,12 +109,19 @@ function compileTemplate(name) {
   return handlebars.compile(fs.readFileSync(path.join(templatesDir, name), 'utf-8'));
 }
 
+function registerPartials() {
+  ['navbar', 'sidebar'].forEach(name => {
+    handlebars.registerPartial(name, fs.readFileSync(path.join(templatesDir, `_${name}.html`), 'utf-8'));
+  });
+}
+
 function build() {
   console.log('Building course website...');
   fs.emptyDirSync(outputDir);
   fs.copySync(assetsDir, outputDir);
+  registerPartials();
 
-  const metadata = prepareCourseMetadata(require(METADATA_FILE));
+  const metadata = prepareCourseMetadata(Object.assign({}, ...METADATA_FILES.map(f => require(f))));
 
   fs.writeFileSync(path.join(outputDir, 'index.html'), compileTemplate('_course.html')(metadata));
   console.log('  → dist/index.html');
@@ -100,6 +129,16 @@ function build() {
   if (metadata.readings && metadata.readings.length > 0) {
     fs.writeFileSync(path.join(outputDir, 'readings.html'), compileTemplate('_course_readings.html')(metadata));
     console.log('  → dist/readings.html');
+  }
+
+  if (metadata.homeworks && metadata.homeworks.length > 0) {
+    fs.writeFileSync(path.join(outputDir, 'homeworks.html'), compileTemplate('_course_homeworks.html')(metadata));
+    console.log('  → dist/homeworks.html');
+  }
+
+  if (metadata.description || metadata.logistics || metadata.grading) {
+    fs.writeFileSync(path.join(outputDir, 'info.html'), compileTemplate('_course_info.html')(metadata));
+    console.log('  → dist/info.html');
   }
 
   console.log('Build completed!');

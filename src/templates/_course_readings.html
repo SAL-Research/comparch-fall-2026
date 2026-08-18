@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <style>
         body { font-family: 'Roboto', sans-serif; }
-        .course-hero { background: {{ accent }}; color: #fff; padding: 2.5rem 0 2rem 0; }
-        .course-hero a { color: #fff; }
+        .section-title { border-bottom: 3px solid {{ accent }}; padding-bottom: .3rem; margin-top: 1.5rem; }
         .reading-list { list-style: none; padding-left: 0; }
         .reading-item { padding: 1rem 0; border-bottom: 1px solid #dee2e6; }
         .reading-item .title { font-weight: 500; }
@@ -24,30 +23,12 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background:{{ accent_dark }};">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">{{ nav_title }}</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav" aria-controls="courseNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="courseNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#schedule"><i class="fa fa-arrow-left"></i> Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Course Page</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://sal-research.github.io/teaching.html">All Courses</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    {{> navbar }}
 
-    <header class="course-hero">
-        <div class="container">
-            <h1 class="mb-1">Reading Materials</h1>
-            <p class="fs-5 mb-0">{{#if code}}{{ code }} — {{/if}}{{ title }}, {{ institution }}, {{ term }}</p>
-        </div>
-    </header>
-
-    <main class="container pb-5 pt-3">
+    <main class="container pb-5">
+        <div class="row g-4">
+        <div class="col-12 col-lg-8 col-xl-9 order-2 order-lg-1">
+        <h2 class="section-title">Reading Materials</h2>
         <p class="mt-3">Assigned reading materials for the course. Paper PDFs and, where available, the corresponding paper presentation slides and videos are linked below, together with the lectures each paper is relevant to.</p>
         <ul class="reading-list">
             {{#each readings}}
@@ -69,6 +50,11 @@
             </li>
             {{/each}}
         </ul>
+        </div>
+        <div class="col-12 col-lg-4 col-xl-3 order-1 order-lg-2">
+            {{> sidebar }}
+        </div>
+        </div>
     </main>
 
     <footer class="py-4 text-center text-muted border-top">

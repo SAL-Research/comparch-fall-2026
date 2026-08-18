@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
-    "start": "npm run build && npx live-server dist"
+    "start": "npm run build && npx live-server dist",
+    "test": "npm run build && node test/future-weeks.test.js"
   },
   "repository": {
     "type": "git",

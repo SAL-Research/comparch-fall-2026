@@ -12,99 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <style>
         body { font-family: 'Roboto', sans-serif; }
-        .course-hero { background: {{ accent }}; color: #fff; padding: 3rem 0 2.5rem 0; }
-        .course-hero a { color: #fff; }
-        .section-title { border-bottom: 3px solid {{ accent }}; padding-bottom: .3rem; margin-top: 2.5rem; }
-        .badge-term { background: rgba(255,255,255,.2); font-weight: 500; }
+        .section-title { border-bottom: 3px solid {{ accent }}; padding-bottom: .2rem; margin-top: 1.25rem; margin-bottom: .5rem; }
+        .table > :not(caption) > * > * { padding: .25rem .5rem; }
         .lecture-list { margin-bottom: 0; padding-left: 1.1rem; }
-        .lecture-list li { margin-bottom: .15rem; }
+        .lecture-list li { margin-bottom: 0; }
         .mat { white-space: nowrap; font-size: .85em; color: #6c757d; }
         .mat a { text-decoration: none; }
-        tr.week-header td { background: {{ accent }}14; font-weight: 600; }
-        tr.hw-row td { background: #fdf3e7; font-size: .95em; }
+        tr.week-header td { font-weight: 600; padding-top: 1rem; padding-bottom: .1rem; border-bottom: none; }
+        .hw-line { font-size: .9em; margin-top: .1rem; }
         tr.exam-row td { background: #f6e3ea; font-weight: 500; }
+        tr.future-week td { background: #f4f4f4; }
+        tr.future-week { opacity: .6; }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background:{{ accent_dark }};">
-        <div class="container">
-            <a class="navbar-brand" href="#">{{ nav_title }}</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav" aria-controls="courseNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="courseNav">
-                <ul class="navbar-nav ms-auto">
-                    {{#if announcements}}<li class="nav-item"><a class="nav-link" href="#announcements">Announcements</a></li>{{/if}}
-                    {{#if homeworks}}<li class="nav-item"><a class="nav-link" href="#homework">Homework</a></li>{{/if}}
-                    {{#if weeks}}<li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>{{/if}}
-                    {{#if readings}}<li class="nav-item"><a class="nav-link" href="readings.html">Readings</a></li>{{/if}}
-                    {{#if description}}<li class="nav-item"><a class="nav-link" href="#courseinfo">Course Information</a></li>{{/if}}
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://sal-research.github.io/teaching.html"><i class="fa fa-arrow-left"></i> All Courses</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="course-hero">
-        <div class="container">
-            <h1 class="mb-1">{{#if code}}{{ code }} — {{/if}}{{ title }}</h1>
-            <p class="fs-5 mb-2">{{ institution_line }}</p>
-            <span class="badge badge-term fs-6"><i class="fa fa-calendar"></i> {{ term }}</span>
-            <span class="badge badge-term fs-6"><i class="fa fa-user"></i> Instructor: {{ instructor.name }}</span>
-            {{#each badges}}
-            <span class="badge badge-term fs-6"><i class="fa fa-{{ this.icon }}"></i> {{ this.text }}</span>
-            {{/each}}
-        </div>
-    </header>
+    {{> navbar }}
 
     <main class="container pb-5">
 
-        {{#if announcements}}
-        <h2 id="announcements" class="section-title">Announcements</h2>
-        <ul>
-            {{#each announcements}}
-            <li><em>{{{ this }}}</em></li>
-            {{/each}}
-        </ul>
-        {{/if}}
-
-        {{#if homeworks}}
-        <h2 id="homework" class="section-title">Homeworks</h2>
-        {{#if homework_intro}}<p>{{{ homework_intro }}}</p>{{/if}}
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead><tr><th>Homework</th><th>Topic</th><th>Assigned</th><th>Deadline</th><th>Handout</th><th>Git Repo</th><th>Submission</th></tr></thead>
-                <tbody>
-                    {{#each homeworks}}
-                    <tr>
-                        <td>{{ this.id }}</td>
-                        <td>{{ this.topic }}</td>
-                        <td>{{ this.assigned }}</td>
-                        <td>{{ this.deadline }}</td>
-                        <td>{{#if (eq this.handout "TBA")}}TBA{{else}}<a href="{{ this.handout }}"><i class="fa fa-file-pdf"></i> Handout</a>{{/if}}</td>
-                        <td>{{#if (eq this.repo "TBA")}}TBA{{else}}<a href="{{ this.repo }}"><i class="fa-brands fa-github"></i> Repo</a>{{/if}}</td>
-                        <td>{{#if (eq this.submission "TBA")}}TBA{{else}}<a href="{{ this.submission }}"><i class="fa fa-upload"></i> Submit</a>{{/if}}</td>
-                    </tr>
-                    {{/each}}
-                </tbody>
-            </table>
-        </div>
-        {{#if homework_note}}<p><em>{{{ homework_note }}}</em></p>{{/if}}
-        {{/if}}
-
+        <div class="row g-4">
+        <div class="col-12 col-lg-8 col-xl-9 order-2 order-lg-1">
         {{#if weeks}}
         <h2 id="schedule" class="section-title">Schedule</h2>
         {{#if schedule_note}}<p>{{{ schedule_note }}}</p>{{/if}}
         <div class="table-responsive">
-            <table class="table align-middle">
+            <table id="schedule-table" class="table align-middle">
                 <thead><tr><th style="min-width:7.5rem;">Date</th><th>Lectures</th></tr></thead>
                 <tbody>
                     {{#each weeks}}
-                    <tr class="week-header"><td colspan="2">Week {{ this.number }}{{#if this.theme}}: {{ this.theme }}{{/if}}</td></tr>
+                    <tr class="week-header"{{#if this.start_iso}} data-week-start="{{ this.start_iso }}"{{/if}}><td colspan="2">Week {{ this.number }}{{#if this.theme}}: {{ this.theme }}{{/if}}</td></tr>
                     {{#each this.days}}
                     {{#if this.exam}}
-                    <tr class="exam-row"><td>{{ this.date }}</td><td><i class="fa fa-file-pen"></i> {{ this.exam }}</td></tr>
+                    <tr class="exam-row"><td>{{ this.date }}</td><td><i class="fa fa-file-pen"></i> {{ this.exam }}{{#if this.events}}<div class="hw-line fw-normal">{{#each this.events}}{{#unless @first}} &nbsp;·&nbsp; {{/unless}}{{#if (eq this.type "assigned")}}<i class="fa fa-pen-to-square"></i> <b>{{ this.homework.id }} assigned</b>: {{ this.homework.topic }} — handout: {{#if (eq this.homework.handout "TBA")}}TBA{{else}}<a href="{{ this.homework.handout }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}} · repo: {{#if (eq this.homework.repo "TBA")}}TBA{{else}}<a href="{{ this.homework.repo }}"><i class="fa-brands fa-github"></i> Git</a>{{/if}}{{/if}}{{#if (eq this.type "due")}}<i class="fa fa-flag-checkered"></i> <b>{{ this.homework.id }} due</b> — submission: {{#if (eq this.homework.submission "TBA")}}TBA{{else}}<a href="{{ this.homework.submission }}"><i class="fa fa-upload"></i> Submit</a>{{/if}}{{/if}}{{#if (eq this.type "note")}}<i class="fa fa-{{ this.icon }}"></i> <b>{{ this.text }}</b>{{/if}}{{/each}}</div>{{/if}}</td></tr>
                     {{else}}
                     <tr>
                         <td>{{ this.date }}</td>
@@ -121,11 +60,9 @@
                                 {{/each}}
                             </ul>
                             {{/if}}
+                            {{#if this.events}}<div class="hw-line">{{#each this.events}}{{#unless @first}} &nbsp;·&nbsp; {{/unless}}{{#if (eq this.type "assigned")}}<i class="fa fa-pen-to-square"></i> <b>{{ this.homework.id }} assigned</b>: {{ this.homework.topic }} — handout: {{#if (eq this.homework.handout "TBA")}}TBA{{else}}<a href="{{ this.homework.handout }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}} · repo: {{#if (eq this.homework.repo "TBA")}}TBA{{else}}<a href="{{ this.homework.repo }}"><i class="fa-brands fa-github"></i> Git</a>{{/if}}{{/if}}{{#if (eq this.type "due")}}<i class="fa fa-flag-checkered"></i> <b>{{ this.homework.id }} due</b> — submission: {{#if (eq this.homework.submission "TBA")}}TBA{{else}}<a href="{{ this.homework.submission }}"><i class="fa fa-upload"></i> Submit</a>{{/if}}{{/if}}{{#if (eq this.type "note")}}<i class="fa fa-{{ this.icon }}"></i> <b>{{ this.text }}</b>{{/if}}{{/each}}</div>{{/if}}
                         </td>
                     </tr>
-                    {{/if}}
-                    {{#if this.events}}
-                    <tr class="hw-row"><td></td><td>{{#each this.events}}{{#unless @first}} &nbsp;·&nbsp; {{/unless}}{{#if (eq this.type "assigned")}}<i class="fa fa-pen-to-square"></i> <b>{{ this.homework.id }} assigned</b>: {{ this.homework.topic }} — handout: {{#if (eq this.homework.handout "TBA")}}TBA{{else}}<a href="{{ this.homework.handout }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}} · repo: {{#if (eq this.homework.repo "TBA")}}TBA{{else}}<a href="{{ this.homework.repo }}"><i class="fa-brands fa-github"></i> Git</a>{{/if}}{{/if}}{{#if (eq this.type "due")}}<i class="fa fa-flag-checkered"></i> <b>{{ this.homework.id }} due</b> — submission: {{#if (eq this.homework.submission "TBA")}}TBA{{else}}<a href="{{ this.homework.submission }}"><i class="fa fa-upload"></i> Submit</a>{{/if}}{{/if}}{{#if (eq this.type "note")}}<i class="fa fa-{{ this.icon }}"></i> <b>{{ this.text }}</b>{{/if}}{{/each}}</td></tr>
                     {{/if}}
                     {{/each}}
                     {{/each}}
@@ -133,55 +70,12 @@
             </table>
         </div>
         {{/if}}
+        </div>
 
-        {{#if description}}
-        <h2 id="courseinfo" class="section-title">Course Information</h2>
-        {{#each description}}
-        <p>{{{ this }}}</p>
-        {{/each}}
-
-            {{#if logistics}}
-            <h3 id="logistics" class="section-title">Catalog Information</h3>
-            <div class="table-responsive">
-                <table class="table">
-                    <tbody>
-                        {{#each logistics}}
-                        <tr><td><b>{{ this.label }}</b></td><td>{{{ this.value }}}</td></tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            </div>
-            {{#each grading.notes}}
-            <p>{{{ this }}}</p>
-            {{/each}}
-            {{/if}}
-
-            {{#if grading}}
-            <h3 id="grading" class="section-title">Grading</h3>
-            {{#if grading.rows}}
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead><tr><th>Component</th><th>Type</th><th>Count</th><th>Total Contribution</th></tr></thead>
-                    <tbody>
-                        {{#each grading.rows}}
-                        <tr><td>{{ this.component }}</td><td>{{ this.type }}</td><td>{{ this.count }}</td><td>{{ this.contribution }}</td></tr>
-                        {{/each}}
-                    </tbody>
-                </table>
-            </div>
-            {{/if}}
-            {{/if}}
-
-            <h3 id="contact" class="section-title">Contact</h3>
-            <p>{{ instructor.role }}: <a href="{{ instructor.web }}">{{ instructor.name }}</a> &mdash; <a href="mailto:{{ instructor.email }}">{{ instructor.email }}</a></p>
-            {{#each contact_notes}}
-            <p>{{{ this }}}</p>
-            {{/each}}
-        {{/if}}
-
-
-
-
+        <div class="col-12 col-lg-4 col-xl-3 order-1 order-lg-2">
+            {{> sidebar }}
+        </div>
+        </div>
     </main>
 
     <footer class="py-4 text-center text-muted border-top">
@@ -191,5 +85,31 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Gray out schedule weeks that start after today.
+document.addEventListener('DOMContentLoaded', function () {
+    // Test hook: pass ?today=YYYY-MM-DD to run the shading as if that were the
+    // current date, e.g. index.html?today=2026-10-20 shades weeks 7-15 only.
+    var override = new URLSearchParams(window.location.search).get('today');
+    var today = override ? new Date(override + 'T00:00:00') : new Date();
+    if (isNaN(today.getTime())) today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var week = [];
+    var weekIsFuture = false;
+    function flush() {
+        if (weekIsFuture) week.forEach(function (r) { r.classList.add('future-week'); });
+        week = [];
+    }
+    document.querySelectorAll('#schedule-table tbody tr').forEach(function (row) {
+        if (row.classList.contains('week-header')) {
+            flush();
+            var start = row.dataset.weekStart ? new Date(row.dataset.weekStart + 'T00:00:00') : null;
+            weekIsFuture = !!start && start > today;
+        }
+        week.push(row);
+    });
+    flush();
+});
+</script>
 </body>
 </html>

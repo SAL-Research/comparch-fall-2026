@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background:{{ accent_dark }};">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">{{#if code}}{{ code }} — {{/if}}{{ title }}<span class="d-none d-lg-inline fw-light"> &nbsp;|&nbsp; {{ institution }} — {{ term }}</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav" aria-controls="courseNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="courseNav">
+            <ul class="navbar-nav ms-auto">
+                {{#if homeworks}}<li class="nav-item"><a class="nav-link" href="homeworks.html">Homeworks</a></li>{{/if}}
+                {{#if readings}}<li class="nav-item"><a class="nav-link" href="readings.html">Readings</a></li>{{/if}}
+                <li class="nav-item"><a class="nav-link" href="https://sal-research.github.io/teaching.html">All Courses</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

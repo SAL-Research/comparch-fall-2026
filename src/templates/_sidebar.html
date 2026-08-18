@@ -1,0 +1,22 @@
+{{#unless hide_courseinfo}}
+{{#if description_abstract}}
+<h2 id="courseinfo" class="section-title">Course Information</h2>
+<p>{{{ description_abstract }}}</p>
+<p><a href="info.html">More Info <i class="fa fa-arrow-right"></i></a></p>
+{{/if}}
+{{/unless}}
+
+{{#if announcements}}
+<h2 id="announcements" class="section-title">Announcements</h2>
+<ul>
+    {{#each announcements}}
+    <li><em>{{{ this }}}</em></li>
+    {{/each}}
+</ul>
+{{/if}}
+
+<h2 id="contact" class="section-title">Contact</h2>
+<p>{{ instructor.role }}: <a href="{{ instructor.web }}">{{ instructor.name }}</a> &mdash; <a href="mailto:{{ instructor.email }}">{{ instructor.email }}</a></p>
+{{#each contact_notes}}
+<p>{{{ this }}}</p>
+{{/each}}
