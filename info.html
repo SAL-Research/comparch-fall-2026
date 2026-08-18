@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Information — CS 423/520 Computer Architecture, Fall 2026</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        .section-title { border-bottom: 3px solid #661530; padding-bottom: .2rem; margin-top: 1.25rem; margin-bottom: .5rem; }
+        .table > :not(caption) > * > * { padding: .25rem .5rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#661530;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">CS 423/520 — Computer Architecture<span class="d-none d-lg-inline fw-light"> &nbsp;|&nbsp; Bilkent University — Fall 2026</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNav" aria-controls="courseNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="courseNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="homeworks.html">Homeworks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="readings.html">Readings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://sal-research.github.io/teaching.html">All Courses</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container pb-5">
+        <div class="row g-4">
+        <div class="col-12 col-lg-8 col-xl-9 order-2 order-lg-1">
+            <h2 class="section-title">Course Information</h2>
+            <p>Basic hardware structure of modern computing platforms: memory systems, storage systems, interconnects, multiprocessors, accelerators, hardware/software cooperation. Key issues in performance, efficiency, scalability, reliability, security, safety, predictability, and quality of service.</p>
+            <p><b>Learning outcomes:</b> Understand fundamental principles and the state of the art in computer architecture. Implement and hands-on learn various parts of a modern computing system.</p>
+
+            <h3 class="section-title">Catalog Information</h3>
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr><td><b>Prerequisite</b></td><td>CS 224</td></tr>
+                        <tr><td><b>Contact Hours</b></td><td>4 hours of lecture per week</td></tr>
+                        <tr><td><b>Textbook</b></td><td>Recommended: <em>Computer Architecture, Fifth Edition: A Quantitative Approach</em>, John L. Hennessy and David A. Patterson, 2011, Morgan Kaufmann</td></tr>
+                        <tr><td><b>GenAI Policy</b></td><td>Allowed as helpers in coding, preparing data visualization scripts, and proofreading the final text. <b>Not allowed</b> for completely taking over any tasks (e.g., implementing mechanisms, conducting simulations, data analysis, and critical paper reviews).</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-title">Grading</h3>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead><tr><th>Component</th><th>Type</th><th>Count</th><th>Total Contribution</th></tr></thead>
+                    <tbody>
+                        <tr><td>Midterm</td><td>Essay/written</td><td>1</td><td>30%</td></tr>
+                        <tr><td>Final</td><td>Essay/written</td><td>1</td><td>30%</td></tr>
+                        <tr><td>Homework</td><td>Hands-on assignments</td><td>4</td><td>40%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><b>Minimum requirement to qualify for the final exam:</b> the midterm grade must be more than 50%.</p>
+        </div>
+
+        <div class="col-12 col-lg-4 col-xl-3 order-1 order-lg-2">
+            
+            <h2 id="announcements" class="section-title">Announcements</h2>
+            <ul>
+                <li><em>Homework handouts, lecture slides, and lecture videos will be posted on this page throughout the semester — check the <a href="#schedule">schedule</a> regularly.</em></li>
+            </ul>
+            
+            <h2 id="contact" class="section-title">Contact</h2>
+            <p>Instructor: <a href="https://agyaglikci.github.io">Abdullah Giray Yağlıkçı</a> &mdash; <a href="mailto:giray@cispa.de">giray@cispa.de</a></p>
+            <p>Hosted by <a href="https://cs.bilkent.edu.tr">the Department of Computer Engineering at Bilkent University</a>.</p>
+            <p>Delivered by the <a href="https://sal-research.github.io">S4L</a> at <a href="https://www.cispa.de">CISPA</a>.</p>
+        </div>
+        </div>
+    </main>
+
+    <footer class="py-4 text-center text-muted border-top">
+        <div class="container">
+            CS 423/520 Computer Architecture &mdash; Bilkent University, Fall 2026
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
