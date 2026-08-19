@@ -59,6 +59,6 @@ module.exports = {
 
   footer_notes: [
     'Hosted by <a href="https://cs.bilkent.edu.tr">the Department of Computer Engineering at Bilkent University</a>',
-    'Delivered by the <a href="https://sal-research.github.io">S4L</a> at <a href="https://www.cispa.de">CISPA</a>',
+    'Delivered by <a href="https://sal-research.github.io">S4L</a> at <a href="https://www.cispa.de">CISPA</a>',
   ],
 };
