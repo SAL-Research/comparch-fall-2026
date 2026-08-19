@@ -54,7 +54,7 @@
         {{#if this.relevant_lectures}}
         <div class="lectures">Relevant lectures:
             {{#each this.relevant_lectures}}
-            <span class="badge">{{ this.number }}</span> {{ this.title }} ({{ this.date }}{{#if this.optional}} · optional{{/if}}){{#unless @last}} · {{/unless}}
+            <span class="badge">{{ this.number }}</span> {{ this.title }} ({{ this.date }} · {{#if this.optional}}optional{{else}}required{{/if}}){{#unless @last}} · {{/unless}}
             {{/each}}
         </div>
         {{/if}}
@@ -82,7 +82,7 @@
             <section class="lecture-group" id="lecture-{{ this.number }}" data-lecture="{{ this.number }}">
                 <h3 class="section-title">{{#if (eq this.number "general")}}{{ this.title }}{{else}}{{ this.number }}: {{ this.title }}{{#if this.date}} <span class="text-muted fw-normal">({{ this.date }})</span>{{/if}}{{/if}}</h3>
                 {{#if this.required_items.length}}
-                {{#if this.optional_items.length}}<h4 class="h6 text-muted mt-2">Required</h4>{{/if}}
+                {{#unless (eq this.number "general")}}<h4 class="h6 text-muted mt-2">Required</h4>{{/unless}}
                 <ul class="reading-list">
                     {{#each this.required_items}}
                     <li class="reading-item">{{> readingBody }}</li>
@@ -90,7 +90,7 @@
                 </ul>
                 {{/if}}
                 {{#if this.optional_items.length}}
-                {{#if this.required_items.length}}<h4 class="h6 text-muted mt-2">Optional</h4>{{/if}}
+                {{#unless (eq this.number "general")}}<h4 class="h6 text-muted mt-2">Optional</h4>{{/unless}}
                 <ul class="reading-list">
                     {{#each this.optional_items}}
                     <li class="reading-item">{{> readingBody }}</li>

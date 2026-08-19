@@ -90,7 +90,7 @@ function prepareCourseMetadata(metadata) {
         // optional; the same reading may be required in one lecture and
         // optional in another.
         const refs = [
-          ...(lecture.readings || []).map(key => ({ key, optional: false })),
+          ...(lecture.required_readings || lecture.readings || []).map(key => ({ key, optional: false })),
           ...(lecture.optional_readings || []).map(key => ({ key, optional: true })),
         ];
         if (refs.length > 0) {

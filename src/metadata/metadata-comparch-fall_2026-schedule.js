@@ -10,7 +10,7 @@
 //
 // During the semester, populate lecture materials by replacing 'TBA' with a
 // URL (pptx, pdf, video). Lectures reference reading materials by
-// `readings: ['<key>', ...]` (required) and `optional_readings: [...]`
+// `required_readings: ['<key>', ...]` and `optional_readings: [...]`
 // (optional) keys defined in the readings metadata file; a reading may be
 // required in one lecture and optional in another.
 
@@ -24,7 +24,7 @@ module.exports = {
           date: 'Sep 17',
           lectures: [
             { title: 'Course Info and Logistics', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Computer Organization and Design Principles: Introduction and Basics', pptx: 'TBA', pdf: 'TBA', video: 'TBA', readings: ['hamming1986you'] },
+            { title: 'Computer Organization and Design Principles: Introduction and Basics', pptx: 'TBA', pdf: 'TBA', video: 'TBA', required_readings: [], optional_readings: ['hamming1986you'] },
           ],
         },
       ],
@@ -59,7 +59,8 @@ module.exports = {
             { title: 'Out-of-Order Pipeline Design', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: "Tomasulo's Algorithm", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'High Performance Substrate (HPS) and Checkpoint Repair', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
-              readings: ['smith1985precise', 'patt1985hps', 'patt1985critical', 'hwu1987checkpoint', 'patt2001requirements'] },
+              required_readings: ['smith1985precise', 'patt1985hps', 'patt1985critical', 'hwu1987checkpoint', 'patt2001requirements'],
+              optional_readings: [] },
           ],
         },
         { date: 'Oct 1', note: 'No lecture' },
