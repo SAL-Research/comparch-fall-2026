@@ -1,0 +1,1 @@
+assets/readings/*.pdf filter=lfs diff=lfs merge=lfs -text
