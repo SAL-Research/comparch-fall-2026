@@ -18,6 +18,7 @@
         .reading-item .title { font-weight: 500; }
         .reading-item .venue { color: #6c757d; }
         .reading-item .links a { text-decoration: none; }
+        .reading-item .links span + span::before { content: "\00a0·\00a0 "; }
         .reading-item .lectures { font-size: .9em; margin-top: .25rem; }
         .reading-item .lectures .badge { background: #661530; }
         .lecture-group h3 { font-size: 1.1rem; }
@@ -63,6 +64,7 @@
             </div>
             <select id="lecture-filter" class="form-select form-select-sm w-auto" aria-label="Filter by lecture">
                 <option value="">All lectures</option>
+                <option value="L1b">L1b — Computer Organization and Design Principles: Introduction and Basics</option>
                 <option value="L4c">L4c — High Performance Substrate (HPS) and Checkpoint Repair</option>
             </select>
         </div>
@@ -70,16 +72,29 @@
         <!-- Lecture view: papers grouped per lecture; a paper relevant to
              several lectures appears under each of them. -->
         <div id="view-by-lecture-list">
+            <section class="lecture-group" id="lecture-L1b" data-lecture="L1b">
+                <h3 class="section-title">L1b: Computer Organization and Design Principles: Introduction and Basics <span class="text-muted fw-normal">(Sep 17)</span></h3>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"You and Your Research"</div>
+        <div class="authors">Richard Hamming</div>
+        <div class="venue"><i>Bell Communications Research Colloquium</i>, 1986</div>
+        <div class="links">
+            <span>Paper: <a href="readings/hamming1986you.pdf">[ pdf ]</a></span>
+            
+            <span>Video: <a href="https://www.youtube.com/watch?v&#x3D;a1zDuOPkMSw">[ video ]</a></span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17)
+        </div>
+</li>
+                </ul>
+            </section>
             <section class="lecture-group" id="lecture-L4c" data-lecture="L4c">
                 <h3 class="section-title">L4c: High Performance Substrate (HPS) and Checkpoint Repair <span class="text-muted fw-normal">(Sep 28)</span></h3>
                 <ul class="reading-list">
                     <li class="reading-item">        <div class="title">"Implementing Precise Interrupts in Pipelined Processors"</div>
         <div class="authors">James E. Smith, Andrew R. Pleszkun</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1985</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -87,10 +102,6 @@
                     <li class="reading-item">        <div class="title">"HPS, a New Microarchitecture: Rationale and Introduction"</div>
         <div class="authors">Yale N. Patt, Wen-mei W. Hwu, Michael C. Shebanow</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -98,10 +109,6 @@
                     <li class="reading-item">        <div class="title">"Critical Issues Regarding HPS, a High Performance Microarchitecture"</div>
         <div class="authors">Yale N. Patt, Stephen W. Melvin, Wen-mei W. Hwu, Michael C. Shebanow</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -109,10 +116,6 @@
                     <li class="reading-item">        <div class="title">"Checkpoint Repair for Out-of-Order Execution Machines"</div>
         <div class="authors">Wen-mei W. Hwu, Yale N. Patt</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1987</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -120,10 +123,6 @@
                     <li class="reading-item">        <div class="title">"Requirements, Bottlenecks, and Good Fortune: Agents for Microprocessor Evolution"</div>
         <div class="authors">Yale N. Patt</div>
         <div class="venue"><i>Proceedings of the IEEE, vol. 89, no. 11</i>, 2001</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -138,10 +137,6 @@
                 <li class="reading-item" id="patt1985critical" data-lectures="L4c">        <div class="title">"Critical Issues Regarding HPS, a High Performance Microarchitecture"</div>
         <div class="authors">Yale N. Patt, Stephen W. Melvin, Wen-mei W. Hwu, Michael C. Shebanow</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -149,10 +144,6 @@
                 <li class="reading-item" id="patt1985hps" data-lectures="L4c">        <div class="title">"HPS, a New Microarchitecture: Rationale and Introduction"</div>
         <div class="authors">Yale N. Patt, Wen-mei W. Hwu, Michael C. Shebanow</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -160,21 +151,25 @@
                 <li class="reading-item" id="smith1985precise" data-lectures="L4c">        <div class="title">"Implementing Precise Interrupts in Pipelined Processors"</div>
         <div class="authors">James E. Smith, Andrew R. Pleszkun</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1985</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                <li class="reading-item" id="hamming1986you" data-lectures="L1b">        <div class="title">"You and Your Research"</div>
+        <div class="authors">Richard Hamming</div>
+        <div class="venue"><i>Bell Communications Research Colloquium</i>, 1986</div>
+        <div class="links">
+            <span>Paper: <a href="readings/hamming1986you.pdf">[ pdf ]</a></span>
+            
+            <span>Video: <a href="https://www.youtube.com/watch?v&#x3D;a1zDuOPkMSw">[ video ]</a></span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17)
         </div>
 </li>
                 <li class="reading-item" id="hwu1987checkpoint" data-lectures="L4c">        <div class="title">"Checkpoint Repair for Out-of-Order Execution Machines"</div>
         <div class="authors">Wen-mei W. Hwu, Yale N. Patt</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1987</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
@@ -182,10 +177,6 @@
                 <li class="reading-item" id="patt2001requirements" data-lectures="L4c">        <div class="title">"Requirements, Bottlenecks, and Good Fortune: Agents for Microprocessor Evolution"</div>
         <div class="authors">Yale N. Patt</div>
         <div class="venue"><i>Proceedings of the IEEE, vol. 89, no. 11</i>, 2001</div>
-        <div class="links">
-            Paper: PDF TBA
-            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-        </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
         </div>
