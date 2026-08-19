@@ -85,7 +85,8 @@ function prepareCourseMetadata(metadata) {
       }
       (day.lectures || []).forEach(lecture => {
         if (lecture.readings && lecture.readings.length > 0) {
-          lecture.readings_anchor = lecture.readings[0];
+          lecture.readings_anchor = `lecture-${lecture.number}`;
+          const items = [];
           lecture.readings.forEach(key => {
             const reading = readingByKey[key];
             if (!reading) {
@@ -93,7 +94,10 @@ function prepareCourseMetadata(metadata) {
               return;
             }
             reading.relevant_lectures.push({ number: lecture.number, title: lecture.title, date: day.date });
+            items.push(reading);
           });
+          metadata.readings_by_lecture = metadata.readings_by_lecture || [];
+          metadata.readings_by_lecture.push({ number: lecture.number, title: lecture.title, date: day.date, items });
         }
       });
       (day.events || []).forEach(event => {
@@ -104,6 +108,19 @@ function prepareCourseMetadata(metadata) {
       });
     });
   });
+
+  // Readings page views: chronological by publication year (each paper once)
+  // and per-lecture groups (papers replicated under every relevant lecture,
+  // already collected above in schedule order).
+  if (metadata.readings) {
+    metadata.readings.forEach(reading => {
+      reading.lecture_numbers = reading.relevant_lectures.map(l => l.number).join(' ');
+    });
+    metadata.readings_by_year = metadata.readings
+      .slice()
+      .sort((a, b) => (a.year - b.year) || a.title.localeCompare(b.title));
+  }
+
   return metadata;
 }
 
