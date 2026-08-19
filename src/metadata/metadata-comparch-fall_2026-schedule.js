@@ -197,11 +197,7 @@ module.exports = {
           lectures: [
             { title: 'Read Disturbance II: Mitigations', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Memory Performance and Cold Boot Attacks', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-          ],
-          events: [
-            { type: 'due', hw: 'hw3' },
-            { type: 'assigned', hw: 'hw4' },
-          ],
+          ]
         },
       ],
     },
@@ -220,6 +216,10 @@ module.exports = {
           lectures: [
             { title: 'NAND Flash Memory', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
+          events: [
+            { type: 'due', hw: 'hw3' },
+            { type: 'assigned', hw: 'hw4' },
+          ]
         },
       ],
     },
@@ -256,8 +256,7 @@ module.exports = {
           lectures: [
             { title: 'On-Chip Networks', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Interrupts and Polling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-          ],
-          events: [{ type: 'due', hw: 'hw4' }],
+          ]
         },
       ],
     },
@@ -277,6 +276,7 @@ module.exports = {
             { title: 'Agent-based Simulations', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Graph Accelerators', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
+          events: [{ type: 'due', hw: 'hw4' }],
         },
       ],
     },
