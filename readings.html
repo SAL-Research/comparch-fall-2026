@@ -20,6 +20,8 @@
         .reading-item .links a { text-decoration: none; }
         .reading-item .lectures { font-size: .9em; margin-top: .25rem; }
         .reading-item .lectures .badge { background: #661530; }
+        .lecture-group h3 { font-size: 1.1rem; }
+        .readings-controls .btn-check:checked + .btn-outline-dark { background: #661530; border-color: #661530; color: #fff; }
     </style>
 </head>
 <body>
@@ -50,68 +52,146 @@
         <div class="col-12 col-lg-8 col-xl-9">
         <h2 class="section-title">Reading Materials</h2>
         <p class="mt-3">Assigned reading materials for the course. Paper PDFs and, where available, the corresponding paper presentation slides and videos are linked below, together with the lectures each paper is relevant to.</p>
-        <ul class="reading-list">
-            <li class="reading-item" id="smith1985precise">
-                <div class="title">"Implementing Precise Interrupts in Pipelined Processors"</div>
-                <div class="authors">James E. Smith, Andrew R. Pleszkun</div>
-                <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1985</div>
-                <div class="links">
-                    Paper: PDF TBA
-                    &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-                </div>
-                <div class="lectures">Relevant lectures:
-                    <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
-                </div>
-            </li>
-            <li class="reading-item" id="patt1985hps">
-                <div class="title">"HPS, a New Microarchitecture: Rationale and Introduction"</div>
-                <div class="authors">Yale N. Patt, Wen-mei W. Hwu, Michael C. Shebanow</div>
-                <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
-                <div class="links">
-                    Paper: PDF TBA
-                    &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-                </div>
-                <div class="lectures">Relevant lectures:
-                    <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
-                </div>
-            </li>
-            <li class="reading-item" id="patt1985critical">
-                <div class="title">"Critical Issues Regarding HPS, a High Performance Microarchitecture"</div>
-                <div class="authors">Yale N. Patt, Stephen W. Melvin, Wen-mei W. Hwu, Michael C. Shebanow</div>
-                <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
-                <div class="links">
-                    Paper: PDF TBA
-                    &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-                </div>
-                <div class="lectures">Relevant lectures:
-                    <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
-                </div>
-            </li>
-            <li class="reading-item" id="hwu1987checkpoint">
-                <div class="title">"Checkpoint Repair for Out-of-Order Execution Machines"</div>
-                <div class="authors">Wen-mei W. Hwu, Yale N. Patt</div>
-                <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1987</div>
-                <div class="links">
-                    Paper: PDF TBA
-                    &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-                </div>
-                <div class="lectures">Relevant lectures:
-                    <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
-                </div>
-            </li>
-            <li class="reading-item" id="patt2001requirements">
-                <div class="title">"Requirements, Bottlenecks, and Good Fortune: Agents for Microprocessor Evolution"</div>
-                <div class="authors">Yale N. Patt</div>
-                <div class="venue"><i>Proceedings of the IEEE, vol. 89, no. 11</i>, 2001</div>
-                <div class="links">
-                    Paper: PDF TBA
-                    &nbsp;·&nbsp; Presentation: slides TBA, video TBA
-                </div>
-                <div class="lectures">Relevant lectures:
-                    <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
-                </div>
-            </li>
-        </ul>
+
+
+        <div class="readings-controls d-flex flex-wrap align-items-center gap-2 mt-2 mb-2">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Sort readings">
+                <input type="radio" class="btn-check" name="readings-view" id="view-lecture" value="lecture" checked>
+                <label class="btn btn-outline-dark" for="view-lecture">By lecture</label>
+                <input type="radio" class="btn-check" name="readings-view" id="view-year" value="year">
+                <label class="btn btn-outline-dark" for="view-year">By publication date</label>
+            </div>
+            <select id="lecture-filter" class="form-select form-select-sm w-auto" aria-label="Filter by lecture">
+                <option value="">All lectures</option>
+                <option value="L4c">L4c — High Performance Substrate (HPS) and Checkpoint Repair</option>
+            </select>
+        </div>
+
+        <!-- Lecture view: papers grouped per lecture; a paper relevant to
+             several lectures appears under each of them. -->
+        <div id="view-by-lecture-list">
+            <section class="lecture-group" id="lecture-L4c" data-lecture="L4c">
+                <h3 class="section-title">L4c: High Performance Substrate (HPS) and Checkpoint Repair <span class="text-muted fw-normal">(Sep 28)</span></h3>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Implementing Precise Interrupts in Pipelined Processors"</div>
+        <div class="authors">James E. Smith, Andrew R. Pleszkun</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1985</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"HPS, a New Microarchitecture: Rationale and Introduction"</div>
+        <div class="authors">Yale N. Patt, Wen-mei W. Hwu, Michael C. Shebanow</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Critical Issues Regarding HPS, a High Performance Microarchitecture"</div>
+        <div class="authors">Yale N. Patt, Stephen W. Melvin, Wen-mei W. Hwu, Michael C. Shebanow</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Checkpoint Repair for Out-of-Order Execution Machines"</div>
+        <div class="authors">Wen-mei W. Hwu, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1987</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Requirements, Bottlenecks, and Good Fortune: Agents for Microprocessor Evolution"</div>
+        <div class="authors">Yale N. Patt</div>
+        <div class="venue"><i>Proceedings of the IEEE, vol. 89, no. 11</i>, 2001</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Publication-date view: chronological, each paper exactly once. -->
+        <div id="view-by-year-list" hidden>
+            <ul class="reading-list">
+                <li class="reading-item" id="patt1985critical" data-lectures="L4c">        <div class="title">"Critical Issues Regarding HPS, a High Performance Microarchitecture"</div>
+        <div class="authors">Yale N. Patt, Stephen W. Melvin, Wen-mei W. Hwu, Michael C. Shebanow</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                <li class="reading-item" id="patt1985hps" data-lectures="L4c">        <div class="title">"HPS, a New Microarchitecture: Rationale and Introduction"</div>
+        <div class="authors">Yale N. Patt, Wen-mei W. Hwu, Michael C. Shebanow</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1985</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                <li class="reading-item" id="smith1985precise" data-lectures="L4c">        <div class="title">"Implementing Precise Interrupts in Pipelined Processors"</div>
+        <div class="authors">James E. Smith, Andrew R. Pleszkun</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1985</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                <li class="reading-item" id="hwu1987checkpoint" data-lectures="L4c">        <div class="title">"Checkpoint Repair for Out-of-Order Execution Machines"</div>
+        <div class="authors">Wen-mei W. Hwu, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1987</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+                <li class="reading-item" id="patt2001requirements" data-lectures="L4c">        <div class="title">"Requirements, Bottlenecks, and Good Fortune: Agents for Microprocessor Evolution"</div>
+        <div class="authors">Yale N. Patt</div>
+        <div class="venue"><i>Proceedings of the IEEE, vol. 89, no. 11</i>, 2001</div>
+        <div class="links">
+            Paper: PDF TBA
+            &nbsp;·&nbsp; Presentation: slides TBA, video TBA
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Sep 28)
+        </div>
+</li>
+            </ul>
+        </div>
         </div>
         <div class="col-12 col-lg-4 col-xl-3">
             <h2 id="courseinfo" class="section-title">Course Information</h2>
@@ -166,5 +246,33 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Toggle between lecture-grouped and publication-date views, and filter both
+// by lecture number.
+document.addEventListener('DOMContentLoaded', function () {
+    var lectureView = document.getElementById('view-by-lecture-list');
+    var yearView = document.getElementById('view-by-year-list');
+    var filter = document.getElementById('lecture-filter');
+
+    function apply() {
+        var mode = document.querySelector('input[name="readings-view"]:checked').value;
+        var lecture = filter.value;
+        lectureView.hidden = mode !== 'lecture';
+        yearView.hidden = mode !== 'year';
+        lectureView.querySelectorAll('.lecture-group').forEach(function (group) {
+            group.hidden = !!lecture && group.dataset.lecture !== lecture;
+        });
+        yearView.querySelectorAll('.reading-item').forEach(function (item) {
+            item.hidden = !!lecture && (item.dataset.lectures || '').split(' ').indexOf(lecture) === -1;
+        });
+    }
+
+    document.querySelectorAll('input[name="readings-view"]').forEach(function (radio) {
+        radio.addEventListener('change', apply);
+    });
+    filter.addEventListener('change', apply);
+    apply();
+});
+</script>
 </body>
 </html>
