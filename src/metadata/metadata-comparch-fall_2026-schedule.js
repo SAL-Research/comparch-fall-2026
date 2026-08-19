@@ -116,15 +116,13 @@ module.exports = {
           date: 'Oct 19',
           alternatives: true,
           lectures: [
-            { title: 'Speculative Execution from a Security Perspective', note: 'potential guest lecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Runahead Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Speculative Execution from a Security Perspective (Subject to Change)', note: 'Guest Lecture by <a href="https://misc0110.net">Michael Schwarz</a>', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
           date: 'Oct 22',
           alternatives: true,
           lectures: [
-            { title: 'Speculative Execution from a Security Perspective', note: 'potential guest lecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Runahead Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
