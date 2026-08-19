@@ -74,6 +74,7 @@
         <div id="view-by-lecture-list">
             <section class="lecture-group" id="lecture-L1b" data-lecture="L1b">
                 <h3 class="section-title">L1b: Computer Organization and Design Principles: Introduction and Basics <span class="text-muted fw-normal">(Sep 17)</span></h3>
+                
                 <ul class="reading-list">
                     <li class="reading-item">        <div class="title">"You and Your Research"</div>
         <div class="authors">Richard Hamming</div>
@@ -94,6 +95,7 @@
             </section>
             <section class="lecture-group" id="lecture-L4c" data-lecture="L4c">
                 <h3 class="section-title">L4c: High Performance Substrate (HPS) and Checkpoint Repair <span class="text-muted fw-normal">(Sep 28)</span></h3>
+                
                 <ul class="reading-list">
                     <li class="reading-item">        <div class="title">"Implementing Precise Interrupts in Pipelined Processors"</div>
         <div class="authors">James E. Smith, Andrew R. Pleszkun</div>
@@ -251,6 +253,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var yearView = document.getElementById('view-by-year-list');
     var filter = document.getElementById('lecture-filter');
 
+    // Initialize from GET parameters, e.g. readings.html?lecture=L4c&view=year,
+    // so lectures can link directly to their own readings list.
+    var params = new URLSearchParams(window.location.search);
+    var initLecture = params.get('lecture');
+    if (initLecture) {
+        Array.prototype.slice.call(filter.options).forEach(function (option) {
+            if (option.value === initLecture) filter.value = initLecture;
+        });
+    }
+    if (params.get('view') === 'year') document.getElementById('view-year').checked = true;
+
     function apply() {
         var mode = document.querySelector('input[name="readings-view"]:checked').value;
         var lecture = filter.value;
@@ -262,6 +275,11 @@ document.addEventListener('DOMContentLoaded', function () {
         yearView.querySelectorAll('.reading-item').forEach(function (item) {
             item.hidden = !!lecture && (item.dataset.lectures || '').split(' ').indexOf(lecture) === -1;
         });
+        var query = new URLSearchParams();
+        if (mode === 'year') query.set('view', 'year');
+        if (lecture) query.set('lecture', lecture);
+        var qs = query.toString();
+        history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : ''));
     }
 
     document.querySelectorAll('input[name="readings-view"]').forEach(function (radio) {
