@@ -51,6 +51,7 @@
         {{/each}}
         </div>
         {{/if}}
+        {{#unless hide_lectures}}
         {{#if this.relevant_lectures}}
         <div class="lectures">Relevant lectures:
             {{#each this.relevant_lectures}}
@@ -58,6 +59,7 @@
             {{/each}}
         </div>
         {{/if}}
+        {{/unless}}
         {{/inline}}
 
         <div class="readings-controls d-flex flex-wrap align-items-center gap-2 mt-2 mb-2">
@@ -85,7 +87,7 @@
                 {{#unless (eq this.number "general")}}<h4 class="h6 text-muted mt-2">Required</h4>{{/unless}}
                 <ul class="reading-list">
                     {{#each this.required_items}}
-                    <li class="reading-item">{{> readingBody }}</li>
+                    <li class="reading-item">{{> readingBody hide_lectures=true }}</li>
                     {{/each}}
                 </ul>
                 {{/if}}
@@ -93,7 +95,7 @@
                 {{#unless (eq this.number "general")}}<h4 class="h6 text-muted mt-2">Optional</h4>{{/unless}}
                 <ul class="reading-list">
                     {{#each this.optional_items}}
-                    <li class="reading-item">{{> readingBody }}</li>
+                    <li class="reading-item">{{> readingBody hide_lectures=true }}</li>
                     {{/each}}
                 </ul>
                 {{/if}}
