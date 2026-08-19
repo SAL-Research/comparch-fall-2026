@@ -54,7 +54,7 @@
         {{#if this.relevant_lectures}}
         <div class="lectures">Relevant lectures:
             {{#each this.relevant_lectures}}
-            <span class="badge">{{ this.number }}</span> {{ this.title }} ({{ this.date }}){{#unless @last}} · {{/unless}}
+            <span class="badge">{{ this.number }}</span> {{ this.title }} ({{ this.date }}{{#if this.optional}} · optional{{/if}}){{#unless @last}} · {{/unless}}
             {{/each}}
         </div>
         {{/if}}
@@ -70,7 +70,7 @@
             <select id="lecture-filter" class="form-select form-select-sm w-auto" aria-label="Filter by lecture">
                 <option value="">All lectures</option>
                 {{#each readings_by_lecture}}
-                <option value="{{ this.number }}">{{ this.number }} — {{ this.title }}</option>
+                <option value="{{ this.number }}">{{#if (eq this.number "general")}}General{{else}}{{ this.number }} — {{ this.title }}{{/if}}</option>
                 {{/each}}
             </select>
         </div>
@@ -80,12 +80,23 @@
         <div id="view-by-lecture-list">
             {{#each readings_by_lecture}}
             <section class="lecture-group" id="lecture-{{ this.number }}" data-lecture="{{ this.number }}">
-                <h3 class="section-title">{{ this.number }}: {{ this.title }} <span class="text-muted fw-normal">({{ this.date }})</span></h3>
+                <h3 class="section-title">{{#if (eq this.number "general")}}{{ this.title }}{{else}}{{ this.number }}: {{ this.title }}{{#if this.date}} <span class="text-muted fw-normal">({{ this.date }})</span>{{/if}}{{/if}}</h3>
+                {{#if this.required_items.length}}
+                {{#if this.optional_items.length}}<h4 class="h6 text-muted mt-2">Required</h4>{{/if}}
                 <ul class="reading-list">
-                    {{#each this.items}}
+                    {{#each this.required_items}}
                     <li class="reading-item">{{> readingBody }}</li>
                     {{/each}}
                 </ul>
+                {{/if}}
+                {{#if this.optional_items.length}}
+                {{#if this.required_items.length}}<h4 class="h6 text-muted mt-2">Optional</h4>{{/if}}
+                <ul class="reading-list">
+                    {{#each this.optional_items}}
+                    <li class="reading-item">{{> readingBody }}</li>
+                    {{/each}}
+                </ul>
+                {{/if}}
             </section>
             {{/each}}
         </div>
@@ -116,6 +127,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var yearView = document.getElementById('view-by-year-list');
     var filter = document.getElementById('lecture-filter');
 
+    // Initialize from GET parameters, e.g. readings.html?lecture=L4c&view=year,
+    // so lectures can link directly to their own readings list.
+    var params = new URLSearchParams(window.location.search);
+    var initLecture = params.get('lecture');
+    if (initLecture) {
+        Array.prototype.slice.call(filter.options).forEach(function (option) {
+            if (option.value === initLecture) filter.value = initLecture;
+        });
+    }
+    if (params.get('view') === 'year') document.getElementById('view-year').checked = true;
+
     function apply() {
         var mode = document.querySelector('input[name="readings-view"]:checked').value;
         var lecture = filter.value;
@@ -127,6 +149,11 @@ document.addEventListener('DOMContentLoaded', function () {
         yearView.querySelectorAll('.reading-item').forEach(function (item) {
             item.hidden = !!lecture && (item.dataset.lectures || '').split(' ').indexOf(lecture) === -1;
         });
+        var query = new URLSearchParams();
+        if (mode === 'year') query.set('view', 'year');
+        if (lecture) query.set('lecture', lecture);
+        var qs = query.toString();
+        history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : ''));
     }
 
     document.querySelectorAll('input[name="readings-view"]').forEach(function (radio) {

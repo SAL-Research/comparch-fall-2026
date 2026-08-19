@@ -54,7 +54,7 @@
                                 {{#each this.lectures}}
                                 <li>{{#if this.exam}}<b><i class="fa fa-file-pen"></i> {{ this.number }}: {{ this.title }}</b>{{else}}{{ this.number }}: {{ this.title }}{{#if this.note}} <em>({{{ this.note }}})</em>{{/if}}
                                     {{#if (or this.pptx this.pdf this.video)}}
-                                    <span class="mat">[{{#if (eq this.pptx "TBA")}}PPTX: TBA{{else}}<a href="{{ this.pptx }}"><i class="fa fa-file-powerpoint"></i> PPTX</a>{{/if}} · {{#if (eq this.pdf "TBA")}}PDF: TBA{{else}}<a href="{{ this.pdf }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}} · {{#if (eq this.video "TBA")}}Video: TBA{{else}}<a href="{{ this.video }}"><i class="fa-brands fa-youtube"></i> Video</a>{{/if}}{{#if this.readings_anchor}} · <a href="readings.html#{{ this.readings_anchor }}"><i class="fa fa-book-open"></i> Readings</a>{{/if}}]</span>
+                                    <span class="mat">[{{#if (eq this.pptx "TBA")}}PPTX: TBA{{else}}<a href="{{ this.pptx }}"><i class="fa fa-file-powerpoint"></i> PPTX</a>{{/if}} · {{#if (eq this.pdf "TBA")}}PDF: TBA{{else}}<a href="{{ this.pdf }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}} · {{#if (eq this.video "TBA")}}Video: TBA{{else}}<a href="{{ this.video }}"><i class="fa-brands fa-youtube"></i> Video</a>{{/if}}{{#if this.readings_anchor}} · <a href="readings.html?lecture={{ this.readings_anchor }}"><i class="fa fa-book-open"></i> Readings</a>{{/if}}]</span>
                                     {{/if}}{{/if}}
                                 </li>
                                 {{/each}}

@@ -10,7 +10,9 @@
 //
 // During the semester, populate lecture materials by replacing 'TBA' with a
 // URL (pptx, pdf, video). Lectures reference reading materials by
-// `readings: ['<key>', ...]` keys defined in the readings metadata file.
+// `readings: ['<key>', ...]` (required) and `optional_readings: [...]`
+// (optional) keys defined in the readings metadata file; a reading may be
+// required in one lecture and optional in another.
 
 module.exports = {
   schedule_note: 'Slides (PPTX and PDF) and lecture videos will be linked next to each lecture as the semester progresses.',

@@ -86,20 +86,27 @@ function prepareCourseMetadata(metadata) {
         });
       }
       (day.lectures || []).forEach(lecture => {
-        if (lecture.readings && lecture.readings.length > 0) {
-          lecture.readings_anchor = `lecture-${lecture.number}`;
-          const items = [];
-          lecture.readings.forEach(key => {
-            const reading = readingByKey[key];
+        // `readings` are required for the lecture, `optional_readings` are
+        // optional; the same reading may be required in one lecture and
+        // optional in another.
+        const refs = [
+          ...(lecture.readings || []).map(key => ({ key, optional: false })),
+          ...(lecture.optional_readings || []).map(key => ({ key, optional: true })),
+        ];
+        if (refs.length > 0) {
+          lecture.readings_anchor = lecture.number;
+          const group = { number: lecture.number, title: lecture.title, date: day.date, required_items: [], optional_items: [] };
+          refs.forEach(ref => {
+            const reading = readingByKey[ref.key];
             if (!reading) {
-              console.warn(`  ! unknown reading key: ${key}`);
+              console.warn(`  ! unknown reading key: ${ref.key}`);
               return;
             }
-            reading.relevant_lectures.push({ number: lecture.number, title: lecture.title, date: day.date });
-            items.push(reading);
+            reading.relevant_lectures.push({ number: lecture.number, title: lecture.title, date: day.date, optional: ref.optional });
+            (ref.optional ? group.optional_items : group.required_items).push(reading);
           });
           metadata.readings_by_lecture = metadata.readings_by_lecture || [];
-          metadata.readings_by_lecture.push({ number: lecture.number, title: lecture.title, date: day.date, items });
+          metadata.readings_by_lecture.push(group);
         }
       });
       (day.events || []).forEach(event => {
@@ -115,8 +122,18 @@ function prepareCourseMetadata(metadata) {
   // and per-lecture groups (papers replicated under every relevant lecture,
   // already collected above in schedule order).
   if (metadata.readings) {
+    // Readings not referenced by any lecture form a "General" group so they
+    // still appear in the lecture view.
+    const unassigned = metadata.readings.filter(r => r.relevant_lectures.length === 0);
+    if (unassigned.length > 0) {
+      metadata.readings_by_lecture = metadata.readings_by_lecture || [];
+      metadata.readings_by_lecture.push({ number: 'general', title: 'General', date: null, required_items: [], optional_items: unassigned });
+      unassigned.forEach(r => { r.lecture_numbers_extra = 'general'; });
+    }
     metadata.readings.forEach(reading => {
-      reading.lecture_numbers = reading.relevant_lectures.map(l => l.number).join(' ');
+      reading.lecture_numbers = reading.relevant_lectures.map(l => l.number)
+        .concat(reading.lecture_numbers_extra ? [reading.lecture_numbers_extra] : [])
+        .join(' ');
     });
     metadata.readings_by_year = metadata.readings
       .slice()
