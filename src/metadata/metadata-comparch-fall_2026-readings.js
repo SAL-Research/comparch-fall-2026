@@ -1,10 +1,22 @@
 // Reading materials for CS 423/520 Computer Architecture (Bilkent, Fall 2026),
 // organized like the lab site's metadata-publications.js.
+//
+// Lectures reference these by `readings: ['<key>', ...]`; the build collects
+// the relevant lectures for each paper and renders readings.html.
+//
+// Links are modeled as resources: each resource has a `resourcename` (Paper,
+// Slides, Video, ...) and a list of links, each with a `fileformat` label and
+// a `url`. Only add a resource once it has at least one real link — absent
+// resources simply don't render. Example:
+//   resources: [
+//     { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: '...' }] },
+//     { resourcename: 'Slides', links: [
+//       { fileformat: 'pptx', url: '...' },
+//       { fileformat: 'pdf', url: '...' },
+//     ] },
+//   ],
 
 module.exports = {
-  // Lectures reference these by `readings: ['<key>', ...]`; the build collects
-  // the relevant lectures for each paper and renders readings.html.
-  // Replace 'TBA' with URLs for the paper pdf and its presentation slides/video.
   readings: [
     {
       key: 'hamming1986you',
@@ -15,8 +27,10 @@ module.exports = {
       venue: 'Bell Communications Research Colloquium',
       type: 'talk',
       year: 1986,
-      pdf: 'readings/hamming1986you.pdf',
-      video: 'https://www.youtube.com/watch?v=a1zDuOPkMSw',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'readings/hamming1986you.pdf' }] },
+        { resourcename: 'Video', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/watch?v=a1zDuOPkMSw' }] },
+      ],
     },
     {
       key: 'smith1985precise',
@@ -28,9 +42,7 @@ module.exports = {
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       year: 1985,
-      pdf: 'TBA',
-      slides: 'TBA',
-      video: 'TBA',
+      resources: [],
     },
     {
       key: 'patt1985hps',
@@ -43,9 +55,7 @@ module.exports = {
       venue: 'International Symposium on Microarchitecture (MICRO)',
       type: 'conference',
       year: 1985,
-      pdf: 'TBA',
-      slides: 'TBA',
-      video: 'TBA',
+      resources: [],
     },
     {
       key: 'patt1985critical',
@@ -59,9 +69,7 @@ module.exports = {
       venue: 'International Symposium on Microarchitecture (MICRO)',
       type: 'conference',
       year: 1985,
-      pdf: 'TBA',
-      slides: 'TBA',
-      video: 'TBA',
+      resources: [],
     },
     {
       key: 'hwu1987checkpoint',
@@ -73,9 +81,7 @@ module.exports = {
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       year: 1987,
-      pdf: 'TBA',
-      slides: 'TBA',
-      video: 'TBA',
+      resources: [],
     },
     {
       key: 'patt2001requirements',
@@ -86,9 +92,7 @@ module.exports = {
       venue: 'Proceedings of the IEEE, vol. 89, no. 11',
       type: 'journal',
       year: 2001,
-      pdf: 'TBA',
-      slides: 'TBA',
-      video: 'TBA',
+      resources: [],
     },
   ],
 };

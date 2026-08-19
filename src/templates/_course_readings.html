@@ -38,11 +38,17 @@
         <div class="title">"{{ this.title }}"</div>
         <div class="authors">{{#each this.authors}}{{ this.firstname }} {{ this.lastname }}{{#unless @last}}, {{/unless}}{{/each}}</div>
         <div class="venue">{{#if (eq this.type "conference")}}in Proceedings of the {{/if}}<i>{{ this.venue }}</i>, {{ this.year }}</div>
-        {{#if (or (real this.pdf) (real this.slides) (real this.video))}}
+        {{#if this.resources.length}}
         <div class="links">
-            {{#if (real this.pdf)}}<span>Paper: <a href="{{ this.pdf }}">[ pdf ]</a></span>{{/if}}
-            {{#if (real this.slides)}}<span>Presentation: <a href="{{ this.slides }}">[ slides ]</a></span>{{/if}}
-            {{#if (real this.video)}}<span>Video: <a href="{{ this.video }}">[ video ]</a></span>{{/if}}
+        {{#each this.resources}}
+            {{#if this.links.length}}
+            <span>{{ this.resourcename }}:
+                {{#each this.links}}
+                <a href="{{ this.url }}">[{{ this.fileformat }}]</a>
+                {{/each}}
+            </span>
+            {{/if}}
+        {{/each}}
         </div>
         {{/if}}
         {{#if this.relevant_lectures}}
