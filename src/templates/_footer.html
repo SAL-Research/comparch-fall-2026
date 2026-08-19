@@ -1,0 +1,9 @@
+<footer class="py-4 text-center text-muted border-top">
+    <div class="container">
+        {{#if footer_notes}}
+        {{#each footer_notes}}{{#unless @first}} &nbsp;|&nbsp; {{/unless}}{{{ this }}}{{/each}}
+        {{else}}
+        {{#if code}}{{ code }} {{/if}}{{ title }} &mdash; {{ institution }}, {{ term }}
+        {{/if}}
+    </div>
+</footer>

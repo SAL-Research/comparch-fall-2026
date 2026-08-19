@@ -28,9 +28,6 @@
 <p><a href="qa.html"><i class="fa fa-comments"></i> Course Q&amp;A</a> — ask course-related questions publicly.</p>
 {{/if}}
 <p>{{ instructor.role }}: <a href="{{ instructor.web }}">{{ instructor.name }}</a> &mdash; <a href="mailto:{{ instructor.email }}">{{ instructor.email }}</a></p>
-{{#each contact_notes}}
-<p>{{{ this }}}</p>
-{{/each}}
 
 {{#if qa}}
 <script>

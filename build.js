@@ -112,7 +112,7 @@ function compileTemplate(name) {
 }
 
 function registerPartials() {
-  ['navbar', 'sidebar'].forEach(name => {
+  ['navbar', 'sidebar', 'footer'].forEach(name => {
     handlebars.registerPartial(name, fs.readFileSync(path.join(templatesDir, `_${name}.html`), 'utf-8'));
   });
 }

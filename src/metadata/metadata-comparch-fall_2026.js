@@ -57,8 +57,8 @@ module.exports = {
     { key: 'bonus1', id: 'Bonus HW', topic: 'Paper Reviews', assigned: 'Oct 5', deadline: 'Dec 21', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
   ],
 
-  contact_notes: [
-    'Hosted by <a href="https://cs.bilkent.edu.tr">the Department of Computer Engineering at Bilkent University</a>.',
-    'Delivered by the <a href="https://sal-research.github.io">S4L</a> at <a href="https://www.cispa.de">CISPA</a>.',
+  footer_notes: [
+    'Hosted by <a href="https://cs.bilkent.edu.tr">the Department of Computer Engineering at Bilkent University</a>',
+    'Delivered by the <a href="https://sal-research.github.io">S4L</a> at <a href="https://www.cispa.de">CISPA</a>',
   ],
 };
