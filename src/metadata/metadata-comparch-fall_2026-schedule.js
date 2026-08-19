@@ -140,14 +140,7 @@ module.exports = {
         },
         {
           date: 'Oct 29',
-          lectures: [
-            { title: 'Cache Coherency', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Cache Pollution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-          ],
-          events: [
-            { type: 'due', hw: 'hw2' },
-            { type: 'assigned', hw: 'hw3' },
-          ],
+          note: 'No lectures',
         },
       ],
     },
@@ -157,13 +150,20 @@ module.exports = {
         {
           date: 'Nov 2',
           lectures: [
-            { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Cache Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+          ],
+          events: [
+            { type: 'due', hw: 'hw2' },
+            { type: 'assigned', hw: 'hw3' },
           ],
         },
         {
           date: 'Nov 5',
-          note: 'No lectures',
+          
+          lectures: [
+            { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+          ],
         },
       ],
     },

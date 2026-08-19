@@ -18,6 +18,8 @@ const METADATA_FILES = [
   './src/metadata/metadata-comparch-fall_2026.js',
   './src/metadata/metadata-comparch-fall_2026-schedule.js',
   './src/metadata/metadata-comparch-fall_2026-readings.js',
+  './src/metadata/metadata-comparch-fall_2026-exercises.js',
+  './src/metadata/metadata-comparch-fall_2026-qa.js',
 ];
 const templatesDir = path.join(__dirname, 'src', 'templates');
 const assetsDir = path.join(__dirname, 'assets');
@@ -139,6 +141,16 @@ function build() {
   if (metadata.description || metadata.logistics || metadata.grading) {
     fs.writeFileSync(path.join(outputDir, 'info.html'), compileTemplate('_course_info.html')(metadata));
     console.log('  → dist/info.html');
+  }
+
+  if (metadata.exercises) {
+    fs.writeFileSync(path.join(outputDir, 'exercises.html'), compileTemplate('_course_exercises.html')(metadata));
+    console.log('  → dist/exercises.html');
+  }
+
+  if (metadata.qa) {
+    fs.writeFileSync(path.join(outputDir, 'qa.html'), compileTemplate('_course_qa.html')(metadata));
+    console.log('  → dist/qa.html');
   }
 
   console.log('Build completed!');

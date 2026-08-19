@@ -46,12 +46,12 @@ module.exports = {
       { component: 'Homework', type: 'Hands-on assignments', count: 4, contribution: '40%' },
     ],
     notes: [
-      '<b>Minimum requirement to qualify for the final exam:</b> the midterm grade must be more than 50%.',
+      '<b>Minimum requirement to qualify for the final exam:</b> the midterm grade must be more than 30%.',
     ],
   },
 
   homework_intro: 'Four homework assignments (40% total) plus one bonus homework. Handouts, git repositories, and submission links will be posted here when each homework is assigned.',
-  homework_note: 'Late submission cut-off for all labs: December 21, 2026.',
+  homework_note: 'You lose 10\% of your grade for each week late. Late submission cut-off for all homeworks: December 21, 2026.',
   homeworks: [
     { key: 'hw1', id: 'HW 1', topic: 'Single-Cycle vs In-Order Pipeline Architectures', assigned: 'Sep 24', deadline: 'Oct 15', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
     { key: 'hw2', id: 'HW 2', topic: 'Caching, Prefetching, and Branch Prediction', assigned: 'Oct 15', deadline: 'Oct 29', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
