@@ -29,11 +29,9 @@
             <div class="collapse navbar-collapse" id="courseNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html#schedule">Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#announcements">Announcements</a></li>
                     <li class="nav-item"><a class="nav-link" href="homeworks.html">Homeworks</a></li>
                     <li class="nav-item"><a class="nav-link" href="readings.html">Readings</a></li>
                     <li class="nav-item"><a class="nav-link" href="exercises.html">Exercises</a></li>
-                    <li class="nav-item"><a class="nav-link" href="qa.html">Q&amp;A</a></li>
                     <li class="nav-item"><a class="nav-link" href="info.html">Course Info</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://sal-research.github.io/teaching.html">All Courses</a></li>
                 </ul>
@@ -126,14 +124,44 @@
             <p><a href="info.html">More Info <i class="fa fa-arrow-right"></i></a></p>
             
             <h2 id="announcements" class="section-title">Announcements</h2>
-            <ul>
-                <li><em>Homework handouts, lecture slides, and lecture videos will be posted on this page throughout the semester — check the <a href="index.html#schedule">schedule</a> regularly.</em></li>
+            <ul id="gh-announcements" data-repo="SAL-Research/comparch-fall-2026">
+                <li><em>Loading announcements…</em></li>
             </ul>
+            <p class="small"><a href="https://github.com/SAL-Research/comparch-fall-2026/discussions/categories/announcements">All announcements <i class="fa fa-arrow-right"></i></a></p>
             
             <h2 id="contact" class="section-title">Contact</h2>
+            <p><a href="qa.html"><i class="fa fa-comments"></i> Course Q&amp;A</a> — ask course-related questions publicly.</p>
             <p>Instructor: <a href="https://agyaglikci.github.io">Abdullah Giray Yağlıkçı</a> &mdash; <a href="mailto:giray@cispa.de">giray@cispa.de</a></p>
             <p>Hosted by <a href="https://cs.bilkent.edu.tr">the Department of Computer Engineering at Bilkent University</a>.</p>
             <p>Delivered by the <a href="https://sal-research.github.io">S4L</a> at <a href="https://www.cispa.de">CISPA</a>.</p>
+            
+            <script>
+            // Populate the Announcements list from the GitHub Discussions
+            // "Announcements" category of the course repository.
+            document.addEventListener('DOMContentLoaded', function () {
+                var list = document.getElementById('gh-announcements');
+                if (!list) return;
+                var repo = list.dataset.repo;
+                function fallback(message) {
+                    list.innerHTML = '<li><em>' + message + '</em></li>';
+                }
+                fetch('https://api.github.com/repos/' + repo + '/discussions?per_page=30')
+                    .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error(r.status)); })
+                    .then(function (discussions) {
+                        var announcements = discussions
+                            .filter(function (d) { return d.category && d.category.name === 'Announcements'; })
+                            .sort(function (a, b) { return b.created_at.localeCompare(a.created_at); })
+                            .slice(0, 5);
+                        if (announcements.length === 0) return fallback('No announcements yet.');
+                        list.innerHTML = announcements.map(function (d) {
+                            var date = new Date(d.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                            return '<li><a href="' + d.html_url + '"></a> <span class="text-muted small">(' + date + ')</span></li>';
+                        }).join('');
+                        list.querySelectorAll('a').forEach(function (a, i) { a.textContent = announcements[i].title; });
+                    })
+                    .catch(function () { fallback('Announcements are posted on the course repository\'s discussions page (link below).'); });
+            });
+            </script>
         </div>
         </div>
     </main>
