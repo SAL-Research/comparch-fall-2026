@@ -1,5 +1,5 @@
 // Course metadata for CS 423/520 Computer Architecture (Bilkent, Fall 2026):
-// identity, instructor, announcements, description, logistics, grading, and
+// identity, instructor, description, logistics, grading, and
 // homeworks. The schedule and the reading materials live in their own files
 // (metadata-comparch-fall_2026-schedule.js / -readings.js); the build merges
 // all three.
@@ -26,9 +26,6 @@ module.exports = {
     web: 'https://agyaglikci.github.io',
     email: 'giray@cispa.de',
   },
-  announcements: [
-    'Homework handouts, lecture slides, and lecture videos will be posted on this page throughout the semester — check the <a href="index.html#schedule">schedule</a> regularly.',
-  ],
   description: [
     'Basic hardware structure of modern computing platforms: memory systems, storage systems, interconnects, multiprocessors, accelerators, hardware/software cooperation. Key issues in performance, efficiency, scalability, reliability, security, safety, predictability, and quality of service.',
     '<b>Learning outcomes:</b> Understand fundamental principles and the state of the art in computer architecture. Implement and hands-on learn various parts of a modern computing system.',

@@ -6,17 +6,58 @@
 {{/if}}
 {{/unless}}
 
-{{#if announcements}}
+{{#if (or announcements qa)}}
 <h2 id="announcements" class="section-title">Announcements</h2>
+{{#if announcements}}
 <ul>
     {{#each announcements}}
     <li><em>{{{ this }}}</em></li>
     {{/each}}
 </ul>
 {{/if}}
+{{#if qa}}
+<ul id="gh-announcements" data-repo="{{ qa.giscus.repo }}">
+    <li><em>Loading announcements…</em></li>
+</ul>
+<p class="small"><a href="https://github.com/{{ qa.giscus.repo }}/discussions/categories/announcements">All announcements <i class="fa fa-arrow-right"></i></a></p>
+{{/if}}
+{{/if}}
 
 <h2 id="contact" class="section-title">Contact</h2>
+{{#if qa}}
+<p><a href="qa.html"><i class="fa fa-comments"></i> Course Q&amp;A</a> — ask course-related questions publicly.</p>
+{{/if}}
 <p>{{ instructor.role }}: <a href="{{ instructor.web }}">{{ instructor.name }}</a> &mdash; <a href="mailto:{{ instructor.email }}">{{ instructor.email }}</a></p>
 {{#each contact_notes}}
 <p>{{{ this }}}</p>
 {{/each}}
+
+{{#if qa}}
+<script>
+// Populate the Announcements list from the GitHub Discussions
+// "Announcements" category of the course repository.
+document.addEventListener('DOMContentLoaded', function () {
+    var list = document.getElementById('gh-announcements');
+    if (!list) return;
+    var repo = list.dataset.repo;
+    function fallback(message) {
+        list.innerHTML = '<li><em>' + message + '</em></li>';
+    }
+    fetch('https://api.github.com/repos/' + repo + '/discussions?per_page=30')
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(new Error(r.status)); })
+        .then(function (discussions) {
+            var announcements = discussions
+                .filter(function (d) { return d.category && d.category.name === 'Announcements'; })
+                .sort(function (a, b) { return b.created_at.localeCompare(a.created_at); })
+                .slice(0, 5);
+            if (announcements.length === 0) return fallback('No announcements yet.');
+            list.innerHTML = announcements.map(function (d) {
+                var date = new Date(d.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                return '<li><a href="' + d.html_url + '"></a> <span class="text-muted small">(' + date + ')</span></li>';
+            }).join('');
+            list.querySelectorAll('a').forEach(function (a, i) { a.textContent = announcements[i].title; });
+        })
+        .catch(function () { fallback('Announcements are posted on the course repository\'s discussions page (link below).'); });
+});
+</script>
+{{/if}}
