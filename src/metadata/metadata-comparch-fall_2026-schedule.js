@@ -22,7 +22,7 @@ module.exports = {
           date: 'Sep 17',
           lectures: [
             { title: 'Course Info and Logistics', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Computer Organization and Design Principles: Introduction and Basics', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Computer Organization and Design Principles: Introduction and Basics', pptx: 'TBA', pdf: 'TBA', video: 'TBA', readings: ['hamming1986you'] },
           ],
         },
       ],

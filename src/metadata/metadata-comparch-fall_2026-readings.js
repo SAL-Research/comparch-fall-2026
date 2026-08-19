@@ -7,6 +7,18 @@ module.exports = {
   // Replace 'TBA' with URLs for the paper pdf and its presentation slides/video.
   readings: [
     {
+      key: 'hamming1986you',
+      title: 'You and Your Research',
+      authors: [
+        { firstname: 'Richard', lastname: 'Hamming' },
+      ],
+      venue: 'Bell Communications Research Colloquium',
+      type: 'talk',
+      year: 1986,
+      pdf: 'readings/hamming1986you.pdf',
+      video: 'https://www.youtube.com/watch?v=a1zDuOPkMSw',
+    },
+    {
       key: 'smith1985precise',
       title: 'Implementing Precise Interrupts in Pipelined Processors',
       authors: [

@@ -18,6 +18,7 @@
         .reading-item .title { font-weight: 500; }
         .reading-item .venue { color: #6c757d; }
         .reading-item .links a { text-decoration: none; }
+        .reading-item .links span + span::before { content: "\00a0·\00a0 "; }
         .reading-item .lectures { font-size: .9em; margin-top: .25rem; }
         .reading-item .lectures .badge { background: {{ accent }}; }
         .lecture-group h3 { font-size: 1.1rem; }
@@ -37,10 +38,13 @@
         <div class="title">"{{ this.title }}"</div>
         <div class="authors">{{#each this.authors}}{{ this.firstname }} {{ this.lastname }}{{#unless @last}}, {{/unless}}{{/each}}</div>
         <div class="venue">{{#if (eq this.type "conference")}}in Proceedings of the {{/if}}<i>{{ this.venue }}</i>, {{ this.year }}</div>
+        {{#if (or (real this.pdf) (real this.slides) (real this.video))}}
         <div class="links">
-            Paper:{{#if (eq this.pdf "TBA")}} PDF TBA{{else}} <a href="{{ this.pdf }}">[ pdf ]</a>{{/if}}
-            &nbsp;·&nbsp; Presentation:{{#if (eq this.slides "TBA")}} slides TBA{{else}} <a href="{{ this.slides }}">[ slides ]</a>{{/if}}{{#if (eq this.video "TBA")}}, video TBA{{else}} <a href="{{ this.video }}">[ video ]</a>{{/if}}
+            {{#if (real this.pdf)}}<span>Paper: <a href="{{ this.pdf }}">[ pdf ]</a></span>{{/if}}
+            {{#if (real this.slides)}}<span>Presentation: <a href="{{ this.slides }}">[ slides ]</a></span>{{/if}}
+            {{#if (real this.video)}}<span>Video: <a href="{{ this.video }}">[ video ]</a></span>{{/if}}
         </div>
+        {{/if}}
         {{#if this.relevant_lectures}}
         <div class="lectures">Relevant lectures:
             {{#each this.relevant_lectures}}

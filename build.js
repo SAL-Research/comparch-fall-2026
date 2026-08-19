@@ -26,6 +26,8 @@ const assetsDir = path.join(__dirname, 'assets');
 const outputDir = path.join(__dirname, 'dist');
 
 handlebars.registerHelper('eq', (a, b) => a === b);
+// A link field is "real" when it is set and not the 'TBA' placeholder.
+handlebars.registerHelper('real', v => !!v && v !== 'TBA');
 handlebars.registerHelper('or', function () {
   const args = Array.prototype.slice.call(arguments, 0, -1);
   return args.some(arg => !!arg);
