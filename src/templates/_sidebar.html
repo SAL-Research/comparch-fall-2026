@@ -27,7 +27,14 @@
 {{#if qa}}
 <p><a href="qa.html"><i class="fa fa-comments"></i> Course Q&amp;A</a> — ask course-related questions publicly.</p>
 {{/if}}
-<p>{{ instructor.role }}: <a href="{{ instructor.web }}">{{ instructor.name }}</a> &mdash; <a href="mailto:{{ instructor.email }}">{{ instructor.email }}</a></p>
+{{#each instructors}}
+<p>
+    <b>{{ this.name }}</b><br>
+    {{ this.role }}<br>
+    <a href="mailto:{{ this.email }}">{{ this.email }}</a><br>
+    <a href="{{ this.web }}">{{ this.web }}</a><br>
+</p>
+{{/each}}
 
 {{#if qa}}
 <script>

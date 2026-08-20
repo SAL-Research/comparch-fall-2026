@@ -20,12 +20,21 @@ module.exports = {
   badges: [
     { icon: 'graduation-cap', text: 'Bilkent 3 credits / 5 ECTS' },
   ],
-  instructor: {
-    role: 'Instructor',
-    name: 'Abdullah Giray Yağlıkçı',
-    web: 'https://agyaglikci.github.io',
-    email: 'giray@cispa.de',
-  },
+  instructors:
+    [
+      {
+        role: 'Instructor',
+        name: 'Abdullah Giray Yağlıkçı',
+        web: 'https://agyaglikci.github.io',
+        email: 'giray@cispa.de'
+      },
+      {
+        role: 'Teaching Assistant',
+        name: 'Namhun Kim',
+        web: 'https://cispa.de/de/people/c01naki',
+        email: 'namhun.kim@cispa.de'
+      }
+    ],
   description: [
     'Basic hardware structure of modern computing platforms: memory systems, storage systems, interconnects, multiprocessors, accelerators, hardware/software cooperation. Key issues in performance, efficiency, scalability, reliability, security, safety, predictability, and quality of service.',
     '<b>Learning outcomes:</b> Understand fundamental principles and the state of the art in computer architecture. Implement and hands-on learn various parts of a modern computing system.',

@@ -94,5 +94,20 @@ module.exports = {
       year: 2001,
       resources: [],
     },
+    {
+      key: 'ebcioglu1997daisy',
+      title: 'DAISY: Dynamic Compilation for 100% Architectural Compatibility',
+      authors: [
+        { firstname: 'Kemal', lastname: 'Ebcioğlu'},
+        { firstname: 'Erik R.', lastname: 'Altman'},
+      ],
+      venue: 'ISCA',
+      type: 'conference',
+      year: 1997,
+      resources: [
+         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'readings/ebcioglu1997daisy.pdf' }] },
+         { resourcename: 'Web', links: [{ fileformat: 'link', url: 'https://research.ibm.com/publications/daisy-dynamic-compilation-for-100percent-architectural-compatibility' }] },
+      ],
+    },
   ],
 };

@@ -82,7 +82,9 @@ module.exports = {
           date: 'Oct 8',
           lectures: [
             { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Dataflow', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
+              optional_readings: ['ebcioglu1997daisy']
+            },
           ],
         },
       ],
