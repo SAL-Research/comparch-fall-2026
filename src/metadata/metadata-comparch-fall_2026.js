@@ -23,19 +23,19 @@ module.exports = {
   instructors:
     [
       {
-        role: 'Instructor',
+        role: 'Instructor, Faculty at CISPA',
         name: 'Abdullah Giray Yağlıkçı',
         web: 'https://agyaglikci.github.io',
         email: 'giray@cispa.de'
       },
       {
-        role: 'Teaching Assistant',
+        role: 'Teaching Assistant, Researcher at CISPA',
         name: 'Namhun Kim',
         web: 'https://cispa.de/de/people/c01naki',
         email: 'namhun.kim@cispa.de'
       },
       {
-        role: 'Teaching Assistant',
+        role: 'Teaching Assistant, Guest Researcher at CISPA',
         name: 'Amina Sokoli',
         web: 'https://aminatpwk.github.io/',
         email: 'aminasokoli0602@outlook.com'

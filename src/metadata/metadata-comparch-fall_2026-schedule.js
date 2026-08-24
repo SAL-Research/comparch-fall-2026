@@ -24,7 +24,7 @@ module.exports = {
           date: 'Sep 17',
           lectures: [
             { title: 'Course Info and Logistics', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Computer Organization and Design Principles: Introduction and Basics', pptx: 'TBA', pdf: 'TBA', video: 'TBA', required_readings: [{ key: 'hennessy2017computer', part: 'Chapter 1' }], optional_readings: ['hamming1986you'] },
+            { title: 'Computer Organization and Design Principles: Introduction and Basics', pptx: 'TBA', pdf: 'TBA', video: 'TBA', required_readings: [{ key: 'hennessy2017computer', part: 'Chapter 1' }], optional_readings: ['hamming1986you', 'jouppi2017indatacenter'] },
           ],
         },
       ],
