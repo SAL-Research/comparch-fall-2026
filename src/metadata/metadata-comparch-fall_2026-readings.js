@@ -109,5 +109,19 @@ module.exports = {
          { resourcename: 'Web', links: [{ fileformat: 'link', url: 'https://research.ibm.com/publications/daisy-dynamic-compilation-for-100percent-architectural-compatibility' }] },
       ],
     },
+    {
+      key: 'hennessy2017computer',
+      title: 'Computer Architecture: A Quantitative Approach, 5th Edition',
+      authors: [
+        { firstname: 'John L.', lastname: 'Hennessy' },
+        { firstname: 'David A.', lastname: 'Patterson' },
+      ],
+      venue: 'Morgan Kaufmann',
+      type: 'book',
+      year: 2017,
+      resources: [
+        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://allbooksfordownloading.wordpress.com/wp-content/uploads/2017/01/computer-architecture-a-quantitative-approach-by-hennessy-and-patterson-5th-edition.pdf' }] },
+      ],
+    }
   ],
 };

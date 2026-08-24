@@ -33,6 +33,12 @@ module.exports = {
         name: 'Namhun Kim',
         web: 'https://cispa.de/de/people/c01naki',
         email: 'namhun.kim@cispa.de'
+      },
+      {
+        role: 'Teaching Assistant',
+        name: 'Amina Sokoli',
+        web: 'https://aminatpwk.github.io/',
+        email: 'aminasokoli0602@outlook.com'
       }
     ],
   description: [
