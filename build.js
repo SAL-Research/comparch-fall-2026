@@ -86,12 +86,15 @@ function prepareCourseMetadata(metadata) {
         });
       }
       (day.lectures || []).forEach(lecture => {
-        // `readings` are required for the lecture, `optional_readings` are
-        // optional; the same reading may be required in one lecture and
-        // optional in another.
+        // required_readings/optional_readings reference readings by key; the
+        // same reading may be required in one lecture and optional in another.
+        // An entry is either a plain key or { key, part: 'Chapter 1' } to
+        // assign only a part of the reading to this lecture.
+        const normalize = (ref, optional) =>
+          typeof ref === 'string' ? { key: ref, optional } : { ...ref, optional };
         const refs = [
-          ...(lecture.required_readings || lecture.readings || []).map(key => ({ key, optional: false })),
-          ...(lecture.optional_readings || []).map(key => ({ key, optional: true })),
+          ...(lecture.required_readings || lecture.readings || []).map(ref => normalize(ref, false)),
+          ...(lecture.optional_readings || []).map(ref => normalize(ref, true)),
         ];
         if (refs.length > 0) {
           lecture.readings_anchor = lecture.number;
@@ -102,8 +105,8 @@ function prepareCourseMetadata(metadata) {
               console.warn(`  ! unknown reading key: ${ref.key}`);
               return;
             }
-            reading.relevant_lectures.push({ number: lecture.number, title: lecture.title, date: day.date, optional: ref.optional });
-            (ref.optional ? group.optional_items : group.required_items).push(reading);
+            reading.relevant_lectures.push({ number: lecture.number, title: lecture.title, date: day.date, optional: ref.optional, part: ref.part });
+            (ref.optional ? group.optional_items : group.required_items).push({ reading, part: ref.part });
           });
           metadata.readings_by_lecture = metadata.readings_by_lecture || [];
           metadata.readings_by_lecture.push(group);
@@ -127,7 +130,7 @@ function prepareCourseMetadata(metadata) {
     const unassigned = metadata.readings.filter(r => r.relevant_lectures.length === 0);
     if (unassigned.length > 0) {
       metadata.readings_by_lecture = metadata.readings_by_lecture || [];
-      metadata.readings_by_lecture.push({ number: 'general', title: 'General', date: null, required_items: [], optional_items: unassigned });
+      metadata.readings_by_lecture.push({ number: 'general', title: 'General', date: null, required_items: [], optional_items: unassigned.map(reading => ({ reading })) });
       unassigned.forEach(r => { r.lecture_numbers_extra = 'general'; });
     }
     metadata.readings.forEach(reading => {

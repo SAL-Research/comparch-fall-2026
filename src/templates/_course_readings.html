@@ -35,7 +35,7 @@
         <p class="mt-3">Assigned reading materials for the course. Paper PDFs and, where available, the corresponding paper presentation slides and videos are linked below, together with the lectures each paper is relevant to.</p>
 
         {{#*inline "readingBody"}}
-        <div class="title">"{{ this.title }}"</div>
+        <div class="title">"{{ this.title }}"{{#if part}} <span class="text-muted fw-normal">— {{ part }}</span>{{/if}}</div>
         <div class="authors">{{#each this.authors}}{{ this.firstname }} {{ this.lastname }}{{#unless @last}}, {{/unless}}{{/each}}</div>
         <div class="venue">{{#if (eq this.type "conference")}}in Proceedings of the {{/if}}<i>{{ this.venue }}</i>, {{ this.year }}</div>
         {{#if this.resources.length}}
@@ -55,7 +55,7 @@
         {{#if this.relevant_lectures}}
         <div class="lectures">Relevant lectures:
             {{#each this.relevant_lectures}}
-            <span class="badge">{{ this.number }}</span> {{ this.title }} ({{ this.date }} · {{#if this.optional}}optional{{else}}required{{/if}}){{#unless @last}} · {{/unless}}
+            <span class="badge">{{ this.number }}</span> {{ this.title }} ({{ this.date }} · {{#if this.optional}}optional{{else}}required{{/if}}{{#if this.part}} · {{ this.part }}{{/if}}){{#unless @last}} · {{/unless}}
             {{/each}}
         </div>
         {{/if}}
@@ -87,7 +87,7 @@
                 {{#unless (eq this.number "general")}}<h4 class="h6 text-muted mt-2">Required</h4>{{/unless}}
                 <ul class="reading-list">
                     {{#each this.required_items}}
-                    <li class="reading-item">{{> readingBody hide_lectures=true }}</li>
+                    <li class="reading-item">{{> readingBody this.reading part=this.part hide_lectures=true }}</li>
                     {{/each}}
                 </ul>
                 {{/if}}
@@ -95,7 +95,7 @@
                 {{#unless (eq this.number "general")}}<h4 class="h6 text-muted mt-2">Optional</h4>{{/unless}}
                 <ul class="reading-list">
                     {{#each this.optional_items}}
-                    <li class="reading-item">{{> readingBody hide_lectures=true }}</li>
+                    <li class="reading-item">{{> readingBody this.reading part=this.part hide_lectures=true }}</li>
                     {{/each}}
                 </ul>
                 {{/if}}
