@@ -207,7 +207,23 @@ module.exports = {
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/1704.04760' }] },
       ],
+      year: 2017,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference'
     },
+    {
+      key: 'mutlu2023flipping',
+      title: 'Retrospective: Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors',
+      authors: [
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2023,
+      venue: 'ISCA@50 25-Year Retrospective: 1996-2020',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/2306.16093' }] },
+      ],
+    }
 
   ],
 };
