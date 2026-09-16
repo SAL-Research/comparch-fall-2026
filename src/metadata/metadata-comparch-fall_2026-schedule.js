@@ -53,6 +53,7 @@ module.exports = {
       days: [
         {
           date: 'Sep 21',
+          video: 'TBA',
           lectures: [
             { title: 'ISA Design Principles', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Performance Evaluation', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -81,6 +82,7 @@ module.exports = {
       days: [
         {
           date: 'Oct 5',
+          video: 'TBA',
           lectures: [
             { title: 'Out-of-Order Pipeline Design', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: "Tomasulo's Algorithm", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -91,6 +93,7 @@ module.exports = {
         },
         {
           date: 'Oct 8',
+          video: 'TBA',
           lectures: [
             { title: 'Von Neumann Architecture and Memory Subsystem Overview', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Virtual Memory and Translation Lookaside Buffer', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -105,6 +108,7 @@ module.exports = {
       days: [
         {
           date: 'Oct 12',
+          video: 'TBA',
           lectures: [
             { title: 'Cache Organization and Design', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'DRAM Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -113,6 +117,7 @@ module.exports = {
         },
         {
           date: 'Oct 15',
+          video: 'TBA',
           lectures: [
             { title: 'Prefetching', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Branch Prediction', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -129,11 +134,13 @@ module.exports = {
       days: [
         {
           date: 'Oct 19',
+          video: 'TBA',
           lectures: [
             { title: 'Speculative Execution from a Security Perspective (Subject to Change)', note: 'Guest Lecture by <a href="https://misc0110.net">Michael Schwarz</a>', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
+          video: 'TBA',
           date: 'Oct 22',
           lectures: [
             { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -152,12 +159,14 @@ module.exports = {
       days: [
         {
           date: 'Oct 26',
+          video: 'TBA',
           lectures: [
             { title: 'Memory Request Scheduling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
           date: 'Oct 29',
+          video: 'TBA',
           note: 'No lecture (Republic Day)',
         },
       ],
@@ -167,6 +176,7 @@ module.exports = {
       days: [
         {
           date: 'Nov 2',
+          video: 'TBA',
           lectures: [
             { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -178,6 +188,7 @@ module.exports = {
         },
         {
           date: 'Nov 5',
+          video: 'TBA',
           lectures: [
             { title: 'Cache Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -191,12 +202,14 @@ module.exports = {
       days: [
         {
           date: 'Nov 9',
+          video: 'TBA',
           lectures: [
             { number: 'LR1', title: 'Review Session', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
           date: 'Nov 12',
+          video: 'TBA',
           exam: 'Midterm Exam',
         },
       ],
@@ -206,6 +219,7 @@ module.exports = {
       days: [
         {
           date: 'Nov 16',
+          video: 'TBA',
           lectures: [
             { title: 'Data Retention and Refresh', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Read Disturbance I: RowHammer, RowPress, and ColumnPress', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -213,6 +227,7 @@ module.exports = {
         },
         {
           date: 'Nov 19',
+          video: 'TBA',
           lectures: [
             { title: 'Read Disturbance II: Mitigations', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Memory Performance and Cold Boot Attacks', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -225,6 +240,7 @@ module.exports = {
       days: [
         {
           date: 'Nov 23',
+          video: 'TBA',
           lectures: [
             { title: 'Phase-Change Memory, STT-MRAM, Resistive Memory', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Monolithic 3D Integration', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -232,6 +248,7 @@ module.exports = {
         },
         {
           date: 'Nov 26',
+          video: 'TBA',
           lectures: [
             { title: 'NAND Flash Memory', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
@@ -247,6 +264,7 @@ module.exports = {
       days: [
         {
           date: 'Nov 30',
+          video: 'TBA',
           lectures: [
             { title: 'Processing Near and Using Memory', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Processing Near and Using Flash Memory', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -254,6 +272,7 @@ module.exports = {
         },
         {
           date: 'Dec 3',
+          video: 'TBA',
           lectures: [
             { title: 'Memory Centric Computing', note: 'guest lecture by Geraldo F. de Oliveira Jr., Huawei Zurich', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
@@ -265,6 +284,7 @@ module.exports = {
       days: [
         {
           date: 'Dec 7',
+          video: 'TBA',
           lectures: [
             { title: 'Accelerators, Systolic Arrays', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Neuromorphic Computation', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -272,6 +292,7 @@ module.exports = {
         },
         {
           date: 'Dec 10',
+          video: 'TBA',
           lectures: [
             { title: 'On-Chip Networks', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Interrupts and Polling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -284,6 +305,7 @@ module.exports = {
       days: [
         {
           date: 'Dec 14',
+          video: 'TBA',
           lectures: [
             { title: 'Neural Networks and LLM Accelerators', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Architecture Solutions to Bioinformatics Workloads', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -291,6 +313,7 @@ module.exports = {
         },
         {
           date: 'Dec 17',
+          video: 'TBA',
           lectures: [
             { title: 'Agent-based Simulations', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Graph Accelerators', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -305,6 +328,7 @@ module.exports = {
         {
           date: 'Dec 21',
           note: 'Review Session',
+          video: 'TBA',
           events: [
             { type: 'due', hw: 'bonus1' },
             { type: 'note', icon: 'clock', text: 'Late Submission Cut-Off for All Labs' },
