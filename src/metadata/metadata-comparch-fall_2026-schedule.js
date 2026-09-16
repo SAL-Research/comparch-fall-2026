@@ -15,7 +15,7 @@
 // required in one lecture and optional in another.
 
 module.exports = {
-  schedule_note: 'Slides (PPTX and PDF) and lecture videos will be linked next to each lecture as the semester progresses.',
+  schedule_note: 'Slides (PPTX and PDF) and lecture videos will be linked next to each lecture as the semester progresses. Video recordings will be collected in the course\'s <a href="https://www.youtube.com/playlist?list=PLW6NIJ89f9Z4">YouTube Playlist</a>',
   weeks: [
     {
       theme: 'Introduction and Foundation',
