@@ -73,10 +73,9 @@ module.exports = {
     },
     {
       theme: 'No Lectures',
-      video: 'TBA',
       days: [
-        { date: 'Sep 28', note: 'No lecture' },
-        { date: 'Oct 1', note: 'No lecture' },
+        { date: 'Sep 28', note: 'No lecture', video: 'TBA'},
+        { date: 'Oct 1', note: 'No lecture', video: 'TBA'},
       ],
     },
     {
