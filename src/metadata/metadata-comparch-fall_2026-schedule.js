@@ -112,9 +112,10 @@ module.exports = {
           date: 'Oct 12',
           video: 'TBA',
           lectures: [
+            { title: 'Pipeline Stalls', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Cache Organization and Design', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'DRAM Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Pipeline Stalls, Loop unrolling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            
           ],
         },
         {
@@ -164,6 +165,7 @@ module.exports = {
           video: 'TBA',
           lectures: [
             { title: 'Memory Request Scheduling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
@@ -179,22 +181,19 @@ module.exports = {
         {
           date: 'Nov 2',
           video: 'TBA',
-          lectures: [
-            { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-          ],
-          events: [
-            { type: 'due', hw: 'hw2' },
-            { type: 'assigned', hw: 'hw3' },
-          ],
+          note: 'No lecture (Conference Conflict)'
         },
         {
           date: 'Nov 5',
           video: 'TBA',
           lectures: [
-            { title: 'Cache Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+          ],
+          events: [
+            { type: 'due', hw: 'hw2' },
+            { type: 'assigned', hw: 'hw3' },
           ],
         },
       ],
