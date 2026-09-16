@@ -62,6 +62,7 @@ module.exports = {
         },
         {
           date: 'Sep 24',
+          video: 'TBA',
           lectures: [
             { title: 'In-Order Pipelined CPU Design, Hazards, and Data Forwarding', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Precise Exceptions and Interrupts', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -72,6 +73,7 @@ module.exports = {
     },
     {
       theme: 'No Lectures',
+      video: 'TBA',
       days: [
         { date: 'Sep 28', note: 'No lecture' },
         { date: 'Oct 1', note: 'No lecture' },
@@ -79,6 +81,7 @@ module.exports = {
     },
     {
       theme: 'Out-of-Order Execution and Memory Subsystem',
+      video: 'TBA',
       days: [
         {
           date: 'Oct 5',
@@ -140,8 +143,8 @@ module.exports = {
           ],
         },
         {
-          video: 'TBA',
           date: 'Oct 22',
+          video: 'TBA',
           lectures: [
             { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
@@ -327,6 +330,7 @@ module.exports = {
       days: [
         {
           date: 'Dec 21',
+          video: 'TBA',
           note: 'Review Session',
           video: 'TBA',
           events: [
