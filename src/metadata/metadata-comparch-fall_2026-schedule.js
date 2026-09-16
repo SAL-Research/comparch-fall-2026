@@ -51,10 +51,17 @@ module.exports = {
       ],
     },
     {
-      theme: 'Out-of-Order Execution',
+      theme: 'No Lectures',
+      days: [
+        { date: 'Sep 28', note: 'No lecture' },
+        { date: 'Oct 1', note: 'No lecture' },
+      ],
+    },
+    {
+      theme: 'Out-of-Order Execution and Memory Subsystem',
       days: [
         {
-          date: 'Sep 28',
+          date: 'Oct 5',
           lectures: [
             { title: 'Out-of-Order Pipeline Design', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: "Tomasulo's Algorithm", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -63,14 +70,8 @@ module.exports = {
               optional_readings: ['patt1985critical','patt2001requirements'] },
           ],
         },
-        { date: 'Oct 1', note: 'No lecture' },
-      ],
-    },
-    {
-      theme: 'Memory Subsystem',
-      days: [
         {
-          date: 'Oct 5',
+          date: 'Oct 8',
           lectures: [
             { title: 'Von Neumann Architecture and Memory Subsystem Overview', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Virtual Memory and Translation Lookaside Buffer', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
@@ -78,84 +79,78 @@ module.exports = {
           ],
           events: [{ type: 'assigned', hw: 'bonus1' }],
         },
-        {
-          date: 'Oct 8',
-          lectures: [
-            { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
-              optional_readings: ['ebcioglu1997daisy']
-            },
-          ],
-        },
       ],
     },
     {
-      theme: 'Memory Stalls, Pipeline Stalls',
+      theme: 'Memory Bottlenecks and Latency Tolerance',
       days: [
         {
           date: 'Oct 12',
           lectures: [
             { title: 'Cache Organization and Design', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'DRAM Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Memory Request Scheduling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Pipeline Stalls, Loop unrolling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
           date: 'Oct 15',
           lectures: [
-            { title: 'Pipeline Stalls, Loop unrolling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Prefetching', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Branch Prediction', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Runahead Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
           events: [
             { type: 'due', hw: 'hw1' },
-            { type: 'assigned', hw: 'hw2' },
           ],
         },
       ],
     },
     {
-      theme: 'Speculative Execution',
+      theme: 'Speculative Execution and Instruction-Level Parallelism',
       days: [
         {
           date: 'Oct 19',
-          alternatives: true,
           lectures: [
             { title: 'Speculative Execution from a Security Perspective (Subject to Change)', note: 'Guest Lecture by <a href="https://misc0110.net">Michael Schwarz</a>', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
           date: 'Oct 22',
-          alternatives: true,
           lectures: [
-            { title: 'Runahead Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
+              optional_readings: ['ebcioglu1997daisy']
+            },
+          ],
+          events: [
+            { type: 'assigned', hw: 'hw2' },
           ],
         },
       ],
     },
     {
-      theme: 'Multi-Core Architectures',
+      theme: 'Memory Request Scheduling',
       days: [
         {
           date: 'Oct 26',
           lectures: [
-            { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Memory Request Scheduling', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
           date: 'Oct 29',
-          note: 'No lectures',
+          note: 'No lecture (Republic Day)',
         },
       ],
     },
     {
-      theme: 'Parallel Execution and GPU Architecture',
+      theme: 'Multi-Core Architectures, Parallelism, and GPUs',
       days: [
         {
           date: 'Nov 2',
           lectures: [
-            { title: 'Cache Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
           events: [
             { type: 'due', hw: 'hw2' },
@@ -164,8 +159,8 @@ module.exports = {
         },
         {
           date: 'Nov 5',
-          
           lectures: [
+            { title: 'Cache Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
