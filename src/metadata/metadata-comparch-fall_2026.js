@@ -35,6 +35,12 @@ module.exports = {
         email: 'namhun.kim@cispa.de'
       },
       {
+        role: 'Teaching Assistant, Incoming Researcher at CISPA',
+        name: 'Sena Filiz',
+        web: 'https://cispa.de/de/people/c01safi',
+        email: 'senafilizzzzz@gmail.com'
+      },
+      {
         role: 'Teaching Assistant, Guest Researcher at CISPA',
         name: 'Amina Sokoli',
         web: 'https://aminatpwk.github.io/',

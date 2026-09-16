@@ -223,6 +223,64 @@ module.exports = {
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/2306.16093' }] },
       ],
+    },
+    {
+      key: 'lee2013tiered',
+      title: 'Tiered-Latency DRAM: A Low Latency and Low Cost DRAM Architecture',
+      authors: [
+        { firstname: 'Donghyuk', lastname: 'Lee' },
+        { firstname: 'Yoongu', lastname: 'Kim' },
+        { firstname: 'Vivek', lastname: 'Seshadri' },
+        { firstname: 'Jamie', lastname: 'Liu' },
+        { firstname: 'Lavanya', lastname: 'Subramanian' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2013,
+      venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/1805.03048'}]},
+        { resourcename: 'Presentation', links: [{ fileformat: 'pptx', url: 'https://people.inf.ethz.ch/omutlu/pub/lee_hpca13_talk.pptx' }]}
+      ],
+    },
+    {
+      key: 'patterson1980case',
+      title: 'The Case for the Reduced Instruction Set Computer',
+      authors: [
+        { firstname: 'David', lastname: 'Patterson' },
+        { firstname: 'Carl', lastname: 'Ditzel' },
+      ],
+      year: 1980,
+      venue: 'SIGARCH CAN',
+      type: 'journal',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.eecs.berkeley.edu/~kubitron/courses/cs252-F00/handouts/papers/patterson80.pdf'}] },
+      ],
+    },
+    {
+      key: 'kim2014flipping',
+      title: 'Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors',
+      authors: [
+        { firstname: 'Yoongu', lastname: 'Kim' },
+        { firstname: 'Ross', lastname: 'Daly' },
+        { firstname: 'Jeremie', lastname: 'Kim' },
+        { firstname: 'Chris', lastname: 'Fallin' },
+        { firstname: 'Ji Hye', lastname: 'Lee' },
+        { firstname: 'Donghyuk', lastname: 'Lee' },
+        { firstname: 'Chris', lastname: 'Wilkerson' },
+        { firstname: 'Konrad', lastname: 'Lai' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2014,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_isca14.pdf'}] },
+        { resourcename: 'Presentation', links: [
+          { fileformat: 'pptx', url: 'https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pptx'},
+          { fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pdf'}]},
+        { resourcename: 'Lecture', links: [{ fileformat: 'video', url: 'https://www.youtube.com/watch?v=KDy632z23UE'}] }
+      ],
     }
 
   ],

@@ -1,0 +1,4 @@
+giray-comparch-2026-fall-l1a-course_info_and_logistics.pptx filter=lfs diff=lfs merge=lfs -text
+giray-comparch-2026-fall-l1a-course_info_and_logistics.pdf filter=lfs diff=lfs merge=lfs -text
+giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pdf filter=lfs diff=lfs merge=lfs -text
+giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pptx filter=lfs diff=lfs merge=lfs -text
