@@ -37,7 +37,7 @@ module.exports = {
       {
         role: 'Teaching Assistant, Incoming Researcher at CISPA',
         name: 'Sena Filiz',
-        web: 'https://cispa.de/de/people/c01sefi',
+        web: 'https://cispa.de/de/people/c01safi',
         email: 'senafilizzzzz@gmail.com'
       },
       {
