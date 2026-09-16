@@ -57,15 +57,16 @@
                     <tr class="exam-row"><td>{{ this.date }}</td><td><i class="fa fa-file-pen"></i> {{ this.exam }}{{#if this.events}}<div class="hw-line fw-normal">{{#each this.events}}{{#unless @first}} &nbsp;·&nbsp; {{/unless}}{{#if (eq this.type "assigned")}}<i class="fa fa-pen-to-square"></i> <b>{{ this.homework.id }} assigned</b>: {{ this.homework.topic }} — handout: {{#if (eq this.homework.handout "TBA")}}TBA{{else}}<a href="{{ this.homework.handout }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}} · repo: {{#if (eq this.homework.repo "TBA")}}TBA{{else}}<a href="{{ this.homework.repo }}"><i class="fa-brands fa-github"></i> Git</a>{{/if}}{{/if}}{{#if (eq this.type "due")}}<i class="fa fa-flag-checkered"></i> <b>{{ this.homework.id }} due</b> — submission: {{#if (eq this.homework.submission "TBA")}}TBA{{else}}<a href="{{ this.homework.submission }}"><i class="fa fa-upload"></i> Submit</a>{{/if}}{{/if}}{{#if (eq this.type "note")}}<i class="fa fa-{{ this.icon }}"></i> <b>{{ this.text }}</b>{{/if}}{{/each}}</div>{{/if}}</td></tr>
                     {{else}}
                     <tr>
-                        <td>{{ this.date }}</td>
+                        <td>{{ this.date }}<br />{{#if (eq this.video "TBA")}}Video: TBA{{else}}<a href="{{ this.video }}"><i class="fa-brands fa-youtube"></i> Video</a>{{/if}}</td>
                         <td>
                             {{#if this.note}}<em>{{{ this.note }}}</em>{{/if}}
                             {{#if this.lectures}}
+                            
                             <ul class="lecture-list">
                                 {{#each this.lectures}}
                                 <li>{{#if this.exam}}<b><i class="fa fa-file-pen"></i> {{ this.number }}: {{ this.title }}</b>{{else}}{{ this.number }}: {{ this.title }}{{#if this.note}} <em>({{{ this.note }}})</em>{{/if}}
                                     {{#if (or this.pptx this.pdf this.video)}}
-                                    <span class="mat">[{{#if (eq this.pptx "TBA")}}PPTX: TBA{{else}}<a href="{{ this.pptx }}"><i class="fa fa-file-powerpoint"></i> PPTX</a>{{/if}} · {{#if (eq this.pdf "TBA")}}PDF: TBA{{else}}<a href="{{ this.pdf }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}} · {{#if (eq this.video "TBA")}}Video: TBA{{else}}<a href="{{ this.video }}"><i class="fa-brands fa-youtube"></i> Video</a>{{/if}}{{#if this.readings_anchor}} · <a href="readings.html?lecture={{ this.readings_anchor }}"><i class="fa fa-book-open"></i> Readings</a>{{/if}}]</span>
+                                    <span class="mat">[{{#if (eq this.pptx "TBA")}}PPTX: TBA{{else}}<a href="{{ this.pptx }}"><i class="fa fa-file-powerpoint"></i> PPTX</a>{{/if}} · {{#if (eq this.pdf "TBA")}}PDF: TBA{{else}}<a href="{{ this.pdf }}"><i class="fa fa-file-pdf"></i> PDF</a>{{/if}}{{#if this.readings_anchor}} · <a href="readings.html?lecture={{ this.readings_anchor }}"><i class="fa fa-book-open"></i> Readings</a>{{/if}}]</span>
                                     {{/if}}{{/if}}
                                 </li>
                                 {{/each}}

@@ -22,9 +22,28 @@ module.exports = {
       days: [
         {
           date: 'Sep 17',
+          video: 'https://youtube.com/live/ydWcSpEcL-8?feature=share',
           lectures: [
-            { title: 'Course Info and Logistics', pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pptx', pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pdf', video: 'https://youtube.com/live/ydWcSpEcL-8?feature=share' },
-            { title: 'Computer Organization and Design Principles: Introduction and Basics', pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-before_lecture.pptx', pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-before_lecture.pdf', video: 'https://youtube.com/live/ydWcSpEcL-8?feature=share', required_readings: [{ key: 'hennessy2017computer', part: 'Chapter 1' }], optional_readings: ['hamming1986you', 'jouppi2017indatacenter', 'lee2013tiered', 'patterson1980case', 'kim2014flipping'] },
+            { 
+              title: 'Course Info and Logistics', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pdf'
+            },
+            { 
+              title: 'Computer Organization and Design Principles: Introduction and Basics', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-before_lecture.pdf', 
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 1' }
+              ], 
+              optional_readings: [
+                'hamming1986you', 
+                'jouppi2017indatacenter', 
+                'lee2013tiered', 
+                'patterson1980case', 
+                'kim2014flipping'
+              ]
+            },
           ],
         },
       ],
