@@ -120,7 +120,7 @@ module.exports = {
       type: 'book',
       year: 2017,
       resources: [
-        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://allbooksfordownloading.wordpress.com/wp-content/uploads/2017/01/computer-architecture-a-quantitative-approach-by-hennessy-and-patterson-5th-edition.pdf' }] },
+        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://books.google.com.tr/books/about/Computer_Architecture.html?id=v3-1hVwHnHwC&redir_esc=y' }] },
       ],
     },
     {
