@@ -223,7 +223,7 @@ module.exports = {
           video: 'TBA',
           lectures: [
             { title: 'Data Retention and Refresh', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Read Disturbance I: RowHammer, RowPress, and ColumnPress', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Read Disturbance I: RowHammer, RowPress, and ColumnDisturb', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
