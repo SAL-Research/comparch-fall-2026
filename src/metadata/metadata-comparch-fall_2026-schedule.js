@@ -53,11 +53,11 @@ module.exports = {
       days: [
         {
           date: 'Sep 21',
-          video: 'TBA',
+          video: 'https://youtube.com/live/aFG72U8NA3E?feature=share',
           lectures: [
             { title: 'ISA Design Principles', 
-              pptx: 'TBA', 
-              pdf: 'TBA', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-before_lecture.pdf', 
               required_readings: [
                 { key: 'hennessy2017computer', part: 'Chapter 1' }
               ],
