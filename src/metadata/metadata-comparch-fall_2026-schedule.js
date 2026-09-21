@@ -55,7 +55,19 @@ module.exports = {
           date: 'Sep 21',
           video: 'TBA',
           lectures: [
-            { title: 'ISA Design Principles', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'ISA Design Principles', 
+              pptx: 'TBA', 
+              pdf: 'TBA', 
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 1' }
+              ],
+              optional_readings: [
+                {key: 'patt2003introduction', part: 'Chapter 4'},
+                {key: 'harris2007digital', part: 'Chapters 6 and 7'},
+                'patterson1980case',
+                'burks1947preliminary'
+              ]
+            },
             { title: 'Performance Evaluation', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Trends, Tradeoffs and Design Fundamentals of Computer Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],

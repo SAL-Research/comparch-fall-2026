@@ -124,6 +124,34 @@ module.exports = {
       ],
     },
     {
+      key: 'harris2007digital',
+      title: 'Digital Design and Computer Architecture',
+      authors: [
+        { firstname: 'David', lastname: 'Harris' },
+        { firstname: 'Sarah', lastname: 'Harris' },
+      ],
+      venue: 'Morgan Kaufmann',
+      type: 'book',
+      year: 2007,
+      resources: [
+        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://www.sciencedirect.com/book/monograph/9780123704979/digital-design-and-computer-architecture' }] },
+      ],
+    },
+    {
+      key: 'patt2003introduction',
+      title: 'Introduction to Computing Systems',
+      authors: [
+        { firstname: 'Yale N.', lastname: 'Patt' },
+        { firstname: 'Sanjay J.', lastname: 'Patel' },
+      ],
+      venue: 'McGraw-Hill Education',
+      type: 'book',
+      year: 2003,
+      resources: [
+        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://books.google.de/books/about/Introduction_to_Computing_Systems_From_B.html?id=g9TRwAEACAAJ&redir_esc=y' }] },
+      ],
+    },
+    {
       key: 'jouppi2017indatacenter',
       title: 'In-Datacenter Performance Analysis of a Tensor Processing Unit',
       authors: [
@@ -280,6 +308,21 @@ module.exports = {
           { fileformat: 'pptx', url: 'https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pptx'},
           { fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pdf'}]},
         { resourcename: 'Lecture', links: [{ fileformat: 'video', url: 'https://www.youtube.com/watch?v=KDy632z23UE'}] }
+      ],
+    },
+    {
+      key: 'burks1947preliminary',
+      title: 'Preliminary Discussion of the Logical Design of an Electronic Computing Instrument',
+      authors: [
+        { firstname: 'Arthur W.', lastname: 'Burks' },
+        { firstname: 'Herman H.', lastname: 'Goldstine' },
+        { firstname: 'John', lastname: 'von Neumann' },
+      ],
+      year: 1947,
+      venue: 'Papers of John von Neumann on Computing and Computer Theory',
+      type: 'report',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://safari.ethz.ch/architecture/fall2022/lib/exe/fetch.php?media=preliminary_discussion_burks1946.pdf'}] },
       ],
     }
 
