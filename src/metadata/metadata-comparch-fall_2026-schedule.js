@@ -26,13 +26,13 @@ module.exports = {
           lectures: [
             { 
               title: 'Course Info and Logistics', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-before_lecture.pdf'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1a-course_info_and_logistics-after_lecture.pdf'
             },
             { 
               title: 'Computer Organization and Design Principles: Introduction and Basics', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-before_lecture.pdf', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-after_lecture.pdf', 
               required_readings: [
                 { key: 'hennessy2017computer', part: 'Chapter 1' }
               ], 
@@ -235,7 +235,7 @@ module.exports = {
           video: 'TBA',
           lectures: [
             { title: 'Data Retention and Refresh', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Read Disturbance I: RowHammer, RowPress, and ColumnPress', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { title: 'Read Disturbance I: RowHammer, RowPress, and ColumnDisturb', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
