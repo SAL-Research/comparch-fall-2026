@@ -68,8 +68,19 @@ module.exports = {
                 'burks1947preliminary'
               ]
             },
-            { title: 'Performance Evaluation', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Trends, Tradeoffs and Design Fundamentals of Computer Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { 
+              title: 'Performance Evaluation', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-before_lecture.pdf', 
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 1' }
+              ],
+              optional_readings: [
+                // Amdahl, “Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities,” AFIPS 1967
+
+              ]
+            },
+            // { title: 'Trends, Tradeoffs and Design Fundamentals of Computer Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
         },
         {
