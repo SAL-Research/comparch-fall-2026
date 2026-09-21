@@ -65,6 +65,7 @@
             <select id="lecture-filter" class="form-select form-select-sm w-auto" aria-label="Filter by lecture">
                 <option value="">All lectures</option>
                 <option value="L1b">L1b — Computer Organization and Design Principles: Introduction and Basics</option>
+                <option value="L2a">L2a — ISA Design Principles</option>
                 <option value="L4c">L4c — High Performance Substrate (HPS) and Checkpoint Repair</option>
                 <option value="L9b">L9b — Dataflow and VLIW</option>
                 <option value="general">General</option>
@@ -150,6 +151,60 @@
 </li>
                 </ul>
             </section>
+            <section class="lecture-group" id="lecture-L2a" data-lecture="L2a">
+                <h3 class="section-title">L2a: ISA Design Principles <span class="text-muted fw-normal">(Sep 21)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Chapter 1</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2017</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Introduction to Computing Systems" <span class="text-muted fw-normal">— Chapter 4</span></div>
+        <div class="authors">Yale N. Patt, Sanjay J. Patel</div>
+        <div class="venue"><i>McGraw-Hill Education</i>, 2003</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.de/books/about/Introduction_to_Computing_Systems_From_B.html?id&#x3D;g9TRwAEACAAJ&amp;redir_esc&#x3D;y">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Digital Design and Computer Architecture" <span class="text-muted fw-normal">— Chapters 6 and 7</span></div>
+        <div class="authors">David Harris, Sarah Harris</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2007</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://www.sciencedirect.com/book/monograph/9780123704979/digital-design-and-computer-architecture">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"The Case for the Reduced Instruction Set Computer"</div>
+        <div class="authors">David Patterson, Carl Ditzel</div>
+        <div class="venue"><i>SIGARCH CAN</i>, 1980</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.eecs.berkeley.edu/~kubitron/courses/cs252-F00/handouts/papers/patterson80.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Preliminary Discussion of the Logical Design of an Electronic Computing Instrument"</div>
+        <div class="authors">Arthur W. Burks, Herman H. Goldstine, John von Neumann</div>
+        <div class="venue"><i>Papers of John von Neumann on Computing and Computer Theory</i>, 1947</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://safari.ethz.ch/architecture/fall2022/lib/exe/fetch.php?media&#x3D;preliminary_discussion_burks1946.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
             <section class="lecture-group" id="lecture-L4c" data-lecture="L4c">
                 <h3 class="section-title">L4c: High Performance Substrate (HPS) and Checkpoint Repair <span class="text-muted fw-normal">(Oct 5)</span></h3>
                 <h4 class="h6 text-muted mt-2">Required</h4>
@@ -217,7 +272,19 @@
         <!-- Publication-date view: chronological, each paper exactly once. -->
         <div id="view-by-year-list" hidden>
             <ul class="reading-list">
-                <li class="reading-item" id="patterson1980case" data-lectures="L1b">        <div class="title">"The Case for the Reduced Instruction Set Computer"</div>
+                <li class="reading-item" id="burks1947preliminary" data-lectures="L2a">        <div class="title">"Preliminary Discussion of the Logical Design of an Electronic Computing Instrument"</div>
+        <div class="authors">Arthur W. Burks, Herman H. Goldstine, John von Neumann</div>
+        <div class="venue"><i>Papers of John von Neumann on Computing and Computer Theory</i>, 1947</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://safari.ethz.ch/architecture/fall2022/lib/exe/fetch.php?media&#x3D;preliminary_discussion_burks1946.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L2a</span> ISA Design Principles (Sep 21 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="patterson1980case" data-lectures="L1b L2a">        <div class="title">"The Case for the Reduced Instruction Set Computer"</div>
         <div class="authors">David Patterson, Carl Ditzel</div>
         <div class="venue"><i>SIGARCH CAN</i>, 1980</div>
         <div class="links">
@@ -226,7 +293,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · optional)
+            <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · optional) · 
+            <span class="badge">L2a</span> ISA Design Principles (Sep 21 · optional)
         </div>
 </li>
                 <li class="reading-item" id="patt1985critical" data-lectures="L4c">        <div class="title">"Critical Issues Regarding HPS, a High Performance Microarchitecture"</div>
@@ -294,6 +362,30 @@
             <span class="badge">L4c</span> High Performance Substrate (HPS) and Checkpoint Repair (Oct 5 · optional)
         </div>
 </li>
+                <li class="reading-item" id="patt2003introduction" data-lectures="L2a">        <div class="title">"Introduction to Computing Systems"</div>
+        <div class="authors">Yale N. Patt, Sanjay J. Patel</div>
+        <div class="venue"><i>McGraw-Hill Education</i>, 2003</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.de/books/about/Introduction_to_Computing_Systems_From_B.html?id&#x3D;g9TRwAEACAAJ&amp;redir_esc&#x3D;y">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L2a</span> ISA Design Principles (Sep 21 · optional · Chapter 4)
+        </div>
+</li>
+                <li class="reading-item" id="harris2007digital" data-lectures="L2a">        <div class="title">"Digital Design and Computer Architecture"</div>
+        <div class="authors">David Harris, Sarah Harris</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2007</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://www.sciencedirect.com/book/monograph/9780123704979/digital-design-and-computer-architecture">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L2a</span> ISA Design Principles (Sep 21 · optional · Chapters 6 and 7)
+        </div>
+</li>
                 <li class="reading-item" id="lee2013tiered" data-lectures="L1b">        <div class="title">"Tiered-Latency DRAM: A Low Latency and Low Cost DRAM Architecture"</div>
         <div class="authors">Donghyuk Lee, Yoongu Kim, Vivek Seshadri, Jamie Liu, Lavanya Subramanian, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2013</div>
@@ -328,7 +420,7 @@
             <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · optional)
         </div>
 </li>
-                <li class="reading-item" id="hennessy2017computer" data-lectures="L1b">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition"</div>
+                <li class="reading-item" id="hennessy2017computer" data-lectures="L1b L2a">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition"</div>
         <div class="authors">John L. Hennessy, David A. Patterson</div>
         <div class="venue"><i>Morgan Kaufmann</i>, 2017</div>
         <div class="links">
@@ -337,7 +429,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · required · Chapter 1)
+            <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · required · Chapter 1) · 
+            <span class="badge">L2a</span> ISA Design Principles (Sep 21 · required · Chapter 1)
         </div>
 </li>
                 <li class="reading-item" id="jouppi2017indatacenter" data-lectures="L1b">        <div class="title">"In-Datacenter Performance Analysis of a Tensor Processing Unit"</div>
