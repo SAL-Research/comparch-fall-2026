@@ -56,8 +56,8 @@ module.exports = {
           video: 'https://youtube.com/live/aFG72U8NA3E?feature=share',
           lectures: [
             { title: 'ISA Design Principles', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-before_lecture.pdf', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-after_lecture.pdf', 
               required_readings: [
                 { key: 'hennessy2017computer', part: 'Chapter 1' }
               ],
@@ -70,8 +70,23 @@ module.exports = {
             },
             { 
               title: 'Performance Evaluation', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-before_lecture.pdf', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-after_lecture.pdf', 
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 1' }
+              ]
+            },
+            // { title: 'Trends, Tradeoffs and Design Fundamentals of Computer Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+          ],
+        },
+        {
+          date: 'Sep 24',
+          video: 'https://youtube.com/live/0kXJYZkH7IQ?feature=share',
+          lectures: [
+            { 
+              title: 'Performance Evaluation', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-before_lecture.pdf', 
               required_readings: [
                 { key: 'hennessy2017computer', part: 'Chapter 1' }
               ],
@@ -80,13 +95,6 @@ module.exports = {
 
               ]
             },
-            // { title: 'Trends, Tradeoffs and Design Fundamentals of Computer Architecture', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-          ],
-        },
-        {
-          date: 'Sep 24',
-          video: 'TBA',
-          lectures: [
             { title: 'In-Order Pipelined CPU Design, Hazards, and Data Forwarding', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
             { title: 'Precise Exceptions and Interrupts', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
