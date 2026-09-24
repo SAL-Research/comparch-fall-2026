@@ -116,20 +116,26 @@ module.exports = {
     {
       theme: 'No Lectures',
       days: [
-        { date: 'Sep 28', note: 'No lecture'},
-        { date: 'Oct 1', note: 'No lecture'},
+        { date: 'Sep 28', note: 'No lecture', video: 'N/A'},
+        { date: 'Oct 1', note: 'No lecture', video: 'N/A'},
       ],
     },
     {
-      theme: 'Out-of-Order Execution, Precise Exceptions, and Interrupts',
-      video: 'TBA',
+      theme: 'Pipeline Hazards, Out-of-Order Execution, Precise Exceptions, and Interrupts',
       days: [
         {
           date: 'Oct 5',
-          video: 'TBA',
+          video: 'https://youtube.com/live/IWXalgEIhJg?feature=share',
           lectures: [
-            { title: 'Pipeline Hazards', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Out-of-Order Pipeline Design', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'Pipeline Hazards', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pdf'},
+            { 
+              title: 'Out-of-Order Pipeline Design', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-ooo_pipeline-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-ooo_pipeline-after_lecture.pdf'
+            },
           ],
         },
         {
