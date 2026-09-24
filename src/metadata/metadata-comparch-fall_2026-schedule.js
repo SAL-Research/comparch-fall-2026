@@ -85,18 +85,30 @@ module.exports = {
           lectures: [
             { 
               title: 'Performance Evaluation', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-before_lecture.pdf', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-after_lecture.pdf', 
               required_readings: [
                 { key: 'hennessy2017computer', part: 'Chapter 1' }
               ],
               optional_readings: [
-                // Amdahl, “Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities,” AFIPS 1967
-
+                {key: 'harris2007digital', part: 'Chapter 7.3'},
+                {key: 'harris2007digital', part: 'Chapter 7.4'},
+                'amdahl1967validity',
+                'madhav2026spec',
+                'gonzalez1996energy'
               ]
             },
-            { title: 'In-Order Pipelined CPU Design, Hazards, and Data Forwarding', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
-            { title: 'Precise Exceptions and Interrupts', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
+            { 
+              title: 'In-Order Pipelined CPU Design', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3b-inorder_pipeline-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3b-inorder_pipeline-after_lecture.pdf', 
+              required_readings: [
+                {key: 'harris2007digital', part: 'Chapter 7.3'},
+                {key: 'harris2007digital', part: 'Chapter 7.4'},
+                {key: 'harris2007digital', part: 'Chapter 7.5'},
+              ]
+            },
+            // { title: 'Precise Exceptions and Interrupts', pptx: 'TBA', pdf: 'TBA', video: 'TBA' },
           ],
           events: [{ type: 'assigned', hw: 'hw1' }],
         },
