@@ -69,13 +69,13 @@ module.exports = {
   },
 
   homework_intro: 'Four homework assignments (40% total) plus one bonus homework. Handouts, git repositories, and submission links will be posted here when each homework is assigned.',
-  homework_note: 'You lose 10\% of your grade for each week late. Late submission cut-off for all homeworks: December 21, 2026.',
+  homework_note: 'You lose 10\% of your grade for each week late. Late submission cut-off for all homeworks: December 27, 2026, 23:59 (Ankara time).',
   homeworks: [
-    { key: 'hw1', id: 'HW 1', topic: 'Single-Cycle vs In-Order Pipeline Architectures', assigned: 'Sep 24', deadline: 'Oct 15', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
+    { key: 'hw1', id: 'HW 1', topic: 'In-Order Pipeline', assigned: 'Sep 24', deadline: 'Oct 18', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
     { key: 'hw2', id: 'HW 2', topic: 'Caching, Prefetching, and Branch Prediction', assigned: 'Oct 22', deadline: 'Nov 2', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
     { key: 'hw3', id: 'HW 3', topic: 'Out-of-Order and Speculative Execution (Bonus: Spectre and Meltdown)', assigned: 'Nov 2', deadline: 'Nov 26', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
     { key: 'hw4', id: 'HW 4', topic: 'Memory Scheduling', assigned: 'Nov 26', deadline: 'Dec 17', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
-    { key: 'bonus1', id: 'Bonus HW', topic: 'Paper Reviews', assigned: 'Oct 8', deadline: 'Dec 21', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
+    { key: 'bonus1', id: 'Bonus HW', topic: 'Paper Reviews', assigned: 'Oct 8', deadline: 'Dec 27', handout: 'TBA', repo: 'TBA', submission: 'TBA' },
   ],
 
   footer_notes: [

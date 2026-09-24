@@ -181,6 +181,11 @@ module.exports = {
             { title: 'Prefetching', pptx: 'TBA', pdf: 'TBA'},
             { title: 'Runahead Execution', pptx: 'TBA', pdf: 'TBA'},
           ],
+        },
+        {
+          date: 'Oct 18',
+          video: 'TBA',
+          note: 'Sunday, no lecture (deadline 23:59)',
           events: [
             { type: 'due', hw: 'hw1' },
           ],
@@ -388,12 +393,17 @@ module.exports = {
           video: 'TBA',
           note: 'Review Session',
           video: 'TBA',
+        },
+        { date: 'Dec 24', exam: 'Final Exam' },
+        {
+          date: 'Dec 27',
+          video: 'TBA',
+          note: 'Sunday, no lecture (deadline 23:59)',
           events: [
             { type: 'due', hw: 'bonus1' },
             { type: 'note', icon: 'clock', text: 'Late Submission Cut-Off for All Labs' },
           ],
         },
-        { date: 'Dec 24', exam: 'Final Exam' },
       ],
     },
   ],
