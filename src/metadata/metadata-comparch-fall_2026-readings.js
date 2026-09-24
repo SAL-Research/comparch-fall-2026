@@ -384,6 +384,20 @@ module.exports = {
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/2605.01575'}]},
         { resourcename: 'Presentation', links: [{ fileformat: 'video', url: 'https://youtu.be/bLyeWRO47TI?si=bQcAMlBUkS1mHJhs'}] }
       ],
+    },
+    {
+      key: 'gonzalez1996energy',
+      title: 'Energy Dissipation in General Purpose Microprocessors',
+      authors: [
+        { firstname: 'Ricardo', lastname: 'Gonzalez' },
+        { firstname: 'Mark', lastname: 'Horowitz' }
+      ],
+      year: 1996,
+      venue: 'International Journal of Solid State Circuits',
+      type: 'journal',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://iacoma.cs.uiuc.edu/CS497/LP4.pdf'}] },
+      ],
     }
 
   ],
