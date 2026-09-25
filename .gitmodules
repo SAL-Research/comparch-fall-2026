@@ -1,0 +1,3 @@
+[submodule "assets/homeworks"]
+	path = assets/homeworks
+	url = https://github.com/SAL-Research/cs423-fall2026-homeworks.git

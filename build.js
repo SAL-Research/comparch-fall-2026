@@ -6,7 +6,12 @@
 // Output:
 //   dist/index.html     — course page
 //   dist/readings.html  — reading materials (only if metadata has readings)
-//   dist/*              — everything in assets/ (favicon, slides, homeworks)
+//   dist/*              — everything in assets/ (favicon, slides, readings),
+//                         except assets/homeworks/ (see below)
+//
+// assets/homeworks/ is the student homework repo, checked out as a git
+// submodule. It is NOT published with the site: the build only reads it to
+// generate GitHub links to each homework's folder and handout.
 
 const fs = require('fs-extra');
 const path = require('path');
@@ -24,6 +29,7 @@ const METADATA_FILES = [
 const templatesDir = path.join(__dirname, 'src', 'templates');
 const assetsDir = path.join(__dirname, 'assets');
 const outputDir = path.join(__dirname, 'dist');
+const homeworksDir = path.join(assetsDir, 'homeworks');
 
 handlebars.registerHelper('eq', (a, b) => a === b);
 // A link field is "real" when it is set and not the 'TBA' placeholder.
@@ -146,6 +152,41 @@ function prepareCourseMetadata(metadata) {
   return metadata;
 }
 
+/**
+ * GitHub base URL of the homework repo, read from the submodule entry in
+ * .gitmodules (e.g. https://github.com/SAL-Research/cs423-fall2026-homeworks).
+ */
+function homeworksRepoUrl() {
+  const gitmodules = path.join(__dirname, '.gitmodules');
+  if (!fs.existsSync(gitmodules)) return null;
+  const m = /path\s*=\s*assets\/homeworks\s*\n\s*url\s*=\s*(\S+)/
+    .exec(fs.readFileSync(gitmodules, 'utf-8'));
+  return m ? m[1].replace(/\.git$/, '') : null;
+}
+
+/**
+ * Fill in `repo` and `handout` links for every homework whose folder (named
+ * after its key, e.g. hw1/) exists in the homework repo. Links set by hand in
+ * the metadata (anything other than 'TBA') are left alone.
+ */
+function linkHomeworksFromRepo(metadata) {
+  const repoUrl = homeworksRepoUrl();
+  if (!repoUrl || !fs.existsSync(homeworksDir)) return;
+  if (fs.readdirSync(homeworksDir).length === 0) {
+    console.warn('  ! assets/homeworks is empty; run `git submodule update --init` to generate homework links');
+    return;
+  }
+  (metadata.homeworks || []).forEach(hw => {
+    const hwDir = path.join(homeworksDir, hw.key);
+    if (!fs.existsSync(hwDir)) return;
+    if (!hw.repo || hw.repo === 'TBA') hw.repo = `${repoUrl}/tree/main/${hw.key}`;
+    if ((!hw.handout || hw.handout === 'TBA') && fs.existsSync(path.join(hwDir, 'handout.pdf'))) {
+      hw.handout = `${repoUrl}/blob/main/${hw.key}/handout.pdf`;
+    }
+    console.log(`  → ${hw.key}: linked to ${repoUrl}/tree/main/${hw.key}`);
+  });
+}
+
 function compileTemplate(name) {
   return handlebars.compile(fs.readFileSync(path.join(templatesDir, name), 'utf-8'));
 }
@@ -159,10 +200,13 @@ function registerPartials() {
 function build() {
   console.log('Building course website...');
   fs.emptyDirSync(outputDir);
-  fs.copySync(assetsDir, outputDir);
+  fs.copySync(assetsDir, outputDir, {
+    filter: src => !(src === homeworksDir || src.startsWith(homeworksDir + path.sep)),
+  });
   registerPartials();
 
   const metadata = prepareCourseMetadata(Object.assign({}, ...METADATA_FILES.map(f => require(f))));
+  linkHomeworksFromRepo(metadata);
 
   fs.writeFileSync(path.join(outputDir, 'index.html'), compileTemplate('_course.html')(metadata));
   console.log('  → dist/index.html');

@@ -109,15 +109,18 @@ module.exports = {
               ]
             },
           ],
-          events: [{ type: 'assigned', hw: 'hw1' }],
         },
+        {
+          date: 'Sep 25', video: 'TBA',
+          events: [{ type: 'assigned', hw: 'hw1' }],
+        }
       ],
     },
     {
       theme: 'No Lectures',
       days: [
-        { date: 'Sep 28', note: 'No lecture', video: 'N/A'},
-        { date: 'Oct 1', note: 'No lecture', video: 'N/A'},
+        { date: 'Sep 28', note: 'No lecture', video: 'TBA'},
+        { date: 'Oct 1', note: 'No lecture', video: 'TBA'},
       ],
     },
     {

@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           lfs: true
+          submodules: true   # assets/homeworks: read by build.js for homework links
       - run: npm ci
       - run: npm run build
       - name: Deploy dist to gh-pages branch
