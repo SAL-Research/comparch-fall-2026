@@ -132,12 +132,24 @@ module.exports = {
           lectures: [
             { 
               title: 'Pipeline Hazards', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-before_lecture.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-before_lecture.pdf'},
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pdf'},
             { 
               title: 'Out-of-Order Pipeline Design', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design.pdf'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design-after_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 3.4'}, 
+                { key: 'hennessy2017computer', part: 'Chapter 3.5'}
+              ],
+              optional_readings: [
+                { key: 'hennessy2017computer', part: 'Appendix C.2'}, 
+                { key: 'hennessy2017computer', part: 'Appendix C.3'}, 
+                { key: 'hennessy2017computer', part: 'Appendix C.4'},
+                { key: 'hennessy2017computer', part: 'Appendix C.5'},
+                'patt1985hps', 
+                'hwu1987checkpoint'
+              ]
             },
           ],
         },
@@ -145,6 +157,11 @@ module.exports = {
           date: 'Oct 8',
           video: 'TBA',
           lectures: [
+            { 
+              title: 'A Deeper Look into Out-of-Order Pipeline Design', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pdf'
+            },
             { title: 'Precise Exceptions and Interrupts', pptx: 'TBA', pdf: 'TBA'},
             { 
               title: 'High Performance Substrate (HPS) and Checkpoint Repair', 
