@@ -132,12 +132,12 @@ module.exports = {
           lectures: [
             { 
               title: 'Pipeline Hazards', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pdf'},
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-before_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-before_lecture.pdf'},
             { 
               title: 'Out-of-Order Pipeline Design', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-ooo_pipeline-after_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-ooo_pipeline-after_lecture.pdf'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design.pdf'
             },
           ],
         },
