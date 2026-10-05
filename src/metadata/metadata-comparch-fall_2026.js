@@ -29,6 +29,18 @@ module.exports = {
         email: 'giray@cispa.de'
       },
       {
+        role: 'Teaching Assistant, Researcher at Alkan Lab in Bilkent University',
+        name: 'Meryem Banu Cavlak',
+        web: 'https://www.alkanlab.org/team/banu-cavlak',
+        email: 'mbanucavlak@gmail.com'
+      },
+       {
+        role: 'Teaching Assistant, Bilkent University',
+        name: 'Moein Javid',
+        web: 'TBA',
+        email: 'moeinjavid@bilkent.edu.tr'
+      },
+      {
         role: 'Teaching Assistant, Researcher at CISPA',
         name: 'Namhun Kim',
         web: 'https://cispa.de/de/people/c01naki',
@@ -39,6 +51,12 @@ module.exports = {
         name: 'Sena Filiz',
         web: 'https://cispa.de/de/people/c01safi',
         email: 'senafilizzzzz@gmail.com'
+      },
+      {
+        role: 'Teaching Assistant, Incoming Researcher at CISPA',
+        name: 'Betul Aydeger',
+        web: 'https://www.linkedin.com/in/betül-aydeğer-262793298/?locale=en',
+        email: 'TBA'
       },
       {
         role: 'Teaching Assistant, Guest Researcher at CISPA',
