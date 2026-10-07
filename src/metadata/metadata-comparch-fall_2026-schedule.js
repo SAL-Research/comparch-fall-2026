@@ -155,31 +155,21 @@ module.exports = {
         },
         {
           date: 'Oct 8',
-          video: 'TBA',
+          video: 'https://youtube.com/live/zeK3quWwJPQ',
           lectures: [
             { 
               title: 'A Deeper Look into Out-of-Order Pipeline Design', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pdf'
             },
-            { title: 'Precise Exceptions and Interrupts', pptx: 'TBA', pdf: 'TBA'},
-            { 
-              title: 'High Performance Substrate (HPS) and Checkpoint Repair', 
-              pptx: 'TBA', 
-              pdf: 'TBA', 
-              required_readings: [
-                'smith1985precise', 
-                'patt1985hps', 
-                'hwu1987checkpoint'
-              ],
-              optional_readings: [
-                'patt1985critical',
-                'patt2001requirements'
-              ] 
-            },
-            { title: 'Critical Paper Reviews in Computer Architecture', pptx: 'TBA', pdf: 'TBA'},
+            {
+              title: 'Tomasulo\'s Algorithm',
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5b-tomasulos_algorithm-before_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5b-tomasulos_algorithm-before_lecture.pdf'
+            }
+            // { title: 'Critical Paper Reviews in Computer Architecture', pptx: 'TBA', pdf: 'TBA'},
           ],
-          events: [{ type: 'assigned', hw: 'bonus1' }],
+          // events: [{ type: 'assigned', hw: 'bonus1' }],
         },
       ],
     },
@@ -190,16 +180,41 @@ module.exports = {
           date: 'Oct 12',
           video: 'TBA',
           lectures: [
-            { title: 'Pipeline Stalls', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Branch Prediction', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'Branch Prediction', 
+              pptx: 'TBA', 
+              pdf: 'TBA'
+            },
+            { 
+              title: 'Precise Exceptions, Interrupts, HPS, and Checkpoint Repair', 
+              pptx: 'TBA', 
+              pdf: 'TBA',
+              required_readings: [
+                'smith1985precise', 
+                'patt1985hps', 
+                'hwu1987checkpoint'
+              ],
+              optional_readings: [
+                'patt1985critical',
+                'patt2001requirements'
+              ] 
+            }
           ],
         },
         {
           date: 'Oct 15',
           video: 'TBA',
           lectures: [
-            { title: 'Prefetching', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Runahead Execution', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'Cache Organization', 
+              pptx: 'TBA', 
+              pdf: 'TBA'
+            },
+            { 
+              title: 'Prefetching and Runahead Execution', 
+              pptx: 'TBA', 
+              pdf: 'TBA'
+            },
           ],
         },
         {
@@ -226,9 +241,16 @@ module.exports = {
           date: 'Oct 22',
           video: 'TBA',
           lectures: [
-            { title: 'Cache Organization and Design', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'DRAM Architecture', pptx: 'TBA', pdf: 'TBA'},
-            // { title: 'Simplescalar and Superscalar', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'DRAM Architecture', 
+              pptx: 'TBA', 
+              pdf: 'TBA'
+            },
+            { 
+              title: 'Memory Request Scheduling', 
+              pptx: 'TBA', 
+              pdf: 'TBA'
+            },
             // { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
             // //   optional_readings: ['ebcioglu1997daisy']
             // },
