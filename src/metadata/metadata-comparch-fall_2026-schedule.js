@@ -34,7 +34,7 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-after_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l1b-computer_organization_and_design_principles_introduction_and_basics-after_lecture.pdf', 
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Chapter 1' }
+                { key: 'hennessy2012computer', part: 'Chapter 1' }
               ], 
               optional_readings: [
                 'hamming1986you', 
@@ -59,13 +59,13 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-after_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2a-isa_design_principles-after_lecture.pdf', 
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Chapter 1' }
+                { key: 'hennessy2012computer', part: 'Chapter 1' }
               ],
               optional_readings: [
                 {key: 'patt2003introduction', part: 'Chapter 4'},
                 {key: 'harris2007digital', part: 'Chapters 6 and 7'},
                 'patterson1980case',
-                'burks1947preliminary'
+                'burks1946preliminary'
               ]
             },
             { 
@@ -73,7 +73,7 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-after_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l2b-performance_evaluation-after_lecture.pdf', 
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Chapter 1' }
+                { key: 'hennessy2012computer', part: 'Chapter 1' }
               ]
             },
             // { title: 'Trends, Tradeoffs and Design Fundamentals of Computer Architecture', pptx: 'TBA', pdf: 'TBA'},
@@ -88,7 +88,7 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-after_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l3a-performance_evaluation-after_lecture.pdf', 
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Chapter 1' }
+                { key: 'hennessy2012computer', part: 'Chapter 1' }
               ],
               optional_readings: [
                 {key: 'harris2007digital', part: 'Chapter 7.3'},
@@ -135,7 +135,7 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pptx',
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pdf',
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Appendix C.2'}
+                { key: 'hennessy2012computer', part: 'Appendix C.2'}
               ]
             },
             { 
@@ -143,21 +143,21 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design-after_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design-after_lecture.pdf',
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Chapter 3.1'},
-                { key: 'hennessy2017computer', part: 'Chapter 3.4'}, 
-                { key: 'hennessy2017computer', part: 'Chapter 3.5'},
-                { key: 'hennessy2017computer', part: 'Chapter 3.6'}
+                { key: 'hennessy2012computer', part: 'Chapter 3.1'},
+                { key: 'hennessy2012computer', part: 'Chapter 3.4'}, 
+                { key: 'hennessy2012computer', part: 'Chapter 3.5'},
+                { key: 'hennessy2012computer', part: 'Chapter 3.6'}
               ],
               optional_readings: [
-                { key: 'hennessy2017computer', part: 'Appendix C.2'}, 
-                { key: 'hennessy2017computer', part: 'Appendix C.3'}, 
-                { key: 'hennessy2017computer', part: 'Appendix C.4'},
-                { key: 'hennessy2017computer', part: 'Appendix C.5'},
+                { key: 'hennessy2012computer', part: 'Appendix C.2'}, 
+                { key: 'hennessy2012computer', part: 'Appendix C.3'}, 
+                { key: 'hennessy2012computer', part: 'Appendix C.4'},
+                { key: 'hennessy2012computer', part: 'Appendix C.5'},
                 { key: 'harris2007digital', part: 'Chapter 7.8'},
                 { key: 'harris2007digital', part: 'Chapter 7.9'},
                 'tomasulo1967efficient',
                 'smith1995microarchitecture',
-                'smith1985precise',
+                'smith1988implementing',
                 'patt1985hps', 
                 'hwu1987checkpoint'
               ]
@@ -173,8 +173,8 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pdf',
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Chapter 3.4'},
-                { key: 'hennessy2017computer', part: 'Chapter 3.6'}
+                { key: 'hennessy2012computer', part: 'Chapter 3.4'},
+                { key: 'hennessy2012computer', part: 'Chapter 3.6'}
               ],
               optional_readings: [
                 'dennis1975preliminary',
@@ -188,9 +188,9 @@ module.exports = {
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5b-tomasulos_algorithm-before_lecture.pptx',
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5b-tomasulos_algorithm-before_lecture.pdf',
               required_readings: [
-                { key: 'hennessy2017computer', part: 'Chapter 3.4'},
-                { key: 'hennessy2017computer', part: 'Chapter 3.5'},
-                { key: 'hennessy2017computer', part: 'Appendix C.7'}
+                { key: 'hennessy2012computer', part: 'Chapter 3.4'},
+                { key: 'hennessy2012computer', part: 'Chapter 3.5'},
+                { key: 'hennessy2012computer', part: 'Appendix C.7'}
               ],
               optional_readings: [
                 'tomasulo1967efficient',
@@ -223,7 +223,7 @@ module.exports = {
               pptx: 'TBA', 
               pdf: 'TBA',
               required_readings: [
-                'smith1985precise', 
+                'smith1988implementing', 
                 'patt1985hps', 
                 'hwu1987checkpoint'
               ],

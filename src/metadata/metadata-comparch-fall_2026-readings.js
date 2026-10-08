@@ -22,27 +22,30 @@ module.exports = {
       key: 'hamming1986you',
       title: 'You and Your Research',
       authors: [
-        { firstname: 'Richard', lastname: 'Hamming' },
+        { firstname: 'Richard W.', lastname: 'Hamming' },
       ],
-      venue: 'Bell Communications Research Colloquium',
+      venue: 'Bell Communications Research (Bellcore) Colloquium Series, Morristown, NJ',
       type: 'talk',
       year: 1986,
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'readings/hamming1986you.pdf' }] },
-        { resourcename: 'Video', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/watch?v=a1zDuOPkMSw' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'readings/hamming1986you.pdf' }, { fileformat: 'link', url: 'https://www.cs.virginia.edu/~robins/YouAndYourResearch.html' }] },
+        { resourcename: 'Video (1995 version of the talk)', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/watch?v=a1zDuOPkMSw' }] },
       ],
     },
     {
-      key: 'smith1985precise',
+      key: 'smith1988implementing',
       title: 'Implementing Precise Interrupts in Pipelined Processors',
       authors: [
         { firstname: 'James E.', lastname: 'Smith' },
         { firstname: 'Andrew R.', lastname: 'Pleszkun' },
       ],
-      venue: 'International Symposium on Computer Architecture (ISCA)',
-      type: 'conference',
-      year: 1985,
-      resources: [],
+      venue: 'IEEE Transactions on Computers, vol. 37, no. 5',
+      type: 'journal',
+      year: 1988,
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.cs.virginia.edu/~evans/greatworks/smith.pdf' }] },
+        { resourcename: 'Paper (shorter ISCA 1985 version)', links: [{ fileformat: 'pdf', url: 'https://www.cs.ucf.edu/~lboloni/Teaching/EEL5708_2006/slides/p36-smith.pdf' }] },
+      ],
     },
     {
       key: 'patt1985hps',
@@ -55,7 +58,9 @@ module.exports = {
       venue: 'International Symposium on Microarchitecture (MICRO)',
       type: 'conference',
       year: 1985,
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/18927.18916' }] },
+      ],
     },
     {
       key: 'patt1985critical',
@@ -69,19 +74,24 @@ module.exports = {
       venue: 'International Symposium on Microarchitecture (MICRO)',
       type: 'conference',
       year: 1985,
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/18927.18917' }] },
+      ],
     },
     {
       key: 'hwu1987checkpoint',
-      title: 'Checkpoint Repair for Out-of-Order Execution Machines',
+      title: 'Checkpoint Repair for High-Performance Out-of-Order Execution Machines',
       authors: [
         { firstname: 'Wen-mei W.', lastname: 'Hwu' },
         { firstname: 'Yale N.', lastname: 'Patt' },
       ],
-      venue: 'International Symposium on Computer Architecture (ISCA)',
-      type: 'conference',
+      venue: 'IEEE Transactions on Computers, vol. C-36, no. 12',
+      type: 'journal',
       year: 1987,
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/TC.1987.5009500' }] },
+        { resourcename: 'Paper (shorter ISCA 1987 version)', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/30350.30353' }] },
+      ],
     },
     {
       key: 'patt2001requirements',
@@ -92,7 +102,9 @@ module.exports = {
       venue: 'Proceedings of the IEEE, vol. 89, no. 11',
       type: 'journal',
       year: 2001,
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/5.964437' }] },
+      ],
     },
     {
       key: 'ebcioglu1997daisy',
@@ -101,7 +113,7 @@ module.exports = {
         { firstname: 'Kemal', lastname: 'Ebcioğlu'},
         { firstname: 'Erik R.', lastname: 'Altman'},
       ],
-      venue: 'ISCA',
+      venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       year: 1997,
       resources: [
@@ -110,7 +122,7 @@ module.exports = {
       ],
     },
     {
-      key: 'hennessy2017computer',
+      key: 'hennessy2012computer',
       title: 'Computer Architecture: A Quantitative Approach, 5th Edition',
       authors: [
         { firstname: 'John L.', lastname: 'Hennessy' },
@@ -118,9 +130,9 @@ module.exports = {
       ],
       venue: 'Morgan Kaufmann',
       type: 'book',
-      year: 2017,
+      year: 2012,
       resources: [
-        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://books.google.com.tr/books/about/Computer_Architecture.html?id=v3-1hVwHnHwC&redir_esc=y' }] },
+        { resourcename: 'Book', links: [{ fileformat: 'link', url: 'https://books.google.com.tr/books/about/Computer_Architecture.html?id=v3-1hVwHnHwC&redir_esc=y' }, { fileformat: 'link', url: 'https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8' }] },
       ],
     },
     {
@@ -134,21 +146,21 @@ module.exports = {
       type: 'book',
       year: 2007,
       resources: [
-        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://www.sciencedirect.com/book/monograph/9780123704979/digital-design-and-computer-architecture' }] },
+        { resourcename: 'Book', links: [{ fileformat: 'link', url: 'https://www.elsevier.com/books/digital-design-and-computer-architecture/harris/978-0-12-370497-9' }] },
       ],
     },
     {
       key: 'patt2003introduction',
-      title: 'Introduction to Computing Systems',
+      title: 'Introduction to Computing Systems: From Bits & Gates to C & Beyond, 2nd Edition',
       authors: [
         { firstname: 'Yale N.', lastname: 'Patt' },
         { firstname: 'Sanjay J.', lastname: 'Patel' },
       ],
-      venue: 'McGraw-Hill Education',
+      venue: 'McGraw-Hill',
       type: 'book',
       year: 2003,
       resources: [
-        { resourcename: 'Book', links: [{ fileformat: 'pdf', url: 'https://books.google.de/books/about/Introduction_to_Computing_Systems_From_B.html?id=g9TRwAEACAAJ&redir_esc=y' }] },
+        { resourcename: 'Book', links: [{ fileformat: 'link', url: 'https://books.google.de/books/about/Introduction_to_Computing_Systems_From_B.html?id=g9TRwAEACAAJ&redir_esc=y' }] },
       ],
     },
     {
@@ -234,6 +246,7 @@ module.exports = {
       ],
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/1704.04760' }] },
+        { resourcename: 'Video', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/watch?v=fhHAArxwzvQ' }] },
       ],
       year: 2017,
       venue: 'International Symposium on Computer Architecture (ISCA)',
@@ -246,10 +259,10 @@ module.exports = {
         { firstname: 'Onur', lastname: 'Mutlu' },
       ],
       year: 2023,
-      venue: 'ISCA@50 25-Year Retrospective: 1996-2020',
+      venue: 'ISCA@50 25-Year Retrospective: 1996-2020 (ACM SIGARCH and IEEE TCCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/2306.16093' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://sites.coecis.cornell.edu/isca50retrospective/files/2023/06/Kim_2014_Flipping.pdf' }, { fileformat: 'pdf', url: 'https://arxiv.org/pdf/2306.16093' }] },
       ],
     },
     {
@@ -267,7 +280,7 @@ module.exports = {
       venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/1805.03048'}]},
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/tldram_hpca13.pdf'}]},
         { resourcename: 'Presentation', links: [{ fileformat: 'pptx', url: 'https://people.inf.ethz.ch/omutlu/pub/lee_hpca13_talk.pptx' }]}
       ],
     },
@@ -275,11 +288,11 @@ module.exports = {
       key: 'patterson1980case',
       title: 'The Case for the Reduced Instruction Set Computer',
       authors: [
-        { firstname: 'David', lastname: 'Patterson' },
-        { firstname: 'Carl', lastname: 'Ditzel' },
+        { firstname: 'David A.', lastname: 'Patterson' },
+        { firstname: 'David R.', lastname: 'Ditzel' },
       ],
       year: 1980,
-      venue: 'SIGARCH CAN',
+      venue: 'ACM SIGARCH Computer Architecture News, vol. 8, no. 6',
       type: 'journal',
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.eecs.berkeley.edu/~kubitron/courses/cs252-F00/handouts/papers/patterson80.pdf'}] },
@@ -311,15 +324,15 @@ module.exports = {
       ],
     },
     {
-      key: 'burks1947preliminary',
+      key: 'burks1946preliminary',
       title: 'Preliminary Discussion of the Logical Design of an Electronic Computing Instrument',
       authors: [
         { firstname: 'Arthur W.', lastname: 'Burks' },
         { firstname: 'Herman H.', lastname: 'Goldstine' },
         { firstname: 'John', lastname: 'von Neumann' },
       ],
-      year: 1947,
-      venue: 'Papers of John von Neumann on Computing and Computer Theory',
+      year: 1946,
+      venue: 'Institute for Advanced Study, Princeton, NJ (technical report)',
       type: 'report',
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://safari.ethz.ch/architecture/fall2022/lib/exe/fetch.php?media=preliminary_discussion_burks1946.pdf'}] },
@@ -332,7 +345,7 @@ module.exports = {
         { firstname: 'Gene M.', lastname: 'Amdahl' },
       ],
       year: 1967,
-      venue: 'AFIPS Conference Proceedings',
+      venue: 'AFIPS Spring Joint Computer Conference',
       type: 'conference',
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://safari.ethz.ch/digitaltechnik/spring2021/lib/exe/fetch.php?media=amdahl.pdf'}] },
@@ -382,7 +395,7 @@ module.exports = {
       type: 'conference',
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/2605.01575'}]},
-        { resourcename: 'Presentation', links: [{ fileformat: 'video', url: 'https://youtu.be/bLyeWRO47TI?si=bQcAMlBUkS1mHJhs'}] }
+        { resourcename: 'Presentation', links: [{ fileformat: 'video', url: 'https://youtu.be/bLyeWRO47TI'}] }
       ],
     },
     {
@@ -393,7 +406,7 @@ module.exports = {
         { firstname: 'Mark', lastname: 'Horowitz' }
       ],
       year: 1996,
-      venue: 'International Journal of Solid State Circuits',
+      venue: 'IEEE Journal of Solid-State Circuits, vol. 31, no. 9',
       type: 'journal',
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://iacoma.cs.uiuc.edu/CS497/LP4.pdf'}] },
@@ -406,9 +419,12 @@ module.exports = {
         { firstname: 'Robert M.', lastname: 'Tomasulo' },
       ],
       year: 1967,
-      venue: 'IBM Journal of Research and Development',
+      venue: 'IBM Journal of Research and Development, vol. 11, no. 1',
       type: 'journal',
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.cs.virginia.edu/~evans/greatworks/tomasulo.pdf' }] },
+        { resourcename: 'Lecture', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/watch?v=h6RQi6y5iTI' }] },
+      ],
     },
     {
       key: 'smith1995microarchitecture',
@@ -418,9 +434,12 @@ module.exports = {
         { firstname: 'Gurindar S.', lastname: 'Sohi' },
       ],
       year: 1995,
-      venue: 'Proceedings of the IEEE',
+      venue: 'Proceedings of the IEEE, vol. 83, no. 12',
       type: 'journal',
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://minds.wisc.edu/bitstreams/5652e1b7-32e3-4b34-886f-e2de8a864da8/download' }] },
+        { resourcename: 'Lecture', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/watch?v=5kGI2EHURSY' }] },
+      ],
     },
     {
       key: 'chrysos1998memory',
@@ -432,7 +451,9 @@ module.exports = {
       year: 1998,
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.eecg.utoronto.ca/~moshovos/ACA08/readings/p142-chrysos.pdf' }] },
+      ],
     },
     {
       key: 'dennis1975preliminary',
@@ -444,7 +465,9 @@ module.exports = {
       year: 1975,
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.eecs.berkeley.edu/~kubitron/cs252/handouts/papers/p125-dennis.pdf' }] },
+      ],
     },
     {
       key: 'gurd1985manchester',
@@ -455,9 +478,11 @@ module.exports = {
         { firstname: 'Ian', lastname: 'Watson' },
       ],
       year: 1985,
-      venue: 'Communications of the ACM',
+      venue: 'Communications of the ACM, vol. 28, no. 1',
       type: 'journal',
-      resources: [],
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/2465.2468' }] },
+      ],
     },
 
   ],
