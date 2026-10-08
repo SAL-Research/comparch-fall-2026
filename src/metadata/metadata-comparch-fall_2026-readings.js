@@ -398,7 +398,67 @@ module.exports = {
       resources: [
         { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://iacoma.cs.uiuc.edu/CS497/LP4.pdf'}] },
       ],
-    }
+    },
+    {
+      key: 'tomasulo1967efficient',
+      title: 'An Efficient Algorithm for Exploiting Multiple Arithmetic Units',
+      authors: [
+        { firstname: 'Robert M.', lastname: 'Tomasulo' },
+      ],
+      year: 1967,
+      venue: 'IBM Journal of Research and Development',
+      type: 'journal',
+      resources: [],
+    },
+    {
+      key: 'smith1995microarchitecture',
+      title: 'The Microarchitecture of Superscalar Processors',
+      authors: [
+        { firstname: 'James E.', lastname: 'Smith' },
+        { firstname: 'Gurindar S.', lastname: 'Sohi' },
+      ],
+      year: 1995,
+      venue: 'Proceedings of the IEEE',
+      type: 'journal',
+      resources: [],
+    },
+    {
+      key: 'chrysos1998memory',
+      title: 'Memory Dependence Prediction Using Store Sets',
+      authors: [
+        { firstname: 'George Z.', lastname: 'Chrysos' },
+        { firstname: 'Joel S.', lastname: 'Emer' },
+      ],
+      year: 1998,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [],
+    },
+    {
+      key: 'dennis1975preliminary',
+      title: 'A Preliminary Architecture for a Basic Data-Flow Processor',
+      authors: [
+        { firstname: 'Jack B.', lastname: 'Dennis' },
+        { firstname: 'David P.', lastname: 'Misunas' },
+      ],
+      year: 1975,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [],
+    },
+    {
+      key: 'gurd1985manchester',
+      title: 'The Manchester Prototype Dataflow Computer',
+      authors: [
+        { firstname: 'John R.', lastname: 'Gurd' },
+        { firstname: 'Chris C.', lastname: 'Kirkham' },
+        { firstname: 'Ian', lastname: 'Watson' },
+      ],
+      year: 1985,
+      venue: 'Communications of the ACM',
+      type: 'journal',
+      resources: [],
+    },
 
   ],
 };

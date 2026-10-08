@@ -133,20 +133,31 @@ module.exports = {
             { 
               title: 'Pipeline Hazards', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pdf'},
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4a-pipeline_hazards-after_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Appendix C.2'}
+              ]
+            },
             { 
               title: 'Out-of-Order Pipeline Design', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design-after_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l4b-out_of_order_pipeline_design-after_lecture.pdf',
               required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 3.1'},
                 { key: 'hennessy2017computer', part: 'Chapter 3.4'}, 
-                { key: 'hennessy2017computer', part: 'Chapter 3.5'}
+                { key: 'hennessy2017computer', part: 'Chapter 3.5'},
+                { key: 'hennessy2017computer', part: 'Chapter 3.6'}
               ],
               optional_readings: [
                 { key: 'hennessy2017computer', part: 'Appendix C.2'}, 
                 { key: 'hennessy2017computer', part: 'Appendix C.3'}, 
                 { key: 'hennessy2017computer', part: 'Appendix C.4'},
                 { key: 'hennessy2017computer', part: 'Appendix C.5'},
+                { key: 'harris2007digital', part: 'Chapter 7.8'},
+                { key: 'harris2007digital', part: 'Chapter 7.9'},
+                'tomasulo1967efficient',
+                'smith1995microarchitecture',
+                'smith1985precise',
                 'patt1985hps', 
                 'hwu1987checkpoint'
               ]
@@ -160,12 +171,34 @@ module.exports = {
             { 
               title: 'A Deeper Look into Out-of-Order Pipeline Design', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5a-a_deeper_look_into_out_of_order_pipeline_design-before_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 3.4'},
+                { key: 'hennessy2017computer', part: 'Chapter 3.6'}
+              ],
+              optional_readings: [
+                'dennis1975preliminary',
+                'gurd1985manchester',
+                'patt1985hps',
+                'smith1995microarchitecture'
+              ]
             },
             {
               title: 'Tomasulo\'s Algorithm',
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5b-tomasulos_algorithm-before_lecture.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5b-tomasulos_algorithm-before_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l5b-tomasulos_algorithm-before_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2017computer', part: 'Chapter 3.4'},
+                { key: 'hennessy2017computer', part: 'Chapter 3.5'},
+                { key: 'hennessy2017computer', part: 'Appendix C.7'}
+              ],
+              optional_readings: [
+                'tomasulo1967efficient',
+                'patt1985hps',
+                'smith1995microarchitecture',
+                'chrysos1998memory',
+                'amdahl1967validity'
+              ]
             }
             // { title: 'Critical Paper Reviews in Computer Architecture', pptx: 'TBA', pdf: 'TBA'},
           ],
