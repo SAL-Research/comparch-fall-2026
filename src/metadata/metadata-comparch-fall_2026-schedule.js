@@ -124,7 +124,7 @@ module.exports = {
       ],
     },
     {
-      theme: 'Pipeline Hazards, Out-of-Order Execution, Precise Exceptions, and Interrupts',
+      theme: 'Pipeline Hazards, Out-of-Order Execution, and Tomasulo\'s Algorithm',
       days: [
         {
           date: 'Oct 5',
@@ -207,11 +207,11 @@ module.exports = {
       ],
     },
     {
-      theme: 'Bottlenecks and Latency Tolerance',
+      theme: 'Out-of-Order Execution in an Imperfect Universe',
       days: [
         {
           date: 'Oct 12',
-          video: 'TBA',
+          video: 'https://youtube.com/live/aPcqjonypmM',
           lectures: [
             { 
               title: 'Branch Prediction', 
@@ -230,7 +230,8 @@ module.exports = {
               optional_readings: [
                 'patt1985critical',
                 'patt2001requirements',
-                'patt2024randomthoughts'
+                'patt2024randomthoughts',
+
               ] 
             }
           ],
