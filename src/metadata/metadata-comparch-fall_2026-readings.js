@@ -484,6 +484,19 @@ module.exports = {
         { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/2465.2468' }] },
       ],
     },
+    {
+      key: 'patt2024randomthoughts',
+      title: 'Random Thoughts after 60 years in the trenches',
+      authors: [
+        { firstname: 'Yale', lastname: 'Patt' },
+      ],
+      year: 2024,
+      venue: 'EFCL Summer School',
+      type: 'keynote',
+      resources: [
+        { resourcename: 'Video', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/live/9BrfnZgdNos' }] },
+      ],
+    }
 
   ],
 };

@@ -215,13 +215,13 @@ module.exports = {
           lectures: [
             { 
               title: 'Branch Prediction', 
-              pptx: 'TBA', 
-              pdf: 'TBA'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6a-branch_prediction-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6a-branch_prediction-before_lecture.pdf'
             },
             { 
               title: 'Precise Exceptions, Interrupts, HPS, and Checkpoint Repair', 
-              pptx: 'TBA', 
-              pdf: 'TBA',
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6b-precise_exceptions_interrupts_hps_and_checkpoint_repair-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6b-precise_exceptions_interrupts_hps_and_checkpoint_repair-before_lecture.pdf',
               required_readings: [
                 'smith1988implementing', 
                 'patt1985hps', 
@@ -229,7 +229,8 @@ module.exports = {
               ],
               optional_readings: [
                 'patt1985critical',
-                'patt2001requirements'
+                'patt2001requirements',
+                'patt2024randomthoughts'
               ] 
             }
           ],
