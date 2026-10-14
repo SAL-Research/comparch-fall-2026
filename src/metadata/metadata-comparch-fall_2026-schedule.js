@@ -238,17 +238,17 @@ module.exports = {
         },
         {
           date: 'Oct 15',
-          video: 'TBA',
+          video: 'https://youtube.com/live/fkkD0guh50s',
           lectures: [
             { 
               title: 'Cache Organization', 
-              pptx: 'TBA', 
-              pdf: 'TBA'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7a-cache_organization-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7a-cache_organization-before_lecture.pdf'
             },
             { 
               title: 'Prefetching and Runahead Execution', 
-              pptx: 'TBA', 
-              pdf: 'TBA'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7b-prefetching_and_runahead_execution-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7b-prefetching_and_runahead_execution-before_lecture.pdf'
             },
           ],
         },
