@@ -267,9 +267,12 @@ module.exports = {
       days: [
         {
           date: 'Oct 19',
-          video: 'TBA',
+          video: 'https://youtube.com/live/o8INICbyzWg',
           lectures: [
-            { title: 'Speculative Execution from a Security Perspective (Subject to Change)', note: 'Guest Lecture by <a href="https://misc0110.net">Michael Schwarz</a>', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'Computer Architecture X Security: A Security Perspective on Non-Retired Instructions', 
+              note: 'Guest Lecture by <a href="https://misc0110.net">Michael Schwarz</a>', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/michael_schwarz-comparch-2026-fall-l8-comparch_x_security-before_lecture.pdf'},
           ],
         },
         {
@@ -331,8 +334,15 @@ module.exports = {
             { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA'},
           ],
           events: [
-            { type: 'due', hw: 'hw2' },
             { type: 'assigned', hw: 'hw3' },
+          ],
+        },
+        {
+          date: 'Nov 8',
+          video: 'TBA',
+          note: 'Sunday, no lecture (deadline 23:59)',
+          events: [
+            { type: 'due', hw: 'hw2' },
           ],
         },
       ],

@@ -90,9 +90,9 @@ module.exports = {
   homework_note: 'You lose 10\% of your grade for each week late. Late submission cut-off for all homeworks: December 27, 2026, 23:59 (Ankara time).',
   homeworks: [
     { key: 'hw1', id: 'HW 1', topic: 'In-Order Pipeline', assigned: 'Sep 25', deadline: 'Oct 18', handout: 'TBA', repo: 'TBA', submission: 'https://moodle.bilkent.edu.tr/current/mod/assign/view.php?id=21222&forceview=1', discussion: 'https://github.com/SAL-Research/comparch-fall-2026/discussions/categories/hw1' },
-    { key: 'hw2', id: 'HW 2', topic: 'Caching, Prefetching, and Branch Prediction', assigned: 'Oct 22', deadline: 'Nov 2', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
-    { key: 'hw3', id: 'HW 3', topic: 'Out-of-Order and Speculative Execution (Bonus: Spectre and Meltdown)', assigned: 'Nov 2', deadline: 'Nov 26', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
-    { key: 'hw4', id: 'HW 4', topic: 'Memory Scheduling', assigned: 'Nov 26', deadline: 'Dec 17', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
+    { key: 'hw2', id: 'HW 2', topic: 'Predicting the Future: Branch Prediction and Prefetching', assigned: 'Oct 22', deadline: 'Nov 8', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
+    { key: 'hw3', id: 'HW 3', topic: 'Out-of-Order Execution and Speculation (Bonus: Spectre and Meltdown)', assigned: 'Nov 2', deadline: 'Nov 26', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
+    { key: 'hw4', id: 'HW 4', topic: 'Main Memory: DRAM and Memory Request Scheduling', assigned: 'Nov 26', deadline: 'Dec 17', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
     { key: 'bonus1', id: 'Bonus HW', topic: 'Paper Reviews', assigned: 'Oct 8', deadline: 'Dec 27', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
   ],
 
