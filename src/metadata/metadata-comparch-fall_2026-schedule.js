@@ -281,12 +281,12 @@ module.exports = {
           lectures: [
             { 
               title: 'DRAM Architecture', 
-              pptx: 'TBA', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9a-dram_architecture-before_lecture.pptx', 
               pdf: 'TBA'
             },
             { 
-              title: 'Memory Request Scheduling', 
-              pptx: 'TBA', 
+              title: 'Memory Controllers', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9b-memory_controllers-before_lecture.pptx', 
               pdf: 'TBA'
             },
             // { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
@@ -306,7 +306,7 @@ module.exports = {
           date: 'Oct 26',
           video: 'TBA',
           lectures: [
-            { title: 'Memory Request Scheduling', pptx: 'TBA', pdf: 'TBA'},
+            { title: 'Memory Request Scheduling II', pptx: 'TBA', pdf: 'TBA'},
             { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA'},
           ],
         },
@@ -330,8 +330,10 @@ module.exports = {
           video: 'TBA',
           lectures: [
             { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA'},
-            { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA'},
-            { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA'},
+            { title: "Cache Coherence", pptx: 'TBA', pdf: 'TBA'},
+            // { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA'},
+            // GPU moved after the midterm (decided 2026-10-19); destination day TBD
+            // { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA'},
           ],
           events: [
             { type: 'assigned', hw: 'hw3' },
