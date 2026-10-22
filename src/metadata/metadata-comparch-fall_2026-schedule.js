@@ -277,17 +277,17 @@ module.exports = {
         },
         {
           date: 'Oct 22',
-          video: 'TBA',
+          video: 'https://youtube.com/live/ACMbRMEMdbk',
           lectures: [
             { 
               title: 'DRAM Architecture', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9a-dram_architecture-before_lecture.pptx', 
-              pdf: 'TBA'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9a-dram_architecture-before_lecture.pdf'
             },
             { 
               title: 'Memory Controllers', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9b-memory_controllers-before_lecture.pptx', 
-              pdf: 'TBA'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9b-memory_controllers-before_lecture.pdf'
             },
             // { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
             // //   optional_readings: ['ebcioglu1997daisy']
