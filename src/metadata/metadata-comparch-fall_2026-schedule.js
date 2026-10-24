@@ -293,9 +293,10 @@ module.exports = {
             // //   optional_readings: ['ebcioglu1997daisy']
             // },
           ],
-          events: [
-            { type: 'assigned', hw: 'hw2' },
-          ],
+        },
+        {
+          date: 'Oct 23', video: 'TBA',
+          events: [{ type: 'assigned', hw: 'hw2' }],
         },
       ],
     },
