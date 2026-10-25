@@ -73,7 +73,12 @@
                 <option value="L4b">L4b — Out-of-Order Pipeline Design</option>
                 <option value="L5a">L5a — A Deeper Look into Out-of-Order Pipeline Design</option>
                 <option value="L5b">L5b — Tomasulo&#x27;s Algorithm</option>
+                <option value="L6a">L6a — Branch Prediction</option>
                 <option value="L6b">L6b — Precise Exceptions, Interrupts, HPS, and Checkpoint Repair</option>
+                <option value="L7a">L7a — Cache Organization</option>
+                <option value="L7b">L7b — Prefetching and Runahead Execution</option>
+                <option value="L9">L9 — DRAM Architecture</option>
+                <option value="L18b">L18b — Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW</option>
                 <option value="general">General</option>
             </select>
         </div>
@@ -671,6 +676,97 @@
 </li>
                 </ul>
             </section>
+            <section class="lecture-group" id="lecture-L6a" data-lecture="L6a">
+                <h3 class="section-title">L6a: Branch Prediction <span class="text-muted fw-normal">(Oct 12)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Chapter 3.3</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Two-Level Adaptive Training Branch Prediction"</div>
+        <div class="authors">Tse-Yu Yeh, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1991</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/123465.123475">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Improving the Accuracy of Dynamic Branch Prediction Using Branch Correlation"</div>
+        <div class="authors">Shien-Tai Pan, Kimming So, Joseph T. Rahmeh</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)</i>, 1992</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/143365.143490">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Combining Branch Predictors"</div>
+        <div class="authors">Scott McFarling</div>
+        <div class="venue"><i>Digital Western Research Laboratory, Technical Note TN-36</i>, 1993</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://web.archive.org/web/20210225023421/https://www.hpl.hp.com/techreports/Compaq-DEC/WRL-TN-36.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"The Bi-Mode Branch Predictor"</div>
+        <div class="authors">Chih-Chieh Lee, I-Cheng K. Chen, Trevor N. Mudge</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1997</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MICRO.1997.645792">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"The Agree Predictor: A Mechanism for Reducing Negative Branch History Interference"</div>
+        <div class="authors">Eric Sprangle, Robert S. Chappell, Mitch Alsup, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1997</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/264107.264210">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"The Alpha 21264 Microprocessor"</div>
+        <div class="authors">Richard E. Kessler</div>
+        <div class="venue"><i>IEEE Micro, vol. 19, no. 2</i>, 1999</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/40.755465">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Dynamic Branch Prediction with Perceptrons"</div>
+        <div class="authors">Daniel A. Jiménez, Calvin Lin</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2001</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/HPCA.2001.903263">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"A Case for (Partially) TAgged GEometric History Length Branch Prediction"</div>
+        <div class="authors">André Seznec, Pierre Michaud</div>
+        <div class="venue"><i>Journal of Instruction-Level Parallelism (JILP), vol. 8</i>, 2006</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://jilp.org/vol8/v8paper1.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
             <section class="lecture-group" id="lecture-L6b" data-lecture="L6b">
                 <h3 class="section-title">L6b: Precise Exceptions, Interrupts, HPS, and Checkpoint Repair <span class="text-muted fw-normal">(Oct 12)</span></h3>
                 <h4 class="h6 text-muted mt-2">Required</h4>
@@ -708,6 +804,26 @@
             </span>
         </div>
 </li>
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Chapter 3.6</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Appendix C.4</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
                 </ul>
                 <h4 class="h6 text-muted mt-2">Optional</h4>
                 <ul class="reading-list">
@@ -740,9 +856,276 @@
 </li>
                 </ul>
             </section>
-            <section class="lecture-group" id="lecture-general" data-lecture="general">
-                <h3 class="section-title">General</h3>
-                
+            <section class="lecture-group" id="lecture-L7a" data-lecture="L7a">
+                <h3 class="section-title">L7a: Cache Organization <span class="text-muted fw-normal">(Oct 15)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Appendix B.1</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Appendix B.2</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Appendix B.3</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Chapter 2</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Digital Design and Computer Architecture" <span class="text-muted fw-normal">— Chapter 8.1</span></div>
+        <div class="authors">David Harris, Sarah Harris</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2007</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://www.elsevier.com/books/digital-design-and-computer-architecture/harris/978-0-12-370497-9">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Digital Design and Computer Architecture" <span class="text-muted fw-normal">— Chapter 8.2</span></div>
+        <div class="authors">David Harris, Sarah Harris</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2007</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://www.elsevier.com/books/digital-design-and-computer-architecture/harris/978-0-12-370497-9">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Digital Design and Computer Architecture" <span class="text-muted fw-normal">— Chapter 8.3</span></div>
+        <div class="authors">David Harris, Sarah Harris</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2007</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://www.elsevier.com/books/digital-design-and-computer-architecture/harris/978-0-12-370497-9">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Memory Systems"</div>
+        <div class="authors">Yoongu Kim, Onur Mutlu</div>
+        <div class="venue"><i>Computing Handbook, 3rd Edition: Computer Science and Software Engineering, CRC Press</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-systems-introduction_computing-handbook14.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Slave Memories and Dynamic Storage Allocation"</div>
+        <div class="authors">Maurice V. Wilkes</div>
+        <div class="venue"><i>IEEE Transactions on Electronic Computers, vol. EC-14, no. 2</i>, 1965</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/PGEC.1965.264263">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Structural Aspects of the System/360 Model 85, II: The Cache"</div>
+        <div class="authors">J. S. Liptay</div>
+        <div class="venue"><i>IBM Systems Journal, vol. 7, no. 1</i>, 1968</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1147/sj.71.0015">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"A Study of Replacement Algorithms for a Virtual-Storage Computer"</div>
+        <div class="authors">László A. Belady</div>
+        <div class="venue"><i>IBM Systems Journal, vol. 5, no. 2</i>, 1966</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1147/sj.52.0078">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"A Case for MLP-Aware Cache Replacement"</div>
+        <div class="authors">Moinuddin K. Qureshi, Daniel N. Lynch, Onur Mutlu, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2006</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/qureshi_isca06.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/qureshi_isca06_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
+            <section class="lecture-group" id="lecture-L7b" data-lecture="L7b">
+                <h3 class="section-title">L7b: Prefetching and Runahead Execution <span class="text-muted fw-normal">(Oct 15)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Chapter 2.2</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Improving Direct-Mapped Cache Performance by the Addition of a Small Fully-Associative Cache and Prefetch Buffers"</div>
+        <div class="authors">Norman P. Jouppi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1990</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/ISCA.1990.134547">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"An Effective On-Chip Preloading Scheme to Reduce Data Access Penalty"</div>
+        <div class="authors">Jean-Loup Baer, Tien-Fu Chen</div>
+        <div class="venue">in Proceedings of the <i>ACM/IEEE Conference on Supercomputing (Supercomputing)</i>, 1991</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/125826.125932">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers"</div>
+        <div class="authors">Santhosh Srinath, Onur Mutlu, Hyesoon Kim, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2007</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/srinath_hpca07.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/srinath_hpca07_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Improving Data Cache Performance by Pre-executing Instructions Under a Cache Miss"</div>
+        <div class="authors">James Dundas, Trevor Mudge</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Supercomputing (ICS)</i>, 1997</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/263580.263597">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Runahead Execution: An Alternative to Very Large Instruction Windows for Out-of-order Processors"</div>
+        <div class="authors">Onur Mutlu, Jared Stark, Chris Wilkerson, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2003</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_hpca03.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_hpca03_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
+            <section class="lecture-group" id="lecture-L9" data-lecture="L9">
+                <h3 class="section-title">L9: DRAM Architecture <span class="text-muted fw-normal">(Oct 22)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Chapter 2.3</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Appendix B.1</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM"</div>
+        <div class="authors">Yoongu Kim, Vivek Seshadri, Donghyuk Lee, Jamie Liu, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/salp-dram_isca12.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Revisiting Memory Errors in Large-Scale Production Data Centers: Analysis and Modeling of New Trends from the Field"</div>
+        <div class="authors">Justin Meza, Qiang Wu, Sanjeev Kumar, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"RAIDR: Retention-Aware Intelligent DRAM Refresh"</div>
+        <div class="authors">Jamie Liu, Ben Jaiyen, Richard Veras, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/raidr-dram-refresh_isca12.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems"</div>
+        <div class="authors">Moinuddin K. Qureshi, Dae-Hyun Kim, Samira Khan, Prashant J. Nair, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
+            <section class="lecture-group" id="lecture-L18b" data-lecture="L18b">
+                <h3 class="section-title">L18b: Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW <span class="text-muted fw-normal">(Dec 7)</span></h3>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
                 <ul class="reading-list">
                     <li class="reading-item">        <div class="title">"DAISY: Dynamic Compilation for 100% Architectural Compatibility"</div>
         <div class="authors">Kemal Ebcioğlu, Erik R. Altman</div>
@@ -756,6 +1139,12 @@
             </span>
         </div>
 </li>
+                </ul>
+            </section>
+            <section class="lecture-group" id="lecture-general" data-lecture="general">
+                <h3 class="section-title">General</h3>
+                
+                <ul class="reading-list">
                     <li class="reading-item">        <div class="title">"Retrospective: Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors"</div>
         <div class="authors">Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>ISCA@50 25-Year Retrospective: 1996-2020 (ACM SIGARCH and IEEE TCCA)</i>, 2023</div>
@@ -785,6 +1174,30 @@
             <span class="badge">L2a</span> ISA Design Principles (Sep 21 · optional)
         </div>
 </li>
+                <li class="reading-item" id="wilkes1965slave" data-lectures="L7a">        <div class="title">"Slave Memories and Dynamic Storage Allocation"</div>
+        <div class="authors">Maurice V. Wilkes</div>
+        <div class="venue"><i>IEEE Transactions on Electronic Computers, vol. EC-14, no. 2</i>, 1965</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/PGEC.1965.264263">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="belady1966study" data-lectures="L7a">        <div class="title">"A Study of Replacement Algorithms for a Virtual-Storage Computer"</div>
+        <div class="authors">László A. Belady</div>
+        <div class="venue"><i>IBM Systems Journal, vol. 5, no. 2</i>, 1966</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1147/sj.52.0078">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="tomasulo1967efficient" data-lectures="L4b L5b">        <div class="title">"An Efficient Algorithm for Exploiting Multiple Arithmetic Units"</div>
         <div class="authors">Robert M. Tomasulo</div>
         <div class="venue"><i>IBM Journal of Research and Development, vol. 11, no. 1</i>, 1967</div>
@@ -812,6 +1225,18 @@
         <div class="lectures">Relevant lectures:
             <span class="badge">L3a</span> Performance Evaluation (Sep 24 · optional) · 
             <span class="badge">L5b</span> Tomasulo&#x27;s Algorithm (Oct 8 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="liptay1968structural" data-lectures="L7a">        <div class="title">"Structural Aspects of the System/360 Model 85, II: The Cache"</div>
+        <div class="authors">J. S. Liptay</div>
+        <div class="venue"><i>IBM Systems Journal, vol. 7, no. 1</i>, 1968</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1147/sj.71.0015">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional)
         </div>
 </li>
                 <li class="reading-item" id="dennis1975preliminary" data-lectures="L5a">        <div class="title">"A Preliminary Architecture for a Basic Data-Flow Processor"</div>
@@ -926,6 +1351,66 @@
             <span class="badge">L6b</span> Precise Exceptions, Interrupts, HPS, and Checkpoint Repair (Oct 12 · required)
         </div>
 </li>
+                <li class="reading-item" id="jouppi1990improving" data-lectures="L7b">        <div class="title">"Improving Direct-Mapped Cache Performance by the Addition of a Small Fully-Associative Cache and Prefetch Buffers"</div>
+        <div class="authors">Norman P. Jouppi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1990</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/ISCA.1990.134547">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="baer1991effective" data-lectures="L7b">        <div class="title">"An Effective On-Chip Preloading Scheme to Reduce Data Access Penalty"</div>
+        <div class="authors">Jean-Loup Baer, Tien-Fu Chen</div>
+        <div class="venue">in Proceedings of the <i>ACM/IEEE Conference on Supercomputing (Supercomputing)</i>, 1991</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/125826.125932">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="yeh1991two" data-lectures="L6a">        <div class="title">"Two-Level Adaptive Training Branch Prediction"</div>
+        <div class="authors">Tse-Yu Yeh, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1991</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/123465.123475">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="pan1992improving" data-lectures="L6a">        <div class="title">"Improving the Accuracy of Dynamic Branch Prediction Using Branch Correlation"</div>
+        <div class="authors">Shien-Tai Pan, Kimming So, Joseph T. Rahmeh</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)</i>, 1992</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/143365.143490">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="mcfarling1993combining" data-lectures="L6a">        <div class="title">"Combining Branch Predictors"</div>
+        <div class="authors">Scott McFarling</div>
+        <div class="venue"><i>Digital Western Research Laboratory, Technical Note TN-36</i>, 1993</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://web.archive.org/web/20210225023421/https://www.hpl.hp.com/techreports/Compaq-DEC/WRL-TN-36.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="smith1995microarchitecture" data-lectures="L4b L5a L5b">        <div class="title">"The Microarchitecture of Superscalar Processors"</div>
         <div class="authors">James E. Smith, Gurindar S. Sohi</div>
         <div class="venue"><i>Proceedings of the IEEE, vol. 83, no. 12</i>, 1995</div>
@@ -955,7 +1440,7 @@
             <span class="badge">L3a</span> Performance Evaluation (Sep 24 · optional)
         </div>
 </li>
-                <li class="reading-item" id="ebcioglu1997daisy" data-lectures="general">        <div class="title">"DAISY: Dynamic Compilation for 100% Architectural Compatibility"</div>
+                <li class="reading-item" id="ebcioglu1997daisy" data-lectures="L18b">        <div class="title">"DAISY: Dynamic Compilation for 100% Architectural Compatibility"</div>
         <div class="authors">Kemal Ebcioğlu, Erik R. Altman</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1997</div>
         <div class="links">
@@ -965,6 +1450,45 @@
             <span>Web:
                 <a href="https://research.ibm.com/publications/daisy-dynamic-compilation-for-100percent-architectural-compatibility">[link]</a>
             </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L18b</span> Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW (Dec 7 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="dundas1997improving" data-lectures="L7b">        <div class="title">"Improving Data Cache Performance by Pre-executing Instructions Under a Cache Miss"</div>
+        <div class="authors">James Dundas, Trevor Mudge</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Supercomputing (ICS)</i>, 1997</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/263580.263597">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="sprangle1997agree" data-lectures="L6a">        <div class="title">"The Agree Predictor: A Mechanism for Reducing Negative Branch History Interference"</div>
+        <div class="authors">Eric Sprangle, Robert S. Chappell, Mitch Alsup, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1997</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/264107.264210">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="lee1997bimode" data-lectures="L6a">        <div class="title">"The Bi-Mode Branch Predictor"</div>
+        <div class="authors">Chih-Chieh Lee, I-Cheng K. Chen, Trevor N. Mudge</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 1997</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MICRO.1997.645792">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
         </div>
 </li>
                 <li class="reading-item" id="chrysos1998memory" data-lectures="L5b">        <div class="title">"Memory Dependence Prediction Using Store Sets"</div>
@@ -977,6 +1501,30 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L5b</span> Tomasulo&#x27;s Algorithm (Oct 8 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kessler1999alpha" data-lectures="L6a">        <div class="title">"The Alpha 21264 Microprocessor"</div>
+        <div class="authors">Richard E. Kessler</div>
+        <div class="venue"><i>IEEE Micro, vol. 19, no. 2</i>, 1999</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/40.755465">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="jimenez2001dynamic" data-lectures="L6a">        <div class="title">"Dynamic Branch Prediction with Perceptrons"</div>
+        <div class="authors">Daniel A. Jiménez, Calvin Lin</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2001</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/HPCA.2001.903263">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
         </div>
 </li>
                 <li class="reading-item" id="patt2001requirements" data-lectures="L6b">        <div class="title">"Requirements, Bottlenecks, and Good Fortune: Agents for Microprocessor Evolution"</div>
@@ -1003,7 +1551,49 @@
             <span class="badge">L2a</span> ISA Design Principles (Sep 21 · optional · Chapter 4)
         </div>
 </li>
-                <li class="reading-item" id="harris2007digital" data-lectures="L2a L3a L3a L3b L3b L3b L4b L4b">        <div class="title">"Digital Design and Computer Architecture"</div>
+                <li class="reading-item" id="mutlu2003runahead" data-lectures="L7b">        <div class="title">"Runahead Execution: An Alternative to Very Large Instruction Windows for Out-of-order Processors"</div>
+        <div class="authors">Onur Mutlu, Jared Stark, Chris Wilkerson, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2003</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_hpca03.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_hpca03_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="seznec2006case" data-lectures="L6a">        <div class="title">"A Case for (Partially) TAgged GEometric History Length Branch Prediction"</div>
+        <div class="authors">André Seznec, Pierre Michaud</div>
+        <div class="venue"><i>Journal of Instruction-Level Parallelism (JILP), vol. 8</i>, 2006</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://jilp.org/vol8/v8paper1.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="qureshi2006case" data-lectures="L7a">        <div class="title">"A Case for MLP-Aware Cache Replacement"</div>
+        <div class="authors">Moinuddin K. Qureshi, Daniel N. Lynch, Onur Mutlu, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2006</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/qureshi_isca06.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/qureshi_isca06_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="harris2007digital" data-lectures="L2a L3a L3a L3b L3b L3b L4b L4b L7a L7a L7a">        <div class="title">"Digital Design and Computer Architecture"</div>
         <div class="authors">David Harris, Sarah Harris</div>
         <div class="venue"><i>Morgan Kaufmann</i>, 2007</div>
         <div class="links">
@@ -1019,10 +1609,40 @@
             <span class="badge">L3b</span> In-Order Pipelined CPU Design (Sep 24 · required · Chapter 7.4) · 
             <span class="badge">L3b</span> In-Order Pipelined CPU Design (Sep 24 · required · Chapter 7.5) · 
             <span class="badge">L4b</span> Out-of-Order Pipeline Design (Oct 5 · optional · Chapter 7.8) · 
-            <span class="badge">L4b</span> Out-of-Order Pipeline Design (Oct 5 · optional · Chapter 7.9)
+            <span class="badge">L4b</span> Out-of-Order Pipeline Design (Oct 5 · optional · Chapter 7.9) · 
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional · Chapter 8.1) · 
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional · Chapter 8.2) · 
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional · Chapter 8.3)
         </div>
 </li>
-                <li class="reading-item" id="hennessy2012computer" data-lectures="L1b L2a L2b L3a L4a L4b L4b L4b L4b L4b L4b L4b L4b L5a L5a L5b L5b L5b">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition"</div>
+                <li class="reading-item" id="srinath2007feedback" data-lectures="L7b">        <div class="title">"Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers"</div>
+        <div class="authors">Santhosh Srinath, Onur Mutlu, Hyesoon Kim, Yale N. Patt</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2007</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/srinath_hpca07.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/srinath_hpca07_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kim2012case" data-lectures="L9">        <div class="title">"A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM"</div>
+        <div class="authors">Yoongu Kim, Vivek Seshadri, Donghyuk Lee, Jamie Liu, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/salp-dram_isca12.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="hennessy2012computer" data-lectures="L1b L2a L2b L3a L4a L4b L4b L4b L4b L4b L4b L4b L4b L5a L5a L5b L5b L5b L6a L6b L6b L7a L7a L7a L7a L7b L9 L9">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition"</div>
         <div class="authors">John L. Hennessy, David A. Patterson</div>
         <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
         <div class="links">
@@ -1049,7 +1669,29 @@
             <span class="badge">L5a</span> A Deeper Look into Out-of-Order Pipeline Design (Oct 8 · required · Chapter 3.6) · 
             <span class="badge">L5b</span> Tomasulo&#x27;s Algorithm (Oct 8 · required · Chapter 3.4) · 
             <span class="badge">L5b</span> Tomasulo&#x27;s Algorithm (Oct 8 · required · Chapter 3.5) · 
-            <span class="badge">L5b</span> Tomasulo&#x27;s Algorithm (Oct 8 · required · Appendix C.7)
+            <span class="badge">L5b</span> Tomasulo&#x27;s Algorithm (Oct 8 · required · Appendix C.7) · 
+            <span class="badge">L6a</span> Branch Prediction (Oct 12 · required · Chapter 3.3) · 
+            <span class="badge">L6b</span> Precise Exceptions, Interrupts, HPS, and Checkpoint Repair (Oct 12 · required · Chapter 3.6) · 
+            <span class="badge">L6b</span> Precise Exceptions, Interrupts, HPS, and Checkpoint Repair (Oct 12 · required · Appendix C.4) · 
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · required · Appendix B.1) · 
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · required · Appendix B.2) · 
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · required · Appendix B.3) · 
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · required · Chapter 2) · 
+            <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · required · Chapter 2.2) · 
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · required · Chapter 2.3) · 
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · required · Appendix B.1)
+        </div>
+</li>
+                <li class="reading-item" id="liu2012raidr" data-lectures="L9">        <div class="title">"RAIDR: Retention-Aware Intelligent DRAM Refresh"</div>
+        <div class="authors">Jamie Liu, Ben Jaiyen, Richard Veras, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/raidr-dram-refresh_isca12.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
         </div>
 </li>
                 <li class="reading-item" id="lee2013tiered" data-lectures="L1b">        <div class="title">"Tiered-Latency DRAM: A Low Latency and Low Cost DRAM Architecture"</div>
@@ -1084,6 +1726,50 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kim2014memory" data-lectures="L7a">        <div class="title">"Memory Systems"</div>
+        <div class="authors">Yoongu Kim, Onur Mutlu</div>
+        <div class="venue"><i>Computing Handbook, 3rd Edition: Computer Science and Software Engineering, CRC Press</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-systems-introduction_computing-handbook14.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L7a</span> Cache Organization (Oct 15 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="qureshi2015avatar" data-lectures="L9">        <div class="title">"AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems"</div>
+        <div class="authors">Moinuddin K. Qureshi, Dae-Hyun Kim, Samira Khan, Prashant J. Nair, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="meza2015revisiting" data-lectures="L9">        <div class="title">"Revisiting Memory Errors in Large-Scale Production Data Centers: Analysis and Modeling of New Trends from the Field"</div>
+        <div class="authors">Justin Meza, Qiang Wu, Sanjeev Kumar, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
         </div>
 </li>
                 <li class="reading-item" id="jouppi2017indatacenter" data-lectures="L1b">        <div class="title">"In-Datacenter Performance Analysis of a Tensor Processing Unit"</div>
