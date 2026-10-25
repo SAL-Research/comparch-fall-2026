@@ -216,16 +216,31 @@ module.exports = {
             { 
               title: 'Branch Prediction', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6a-branch_prediction-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6a-branch_prediction-before_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6a-branch_prediction-before_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2012computer', part: 'Chapter 3.3'}
+              ],
+              optional_readings: [
+                'yeh1991two',
+                'pan1992improving',
+                'mcfarling1993combining',
+                'lee1997bimode',
+                'sprangle1997agree',
+                'kessler1999alpha',
+                'jimenez2001dynamic',
+                'seznec2006case'
+              ]
             },
             { 
               title: 'Precise Exceptions, Interrupts, HPS, and Checkpoint Repair', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6b-precise_exceptions_interrupts_hps_and_checkpoint_repair-before_lecture.pptx', 
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l6b-precise_exceptions_interrupts_hps_and_checkpoint_repair-before_lecture.pdf',
               required_readings: [
-                'smith1988implementing', 
-                'patt1985hps', 
-                'hwu1987checkpoint'
+                'smith1988implementing',
+                'patt1985hps',
+                'hwu1987checkpoint',
+                { key: 'hennessy2012computer', part: 'Chapter 3.6'},
+                { key: 'hennessy2012computer', part: 'Appendix C.4'}
               ],
               optional_readings: [
                 'patt1985critical',
@@ -243,12 +258,38 @@ module.exports = {
             { 
               title: 'Cache Organization', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7a-cache_organization-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7a-cache_organization-before_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7a-cache_organization-before_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2012computer', part: 'Appendix B.1'},
+                { key: 'hennessy2012computer', part: 'Appendix B.2'},
+                { key: 'hennessy2012computer', part: 'Appendix B.3'},
+                { key: 'hennessy2012computer', part: 'Chapter 2'}
+              ],
+              optional_readings: [
+                { key: 'harris2007digital', part: 'Chapter 8.1'},
+                { key: 'harris2007digital', part: 'Chapter 8.2'},
+                { key: 'harris2007digital', part: 'Chapter 8.3'},
+                'kim2014memory',
+                'wilkes1965slave',
+                'liptay1968structural',
+                'belady1966study',
+                'qureshi2006case'
+              ]
             },
-            { 
-              title: 'Prefetching and Runahead Execution', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7b-prefetching_and_runahead_execution-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7b-prefetching_and_runahead_execution-before_lecture.pdf'
+            {
+              title: 'Prefetching and Runahead Execution',
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7b-prefetching_and_runahead_execution-before_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l7b-prefetching_and_runahead_execution-before_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2012computer', part: 'Chapter 2.2'}
+              ],
+              optional_readings: [
+                'jouppi1990improving',
+                'baer1991effective',
+                'srinath2007feedback',
+                'dundas1997improving',
+                'mutlu2003runahead'
+              ]
             },
           ],
         },
@@ -282,13 +323,19 @@ module.exports = {
             { 
               title: 'DRAM Architecture', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9a-dram_architecture-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9a-dram_architecture-before_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9a-dram_architecture-before_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2012computer', part: 'Chapter 2.3'},
+                { key: 'hennessy2012computer', part: 'Appendix B.1'}
+              ],
+              optional_readings: [
+                'kim2012case',
+                'meza2015revisiting',
+                'liu2012raidr',
+                'qureshi2015avatar'
+              ]
             },
-            { 
-              title: 'Memory Controllers', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9b-memory_controllers-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l9b-memory_controllers-before_lecture.pdf'
-            },
+            // Memory Controllers: not reached on Oct 22 (DRAM Architecture took the whole day) -> Oct 26
             // { title: 'Dataflow and VLIW', pptx: 'TBA', pdf: 'TBA', video: 'TBA',
             // //   optional_readings: ['ebcioglu1997daisy']
             // },
@@ -301,14 +348,18 @@ module.exports = {
       ],
     },
     {
-      theme: 'Memory Request Scheduling',
+      theme: 'Memory Controllers',
       days: [
         {
           date: 'Oct 26',
           video: 'TBA',
           lectures: [
-            { title: 'Memory Request Scheduling II', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA'},
+            {
+              title: 'Memory Controllers and Memory Request Scheduling',
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-before_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-before_lecture.pdf'
+            },
+            // Memory Consistency moved after the midterm (Dec 7)
           ],
         },
         {
@@ -319,7 +370,7 @@ module.exports = {
       ],
     },
     {
-      theme: 'Multi-Core Architectures, Parallelism, and GPUs',
+      theme: 'Multi-Core Architectures and Cache Coherence',
       days: [
         {
           date: 'Nov 2',
@@ -332,9 +383,7 @@ module.exports = {
           lectures: [
             { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA'},
             { title: "Cache Coherence", pptx: 'TBA', pdf: 'TBA'},
-            // { title: "Parallelism, Heterogeneity, Flynn's Taxonomy", pptx: 'TBA', pdf: 'TBA'},
-            // GPU moved after the midterm (decided 2026-10-19); destination day TBD
-            // { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA'},
+            // Parallelism/Flynn and GPU moved after the midterm (Dec 7, Dec 10)
           ],
           events: [
             { type: 'assigned', hw: 'hw3' },
@@ -433,22 +482,24 @@ module.exports = {
       ],
     },
     {
-      theme: 'System on Chip',
+      theme: 'Parallelism, Heterogeneity, and GPUs',
       days: [
         {
           date: 'Dec 7',
           video: 'TBA',
           lectures: [
-            { title: 'Accelerators, Systolic Arrays', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Neuromorphic Computation', pptx: 'TBA', pdf: 'TBA'},
+            { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA'},
+            { title: "Parallelism, Heterogeneity, Flynn's Taxonomy, VLIW", pptx: 'TBA', pdf: 'TBA',
+              optional_readings: ['ebcioglu1997daisy'] },
           ],
         },
         {
           date: 'Dec 10',
           video: 'TBA',
           lectures: [
+            { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA'},
             { title: 'On-Chip Networks', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Interrupts and Polling', pptx: 'TBA', pdf: 'TBA'},
+            // { title: 'Interrupts and Polling', pptx: 'TBA', pdf: 'TBA'},  // interrupts covered in L6b
           ]
         },
       ],
@@ -460,16 +511,18 @@ module.exports = {
           date: 'Dec 14',
           video: 'TBA',
           lectures: [
+            { title: 'Accelerators, Systolic Arrays', pptx: 'TBA', pdf: 'TBA'},
             { title: 'Neural Networks and LLM Accelerators', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Architecture Solutions to Bioinformatics Workloads', pptx: 'TBA', pdf: 'TBA'},
+            // { title: 'Neuromorphic Computation', pptx: 'TBA', pdf: 'TBA'},
           ],
         },
         {
           date: 'Dec 17',
           video: 'TBA',
           lectures: [
-            { title: 'Agent-based Simulations', pptx: 'TBA', pdf: 'TBA'},
+            { title: 'Architecture Solutions to Bioinformatics Workloads', pptx: 'TBA', pdf: 'TBA'},
             { title: 'Graph Accelerators', pptx: 'TBA', pdf: 'TBA'},
+            // { title: 'Agent-based Simulations', pptx: 'TBA', pdf: 'TBA'},
           ],
           events: [{ type: 'due', hw: 'hw4' }],
         },

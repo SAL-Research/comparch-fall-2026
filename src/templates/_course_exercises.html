@@ -26,6 +26,7 @@
             {{#if exercises.intro}}<p class="mt-3">{{{ exercises.intro }}}</p>{{/if}}
             {{#each exercises.sections}}
             <h3 class="section-title">{{ this.title }}</h3>
+            {{#if this.note}}<p>{{{ this.note }}}</p>{{/if}}
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead><tr><th>Exam</th><th>Questions</th><th>Solutions</th></tr></thead>

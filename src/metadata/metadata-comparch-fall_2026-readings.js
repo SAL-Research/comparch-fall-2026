@@ -496,7 +496,338 @@ module.exports = {
       resources: [
         { resourcename: 'Video', links: [{ fileformat: 'youtube', url: 'https://www.youtube.com/live/9BrfnZgdNos' }] },
       ],
-    }
+    },
+    {
+      key: 'yeh1991two',
+      title: 'Two-Level Adaptive Training Branch Prediction',
+      authors: [
+        { firstname: 'Tse-Yu', lastname: 'Yeh' },
+        { firstname: 'Yale N.', lastname: 'Patt' },
+      ],
+      year: 1991,
+      venue: 'International Symposium on Microarchitecture (MICRO)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/123465.123475' }] },
+      ],
+    },
+    {
+      key: 'pan1992improving',
+      title: 'Improving the Accuracy of Dynamic Branch Prediction Using Branch Correlation',
+      authors: [
+        { firstname: 'Shien-Tai', lastname: 'Pan' },
+        { firstname: 'Kimming', lastname: 'So' },
+        { firstname: 'Joseph T.', lastname: 'Rahmeh' },
+      ],
+      year: 1992,
+      venue: 'International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/143365.143490' }] },
+      ],
+    },
+    {
+      key: 'mcfarling1993combining',
+      title: 'Combining Branch Predictors',
+      authors: [
+        { firstname: 'Scott', lastname: 'McFarling' },
+      ],
+      year: 1993,
+      venue: 'Digital Western Research Laboratory, Technical Note TN-36',
+      type: 'report',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://web.archive.org/web/20210225023421/https://www.hpl.hp.com/techreports/Compaq-DEC/WRL-TN-36.pdf' }] },
+      ],
+    },
+    {
+      key: 'lee1997bimode',
+      title: 'The Bi-Mode Branch Predictor',
+      authors: [
+        { firstname: 'Chih-Chieh', lastname: 'Lee' },
+        { firstname: 'I-Cheng K.', lastname: 'Chen' },
+        { firstname: 'Trevor N.', lastname: 'Mudge' },
+      ],
+      year: 1997,
+      venue: 'International Symposium on Microarchitecture (MICRO)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/MICRO.1997.645792' }] },
+      ],
+    },
+    {
+      key: 'sprangle1997agree',
+      title: 'The Agree Predictor: A Mechanism for Reducing Negative Branch History Interference',
+      authors: [
+        { firstname: 'Eric', lastname: 'Sprangle' },
+        { firstname: 'Robert S.', lastname: 'Chappell' },
+        { firstname: 'Mitch', lastname: 'Alsup' },
+        { firstname: 'Yale N.', lastname: 'Patt' },
+      ],
+      year: 1997,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/264107.264210' }] },
+      ],
+    },
+    {
+      key: 'kessler1999alpha',
+      title: 'The Alpha 21264 Microprocessor',
+      authors: [
+        { firstname: 'Richard E.', lastname: 'Kessler' },
+      ],
+      year: 1999,
+      venue: 'IEEE Micro, vol. 19, no. 2',
+      type: 'journal',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/40.755465' }] },
+      ],
+    },
+    {
+      key: 'jimenez2001dynamic',
+      title: 'Dynamic Branch Prediction with Perceptrons',
+      authors: [
+        { firstname: 'Daniel A.', lastname: 'Jiménez' },
+        { firstname: 'Calvin', lastname: 'Lin' },
+      ],
+      year: 2001,
+      venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA.2001.903263' }] },
+      ],
+    },
+    {
+      key: 'seznec2006case',
+      title: 'A Case for (Partially) TAgged GEometric History Length Branch Prediction',
+      authors: [
+        { firstname: 'André', lastname: 'Seznec' },
+        { firstname: 'Pierre', lastname: 'Michaud' },
+      ],
+      year: 2006,
+      venue: 'Journal of Instruction-Level Parallelism (JILP), vol. 8',
+      type: 'journal',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://jilp.org/vol8/v8paper1.pdf' }] },
+      ],
+    },
+    {
+      key: 'kim2014memory',
+      title: 'Memory Systems',
+      authors: [
+        { firstname: 'Yoongu', lastname: 'Kim' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2014,
+      venue: 'Computing Handbook, 3rd Edition: Computer Science and Software Engineering, CRC Press',
+      type: 'book chapter',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/memory-systems-introduction_computing-handbook14.pdf' }] },
+      ],
+    },
+    {
+      key: 'wilkes1965slave',
+      title: 'Slave Memories and Dynamic Storage Allocation',
+      authors: [
+        { firstname: 'Maurice V.', lastname: 'Wilkes' },
+      ],
+      year: 1965,
+      venue: 'IEEE Transactions on Electronic Computers, vol. EC-14, no. 2',
+      type: 'journal',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/PGEC.1965.264263' }] },
+      ],
+    },
+    {
+      key: 'liptay1968structural',
+      title: 'Structural Aspects of the System/360 Model 85, II: The Cache',
+      authors: [
+        { firstname: 'J. S.', lastname: 'Liptay' },
+      ],
+      year: 1968,
+      venue: 'IBM Systems Journal, vol. 7, no. 1',
+      type: 'journal',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1147/sj.71.0015' }] },
+      ],
+    },
+    {
+      key: 'belady1966study',
+      title: 'A Study of Replacement Algorithms for a Virtual-Storage Computer',
+      authors: [
+        { firstname: 'László A.', lastname: 'Belady' },
+      ],
+      year: 1966,
+      venue: 'IBM Systems Journal, vol. 5, no. 2',
+      type: 'journal',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1147/sj.52.0078' }] },
+      ],
+    },
+    {
+      key: 'qureshi2006case',
+      title: 'A Case for MLP-Aware Cache Replacement',
+      authors: [
+        { firstname: 'Moinuddin K.', lastname: 'Qureshi' },
+        { firstname: 'Daniel N.', lastname: 'Lynch' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+        { firstname: 'Yale N.', lastname: 'Patt' },
+      ],
+      year: 2006,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/qureshi_isca06.pdf' }] },
+        { resourcename: 'Presentation', links: [{ fileformat: 'ppt', url: 'https://people.inf.ethz.ch/omutlu/pub/qureshi_isca06_talk.ppt' }] },
+      ],
+    },
+    {
+      key: 'jouppi1990improving',
+      title: 'Improving Direct-Mapped Cache Performance by the Addition of a Small Fully-Associative Cache and Prefetch Buffers',
+      authors: [
+        { firstname: 'Norman P.', lastname: 'Jouppi' },
+      ],
+      year: 1990,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/ISCA.1990.134547' }] },
+      ],
+    },
+    {
+      key: 'baer1991effective',
+      title: 'An Effective On-Chip Preloading Scheme to Reduce Data Access Penalty',
+      authors: [
+        { firstname: 'Jean-Loup', lastname: 'Baer' },
+        { firstname: 'Tien-Fu', lastname: 'Chen' },
+      ],
+      year: 1991,
+      venue: 'ACM/IEEE Conference on Supercomputing (Supercomputing)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/125826.125932' }] },
+      ],
+    },
+    {
+      key: 'srinath2007feedback',
+      title: 'Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers',
+      authors: [
+        { firstname: 'Santhosh', lastname: 'Srinath' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+        { firstname: 'Hyesoon', lastname: 'Kim' },
+        { firstname: 'Yale N.', lastname: 'Patt' },
+      ],
+      year: 2007,
+      venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/srinath_hpca07.pdf' }] },
+        { resourcename: 'Presentation', links: [{ fileformat: 'ppt', url: 'https://people.inf.ethz.ch/omutlu/pub/srinath_hpca07_talk.ppt' }] },
+      ],
+    },
+    {
+      key: 'dundas1997improving',
+      title: 'Improving Data Cache Performance by Pre-executing Instructions Under a Cache Miss',
+      authors: [
+        { firstname: 'James', lastname: 'Dundas' },
+        { firstname: 'Trevor', lastname: 'Mudge' },
+      ],
+      year: 1997,
+      venue: 'International Conference on Supercomputing (ICS)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/263580.263597' }] },
+      ],
+    },
+    {
+      key: 'mutlu2003runahead',
+      title: 'Runahead Execution: An Alternative to Very Large Instruction Windows for Out-of-order Processors',
+      authors: [
+        { firstname: 'Onur', lastname: 'Mutlu' },
+        { firstname: 'Jared', lastname: 'Stark' },
+        { firstname: 'Chris', lastname: 'Wilkerson' },
+        { firstname: 'Yale N.', lastname: 'Patt' },
+      ],
+      year: 2003,
+      venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/mutlu_hpca03.pdf' }] },
+        { resourcename: 'Presentation', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/mutlu_hpca03_talk.pdf' }] },
+      ],
+    },
+    {
+      key: 'kim2012case',
+      title: 'A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM',
+      authors: [
+        { firstname: 'Yoongu', lastname: 'Kim' },
+        { firstname: 'Vivek', lastname: 'Seshadri' },
+        { firstname: 'Donghyuk', lastname: 'Lee' },
+        { firstname: 'Jamie', lastname: 'Liu' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2012,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/salp-dram_isca12.pdf' }] },
+      ],
+    },
+    {
+      key: 'meza2015revisiting',
+      title: 'Revisiting Memory Errors in Large-Scale Production Data Centers: Analysis and Modeling of New Trends from the Field',
+      authors: [
+        { firstname: 'Justin', lastname: 'Meza' },
+        { firstname: 'Qiang', lastname: 'Wu' },
+        { firstname: 'Sanjeev', lastname: 'Kumar' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2015,
+      venue: 'International Conference on Dependable Systems and Networks (DSN)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15.pdf' }] },
+        { resourcename: 'Presentation', links: [
+          { fileformat: 'pptx', url: 'https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15-talk.pptx' },
+          { fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/memory-errors-at-facebook_dsn15-talk.pdf' }] },
+      ],
+    },
+    {
+      key: 'liu2012raidr',
+      title: 'RAIDR: Retention-Aware Intelligent DRAM Refresh',
+      authors: [
+        { firstname: 'Jamie', lastname: 'Liu' },
+        { firstname: 'Ben', lastname: 'Jaiyen' },
+        { firstname: 'Richard', lastname: 'Veras' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2012,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/raidr-dram-refresh_isca12.pdf' }] },
+      ],
+    },
+    {
+      key: 'qureshi2015avatar',
+      title: 'AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems',
+      authors: [
+        { firstname: 'Moinuddin K.', lastname: 'Qureshi' },
+        { firstname: 'Dae-Hyun', lastname: 'Kim' },
+        { firstname: 'Samira', lastname: 'Khan' },
+        { firstname: 'Prashant J.', lastname: 'Nair' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2015,
+      venue: 'International Conference on Dependable Systems and Networks (DSN)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15.pdf' }] },
+        { resourcename: 'Presentation', links: [
+          { fileformat: 'pptx', url: 'https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pptx' },
+          { fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pdf' }] },
+      ],
+    },
 
   ],
 };
