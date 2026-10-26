@@ -352,14 +352,22 @@ module.exports = {
       days: [
         {
           date: 'Oct 26',
-          video: 'TBA',
+          video: 'https://www.youtube.com/live/m1mMMoQsJRg?si=d6tB786jhftBiq6S',
           lectures: [
             {
               title: 'Memory Controllers and Memory Request Scheduling',
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-before_lecture.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-before_lecture.pdf'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-after_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-after_lecture.pdf'
+              required_readings: [
+                { key: 'hennessy2012computer', part: 'Chapter 2.3'}
+              ],
+              optional_readings: [
+                'liu2012raidr',
+                'qureshi2015avatar',
+                'ipek2010self',
+                'hassan2019memory'
+              ]
             },
-            // Memory Consistency moved after the midterm (Dec 7)
           ],
         },
         {
