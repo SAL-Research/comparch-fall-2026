@@ -357,15 +357,15 @@ module.exports = {
             {
               title: 'Memory Controllers and Memory Request Scheduling',
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-after_lecture.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-after_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l10-memory_controllers-after_lecture.pdf',
               required_readings: [
                 { key: 'hennessy2012computer', part: 'Chapter 2.3'}
               ],
               optional_readings: [
                 'liu2012raidr',
                 'qureshi2015avatar',
-                'ipek2010self',
-                'hassan2019memory'
+                'ipek2008self',
+                'hassan2024self'
               ]
             },
           ],

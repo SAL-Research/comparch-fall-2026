@@ -828,6 +828,39 @@ module.exports = {
           { fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pdf' }] },
       ],
     },
+    {
+      key: 'ipek2008self',
+      title: 'Self-Optimizing Memory Controllers: A Reinforcement Learning Approach',
+      authors: [
+        { firstname: 'Engin', lastname: 'Ipek' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+        { firstname: 'José F.', lastname: 'Martínez' },
+        { firstname: 'Rich', lastname: 'Caruana' },
+      ],
+      year: 2008,
+      venue: 'International Symposium on Computer Architecture (ISCA)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.inf.ethz.ch/omutlu/pub/rlmc_isca08.pdf' }] },
+      ],
+    },
+    {
+      key: 'hassan2024self',
+      title: 'Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations',
+      authors: [
+        { firstname: 'Hasan', lastname: 'Hassan' },
+        { firstname: 'Ataberk', lastname: 'Olgun' },
+        { firstname: 'A. Giray', lastname: 'Yağlıkçı' },
+        { firstname: 'Haocong', lastname: 'Luo' },
+        { firstname: 'Onur', lastname: 'Mutlu' },
+      ],
+      year: 2024,
+      venue: 'International Symposium on Microarchitecture (MICRO)',
+      type: 'conference',
+      resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/2207.13358' }] },
+      ],
+    },
 
   ],
 };
