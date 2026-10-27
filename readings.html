@@ -78,6 +78,7 @@
                 <option value="L7a">L7a — Cache Organization</option>
                 <option value="L7b">L7b — Prefetching and Runahead Execution</option>
                 <option value="L9">L9 — DRAM Architecture</option>
+                <option value="L10">L10 — Memory Controllers and Memory Request Scheduling</option>
                 <option value="L18b">L18b — Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW</option>
                 <option value="general">General</option>
             </select>
@@ -1123,6 +1124,65 @@
 </li>
                 </ul>
             </section>
+            <section class="lecture-group" id="lecture-L10" data-lecture="L10">
+                <h3 class="section-title">L10: Memory Controllers and Memory Request Scheduling <span class="text-muted fw-normal">(Oct 26)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition" <span class="text-muted fw-normal">— Chapter 2.3</span></div>
+        <div class="authors">John L. Hennessy, David A. Patterson</div>
+        <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
+        <div class="links">
+            <span>Book:
+                <a href="https://books.google.com.tr/books/about/Computer_Architecture.html?id&#x3D;v3-1hVwHnHwC&amp;redir_esc&#x3D;y">[link]</a>
+                <a href="https://shop.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8">[link]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"RAIDR: Retention-Aware Intelligent DRAM Refresh"</div>
+        <div class="authors">Jamie Liu, Ben Jaiyen, Richard Veras, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/raidr-dram-refresh_isca12.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems"</div>
+        <div class="authors">Moinuddin K. Qureshi, Dae-Hyun Kim, Samira Khan, Prashant J. Nair, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/avatar-dram-refresh_dsn15-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Self-Optimizing Memory Controllers: A Reinforcement Learning Approach"</div>
+        <div class="authors">Engin Ipek, Onur Mutlu, José F. Martínez, Rich Caruana</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2008</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rlmc_isca08.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations"</div>
+        <div class="authors">Hasan Hassan, Ataberk Olgun, A. Giray Yağlıkçı, Haocong Luo, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2207.13358">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
             <section class="lecture-group" id="lecture-L18b" data-lecture="L18b">
                 <h3 class="section-title">L18b: Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW <span class="text-muted fw-normal">(Dec 7)</span></h3>
                 <h4 class="h6 text-muted mt-2">Optional</h4>
@@ -1630,6 +1690,18 @@
             <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · optional)
         </div>
 </li>
+                <li class="reading-item" id="ipek2008self" data-lectures="L10">        <div class="title">"Self-Optimizing Memory Controllers: A Reinforcement Learning Approach"</div>
+        <div class="authors">Engin Ipek, Onur Mutlu, José F. Martínez, Rich Caruana</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2008</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rlmc_isca08.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="kim2012case" data-lectures="L9">        <div class="title">"A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM"</div>
         <div class="authors">Yoongu Kim, Vivek Seshadri, Donghyuk Lee, Jamie Liu, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
@@ -1642,7 +1714,7 @@
             <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
         </div>
 </li>
-                <li class="reading-item" id="hennessy2012computer" data-lectures="L1b L2a L2b L3a L4a L4b L4b L4b L4b L4b L4b L4b L4b L5a L5a L5b L5b L5b L6a L6b L6b L7a L7a L7a L7a L7b L9 L9">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition"</div>
+                <li class="reading-item" id="hennessy2012computer" data-lectures="L1b L2a L2b L3a L4a L4b L4b L4b L4b L4b L4b L4b L4b L5a L5a L5b L5b L5b L6a L6b L6b L7a L7a L7a L7a L7b L9 L9 L10">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition"</div>
         <div class="authors">John L. Hennessy, David A. Patterson</div>
         <div class="venue"><i>Morgan Kaufmann</i>, 2012</div>
         <div class="links">
@@ -1679,10 +1751,11 @@
             <span class="badge">L7a</span> Cache Organization (Oct 15 · required · Chapter 2) · 
             <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · required · Chapter 2.2) · 
             <span class="badge">L9</span> DRAM Architecture (Oct 22 · required · Chapter 2.3) · 
-            <span class="badge">L9</span> DRAM Architecture (Oct 22 · required · Appendix B.1)
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · required · Appendix B.1) · 
+            <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · required · Chapter 2.3)
         </div>
 </li>
-                <li class="reading-item" id="liu2012raidr" data-lectures="L9">        <div class="title">"RAIDR: Retention-Aware Intelligent DRAM Refresh"</div>
+                <li class="reading-item" id="liu2012raidr" data-lectures="L9 L10">        <div class="title">"RAIDR: Retention-Aware Intelligent DRAM Refresh"</div>
         <div class="authors">Jamie Liu, Ben Jaiyen, Richard Veras, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
         <div class="links">
@@ -1691,7 +1764,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional) · 
+            <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
         </div>
 </li>
                 <li class="reading-item" id="lee2013tiered" data-lectures="L1b">        <div class="title">"Tiered-Latency DRAM: A Low Latency and Low Cost DRAM Architecture"</div>
@@ -1740,7 +1814,7 @@
             <span class="badge">L7a</span> Cache Organization (Oct 15 · optional)
         </div>
 </li>
-                <li class="reading-item" id="qureshi2015avatar" data-lectures="L9">        <div class="title">"AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems"</div>
+                <li class="reading-item" id="qureshi2015avatar" data-lectures="L9 L10">        <div class="title">"AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems"</div>
         <div class="authors">Moinuddin K. Qureshi, Dae-Hyun Kim, Samira Khan, Prashant J. Nair, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
         <div class="links">
@@ -1753,7 +1827,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional) · 
+            <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
         </div>
 </li>
                 <li class="reading-item" id="meza2015revisiting" data-lectures="L9">        <div class="title">"Revisiting Memory Errors in Large-Scale Production Data Centers: Analysis and Modeling of New Trends from the Field"</div>
@@ -1807,6 +1882,18 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L6b</span> Precise Exceptions, Interrupts, HPS, and Checkpoint Repair (Oct 12 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="hassan2024self" data-lectures="L10">        <div class="title">"Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations"</div>
+        <div class="authors">Hasan Hassan, Ataberk Olgun, A. Giray Yağlıkçı, Haocong Luo, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2207.13358">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
         </div>
 </li>
                 <li class="reading-item" id="madhav2026spec" data-lectures="L3a">        <div class="title">"SPEC CPU: The Next Generation"</div>
