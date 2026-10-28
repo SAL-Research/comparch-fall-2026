@@ -382,8 +382,15 @@ module.exports = {
       days: [
         {
           date: 'Nov 2',
-          video: 'TBA',
-          note: 'No lecture (Conference Conflict)'
+          video: 'https://youtu.be/_nxpZFPdfkI',
+          note: 'No live lecture, watch the video.',
+          lectures: [
+            { 
+              title: 'Critical Paper Reviews', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l11-paper_review-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l11-paper_review-after_lecture.pdf'
+            },
+          ]
         },
         {
           date: 'Nov 5',
