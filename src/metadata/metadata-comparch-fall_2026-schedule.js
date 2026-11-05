@@ -394,14 +394,14 @@ module.exports = {
         },
         {
           date: 'Nov 5',
-          video: 'TBA',
+          video: 'https://youtube.com/live/0xuOmbjl0esgit',
           lectures: [
-            { title: 'Multi-Core Architecture', pptx: 'TBA', pdf: 'TBA'},
-            { title: "Cache Coherence", pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'Memory Scheduling', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-before_lecture.pdf', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-before_lecture.pdf'
+            },
             // Parallelism/Flynn and GPU moved after the midterm (Dec 7, Dec 10)
-          ],
-          events: [
-            { type: 'assigned', hw: 'hw3' },
           ],
         },
         {
@@ -429,6 +429,12 @@ module.exports = {
           video: 'TBA',
           exam: 'Midterm Exam',
         },
+        {
+          date: 'Nov 15',
+          events: [
+            { type: 'assigned', hw: 'hw3' },
+          ]
+        }
       ],
     },
     {
@@ -438,15 +444,14 @@ module.exports = {
           date: 'Nov 16',
           video: 'TBA',
           lectures: [
-            { title: 'Data Retention and Refresh', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Read Disturbance I: RowHammer, RowPress, and ColumnDisturb', pptx: 'TBA', pdf: 'TBA'},
+            { title: 'DRAM Read Disturbance: RowHammer, RowPress, and ColumnDisturb', pptx: 'TBA', pdf: 'TBA'},
           ],
         },
         {
           date: 'Nov 19',
           video: 'TBA',
           lectures: [
-            { title: 'Read Disturbance II: Mitigations', pptx: 'TBA', pdf: 'TBA'},
+            { title: 'DRAM Read Disturbance Mitigations', pptx: 'TBA', pdf: 'TBA'},
             { title: 'Memory Performance and Cold Boot Attacks', pptx: 'TBA', pdf: 'TBA'},
           ]
         },
