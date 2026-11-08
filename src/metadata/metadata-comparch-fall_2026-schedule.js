@@ -398,8 +398,8 @@ module.exports = {
           lectures: [
             { 
               title: 'Memory Scheduling', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-before_lecture.pdf', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-before_lecture.pdf'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-after_lecture.pdf'
             },
             // Parallelism/Flynn and GPU moved after the midterm (Dec 7, Dec 10)
           ],
@@ -431,6 +431,7 @@ module.exports = {
         },
         {
           date: 'Nov 15',
+          video: 'TBA',
           events: [
             { type: 'assigned', hw: 'hw3' },
           ]
