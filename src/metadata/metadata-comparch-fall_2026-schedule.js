@@ -419,9 +419,14 @@ module.exports = {
       days: [
         {
           date: 'Nov 9',
-          video: 'TBA',
+          video: 'https://youtube.com/live/TanAqIGhdv8',
           lectures: [
-            { number: 'LR1', title: 'Review Session', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              number: 'LR1', 
+              title: 'Review Session', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-lr1-review_session-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-lr1-review_session-before_lecture.pdf'
+            },
           ],
         },
         {
