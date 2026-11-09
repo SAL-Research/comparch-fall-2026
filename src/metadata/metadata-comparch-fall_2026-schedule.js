@@ -378,7 +378,7 @@ module.exports = {
       ],
     },
     {
-      theme: 'Multi-Core Architectures and Cache Coherence',
+      theme: 'Memory Scheduling and Critical Paper Reviews',
       days: [
         {
           date: 'Nov 2',
