@@ -394,12 +394,25 @@ module.exports = {
         },
         {
           date: 'Nov 5',
-          video: 'https://youtube.com/live/0xuOmbjl0esgit',
+          video: 'https://youtube.com/live/0xuOmbjl0es',
           lectures: [
             { 
               title: 'Memory Scheduling', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-after_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-after_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l12-memory_scheduling-after_lecture.pdf',
+              optional_readings: [
+                'moscibroda2007memory',
+                'rixner2000memory',
+                'mutlu2007stall',
+                'mutlu2008parallelism',
+                'kim2010atlas',
+                'kim2010thread',
+                'muralidhara2011reducing',
+                'subramanian2014blacklisting',
+                'eyerman2008system',
+                'esmailidokht2024mess',
+                'bostanci2026cleaning'
+              ]
             },
             // Parallelism/Flynn and GPU moved after the midterm (Dec 7, Dec 10)
           ],
