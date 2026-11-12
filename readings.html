@@ -79,6 +79,7 @@
                 <option value="L7b">L7b — Prefetching and Runahead Execution</option>
                 <option value="L9">L9 — DRAM Architecture</option>
                 <option value="L10">L10 — Memory Controllers and Memory Request Scheduling</option>
+                <option value="L12">L12 — Memory Scheduling</option>
                 <option value="L19b">L19b — Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW</option>
                 <option value="general">General</option>
             </select>
@@ -1183,6 +1184,141 @@
 </li>
                 </ul>
             </section>
+            <section class="lecture-group" id="lecture-L12" data-lecture="L12">
+                <h3 class="section-title">L12: Memory Scheduling <span class="text-muted fw-normal">(Nov 5)</span></h3>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Memory Performance Attacks: Denial of Memory Service in Multi-Core Systems"</div>
+        <div class="authors">Thomas Moscibroda, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>USENIX Security Symposium</i>, 2007</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mph_usenix_security07.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_usenix-security07_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Memory Access Scheduling"</div>
+        <div class="authors">Scott Rixner, William J. Dally, Ujval J. Kapasi, Peter Mattson, John D. Owens</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2000</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/339647.339668">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Stall-Time Fair Memory Access Scheduling for Chip Multiprocessors"</div>
+        <div class="authors">Onur Mutlu, Thomas Moscibroda</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2007</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/stfm_micro07.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_micro07_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Parallelism-Aware Batch Scheduling: Enhancing both Performance and Fairness of Shared DRAM Systems"</div>
+        <div class="authors">Onur Mutlu, Thomas Moscibroda</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2008</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/parbs_isca08.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_isca08_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"ATLAS: A Scalable and High-Performance Scheduling Algorithm for Multiple Memory Controllers"</div>
+        <div class="authors">Yoongu Kim, Dongsu Han, Onur Mutlu, Mor Harchol-Balter</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2010</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/atlas_hpca10.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/kim_hpca10_talk.pptx">[pptx]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Thread Cluster Memory Scheduling: Exploiting Differences in Memory Access Behavior"</div>
+        <div class="authors">Yoongu Kim, Michael Papamichael, Onur Mutlu, Mor Harchol-Balter</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2010</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/tcm_micro10.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/kim_micro10_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/kim_micro10_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Reducing Memory Interference in Multicore Systems via Application-Aware Memory Channel Partitioning"</div>
+        <div class="authors">Sai Prashanth Muralidhara, Lavanya Subramanian, Onur Mutlu, Mahmut Kandemir, Thomas Moscibroda</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2011</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-channel-partitioning-micro11.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"The Blacklisting Memory Scheduler: Achieving High Performance and Fairness at Low Cost"</div>
+        <div class="authors">Lavanya Subramanian, Donghyuk Lee, Vivek Seshadri, Harsha Rastogi, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Computer Design (ICCD)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss-memory-scheduler_iccd14.pdf">[pdf]</a>
+            </span>
+            <span>Paper (extended IEEE TPDS 2016 version):
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss-memory-scheduler_ieee-tpds16.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss_lavanya_iccd14-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss_lavanya_iccd14-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"System-Level Performance Metrics for Multiprogram Workloads"</div>
+        <div class="authors">Stijn Eyerman, Lieven Eeckhout</div>
+        <div class="venue"><i>IEEE Micro, vol. 28, no. 3</i>, 2008</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MM.2008.44">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"A Mess of Memory System Benchmarking, Simulation and Application Profiling"</div>
+        <div class="authors">Pouya Esmaili-Dokht, Francesco Sgherzi, Valéria Soldera Girelli, Isaac Boixaderas, Mariana Carmin, Alireza Monemi, Adrià Armejach, Estanislao Mercadal, Germán Llort, Petar Radojković, Miquel Moretó, Judit Giménez, Xavier Martorell, Eduard Ayguadé, Jesus Labarta, Emanuele Confalonieri, Rishabh Dubey, Jason Adlard</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MICRO61859.2024.00020">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Cleaning up the Mess: Re-Evaluating the Real-System Modeling Accuracy of Ramulator 2.0"</div>
+        <div class="authors">F. Nisa Bostancı, Haocong Luo, Ataberk Olgun, Maria Makeenkova, Geraldo F. de Oliveira, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Performance Analysis of Systems and Software (ISPASS)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2510.15744">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CUTMess_ispass26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CUTMess_ispass26-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/Cleaning-up-the-Mess">[github]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
             <section class="lecture-group" id="lecture-L19b" data-lecture="L19b">
                 <h3 class="section-title">L19b: Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW <span class="text-muted fw-normal">(Dec 7)</span></h3>
                 <h4 class="h6 text-muted mt-2">Optional</h4>
@@ -1575,6 +1711,18 @@
             <span class="badge">L6a</span> Branch Prediction (Oct 12 · optional)
         </div>
 </li>
+                <li class="reading-item" id="rixner2000memory" data-lectures="L12">        <div class="title">"Memory Access Scheduling"</div>
+        <div class="authors">Scott Rixner, William J. Dally, Ujval J. Kapasi, Peter Mattson, John D. Owens</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2000</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/339647.339668">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="jimenez2001dynamic" data-lectures="L6a">        <div class="title">"Dynamic Branch Prediction with Perceptrons"</div>
         <div class="authors">Daniel A. Jiménez, Calvin Lin</div>
         <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2001</div>
@@ -1690,6 +1838,51 @@
             <span class="badge">L7b</span> Prefetching and Runahead Execution (Oct 15 · optional)
         </div>
 </li>
+                <li class="reading-item" id="moscibroda2007memory" data-lectures="L12">        <div class="title">"Memory Performance Attacks: Denial of Memory Service in Multi-Core Systems"</div>
+        <div class="authors">Thomas Moscibroda, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>USENIX Security Symposium</i>, 2007</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mph_usenix_security07.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_usenix-security07_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="mutlu2007stall" data-lectures="L12">        <div class="title">"Stall-Time Fair Memory Access Scheduling for Chip Multiprocessors"</div>
+        <div class="authors">Onur Mutlu, Thomas Moscibroda</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2007</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/stfm_micro07.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_micro07_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="mutlu2008parallelism" data-lectures="L12">        <div class="title">"Parallelism-Aware Batch Scheduling: Enhancing both Performance and Fairness of Shared DRAM Systems"</div>
+        <div class="authors">Onur Mutlu, Thomas Moscibroda</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2008</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/parbs_isca08.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/mutlu_isca08_talk.ppt">[ppt]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="ipek2008self" data-lectures="L10">        <div class="title">"Self-Optimizing Memory Controllers: A Reinforcement Learning Approach"</div>
         <div class="authors">Engin Ipek, Onur Mutlu, José F. Martínez, Rich Caruana</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2008</div>
@@ -1700,6 +1893,61 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="eyerman2008system" data-lectures="L12">        <div class="title">"System-Level Performance Metrics for Multiprogram Workloads"</div>
+        <div class="authors">Stijn Eyerman, Lieven Eeckhout</div>
+        <div class="venue"><i>IEEE Micro, vol. 28, no. 3</i>, 2008</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MM.2008.44">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kim2010atlas" data-lectures="L12">        <div class="title">"ATLAS: A Scalable and High-Performance Scheduling Algorithm for Multiple Memory Controllers"</div>
+        <div class="authors">Yoongu Kim, Dongsu Han, Onur Mutlu, Mor Harchol-Balter</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2010</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/atlas_hpca10.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/kim_hpca10_talk.pptx">[pptx]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kim2010thread" data-lectures="L12">        <div class="title">"Thread Cluster Memory Scheduling: Exploiting Differences in Memory Access Behavior"</div>
+        <div class="authors">Yoongu Kim, Michael Papamichael, Onur Mutlu, Mor Harchol-Balter</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2010</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/tcm_micro10.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/kim_micro10_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/kim_micro10_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="muralidhara2011reducing" data-lectures="L12">        <div class="title">"Reducing Memory Interference in Multicore Systems via Application-Aware Memory Channel Partitioning"</div>
+        <div class="authors">Sai Prashanth Muralidhara, Lavanya Subramanian, Onur Mutlu, Mahmut Kandemir, Thomas Moscibroda</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2011</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/memory-channel-partitioning-micro11.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
         </div>
 </li>
                 <li class="reading-item" id="kim2012case" data-lectures="L9">        <div class="title">"A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM"</div>
@@ -1814,6 +2062,25 @@
             <span class="badge">L7a</span> Cache Organization (Oct 15 · optional)
         </div>
 </li>
+                <li class="reading-item" id="subramanian2014blacklisting" data-lectures="L12">        <div class="title">"The Blacklisting Memory Scheduler: Achieving High Performance and Fairness at Low Cost"</div>
+        <div class="authors">Lavanya Subramanian, Donghyuk Lee, Vivek Seshadri, Harsha Rastogi, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Computer Design (ICCD)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss-memory-scheduler_iccd14.pdf">[pdf]</a>
+            </span>
+            <span>Paper (extended IEEE TPDS 2016 version):
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss-memory-scheduler_ieee-tpds16.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss_lavanya_iccd14-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/bliss_lavanya_iccd14-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="qureshi2015avatar" data-lectures="L9 L10">        <div class="title">"AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems"</div>
         <div class="authors">Moinuddin K. Qureshi, Dae-Hyun Kim, Samira Khan, Prashant J. Nair, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
@@ -1872,6 +2139,18 @@
             </span>
         </div>
 </li>
+                <li class="reading-item" id="esmailidokht2024mess" data-lectures="L12">        <div class="title">"A Mess of Memory System Benchmarking, Simulation and Application Profiling"</div>
+        <div class="authors">Pouya Esmaili-Dokht, Francesco Sgherzi, Valéria Soldera Girelli, Isaac Boixaderas, Mariana Carmin, Alireza Monemi, Adrià Armejach, Estanislao Mercadal, Germán Llort, Petar Radojković, Miquel Moretó, Judit Giménez, Xavier Martorell, Eduard Ayguadé, Jesus Labarta, Emanuele Confalonieri, Rishabh Dubey, Jason Adlard</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MICRO61859.2024.00020">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="patt2024randomthoughts" data-lectures="L6b">        <div class="title">"Random Thoughts after 60 years in the trenches"</div>
         <div class="authors">Yale Patt</div>
         <div class="venue"><i>EFCL Summer School</i>, 2024</div>
@@ -1894,6 +2173,25 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="bostanci2026cleaning" data-lectures="L12">        <div class="title">"Cleaning up the Mess: Re-Evaluating the Real-System Modeling Accuracy of Ramulator 2.0"</div>
+        <div class="authors">F. Nisa Bostancı, Haocong Luo, Ataberk Olgun, Maria Makeenkova, Geraldo F. de Oliveira, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Performance Analysis of Systems and Software (ISPASS)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2510.15744">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CUTMess_ispass26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CUTMess_ispass26-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/Cleaning-up-the-Mess">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
         </div>
 </li>
                 <li class="reading-item" id="madhav2026spec" data-lectures="L3a">        <div class="title">"SPEC CPU: The Next Generation"</div>
