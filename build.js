@@ -34,6 +34,11 @@ const homeworksDir = path.join(assetsDir, 'homeworks');
 handlebars.registerHelper('eq', (a, b) => a === b);
 // A link field is "real" when it is set and not the 'TBA' placeholder.
 handlebars.registerHelper('real', v => !!v && v !== 'TBA');
+// Author list shortened to the first `max` authors + "et al." (bonus paper list).
+handlebars.registerHelper('authorsShort', (authors, max) => {
+  const names = (authors || []).map(a => `${a.firstname} ${a.lastname}`);
+  return names.length > max ? `${names.slice(0, max).join(', ')}, et al.` : names.join(', ');
+});
 handlebars.registerHelper('or', function () {
   const args = Array.prototype.slice.call(arguments, 0, -1);
   return args.some(arg => !!arg);
@@ -147,6 +152,28 @@ function prepareCourseMetadata(metadata) {
     metadata.readings_by_year = metadata.readings
       .slice()
       .sort((a, b) => (a.year - b.year) || a.title.localeCompare(b.title));
+
+    // Bonus-HW paper list (homeworks.html#bonus-papers): readings flagged
+    // `bonus: true`, each listed once under the first lecture it belongs to,
+    // in schedule order.
+    const lectureOrder = {};
+    (metadata.readings_by_lecture || []).forEach((g, i) => { lectureOrder[g.number] = i; });
+    const bonusGroups = [];
+    const groupByNumber = {};
+    metadata.readings
+      .filter(r => r.bonus)
+      .map(r => ({ reading: r, lecture: r.relevant_lectures[0] || { number: 'general', title: 'General', date: null } }))
+      .sort((a, b) => ((lectureOrder[a.lecture.number] ?? 1e9) - (lectureOrder[b.lecture.number] ?? 1e9))
+        || (a.reading.year - b.reading.year) || a.reading.title.localeCompare(b.reading.title))
+      .forEach(({ reading, lecture }) => {
+        if (!groupByNumber[lecture.number]) {
+          groupByNumber[lecture.number] = { number: lecture.number, title: lecture.title, date: lecture.date, papers: [] };
+          bonusGroups.push(groupByNumber[lecture.number]);
+        }
+        groupByNumber[lecture.number].papers.push(reading);
+      });
+    metadata.bonus_paper_groups = bonusGroups;
+    metadata.bonus_paper_count = bonusGroups.reduce((n, g) => n + g.papers.length, 0);
   }
 
   return metadata;

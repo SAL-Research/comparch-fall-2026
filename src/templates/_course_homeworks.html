@@ -30,7 +30,7 @@
                     {{#each homeworks}}
                     <tr>
                         <td>{{ this.id }}</td>
-                        <td>{{ this.topic }}</td>
+                        <td>{{ this.topic }}{{#if this.list_anchor}} (<a href="#{{ this.list_anchor }}">paper list</a>){{/if}}</td>
                         <td>{{ this.assigned }}</td>
                         <td>{{ this.deadline }}</td>
                         <td>{{#if (eq this.handout "TBA")}}TBA{{else}}<a href="{{ this.handout }}"><i class="fa fa-file-pdf"></i> Handout</a>{{/if}}</td>
@@ -43,6 +43,34 @@
             </table>
         </div>
         {{#if homework_note}}<p><em>{{{ homework_note }}}</em></p>{{/if}}
+
+        {{#if bonus_paper_groups.length}}
+        <h2 class="section-title" id="bonus-papers">Bonus HW: Paper List</h2>
+        <div class="alert alert-warning mt-3" role="note">
+            <strong>This list is dynamic.</strong> We add new papers as we make progress in the lectures.
+            Check the list before you choose a paper. You may review any paper that is on the list at the time you submit.
+            {{#if bonus_list_updated}}<br><strong>Last updated:</strong> {{ bonus_list_updated }} · {{ bonus_paper_count }} papers{{/if}}
+        </div>
+        <p>Write the <strong>paper key</strong> (e.g., <code>kim2014flipping</code>) in your review and in the file name
+            <code>review_&lt;studentID&gt;_&lt;paperkey&gt;.pdf</code>. The rules are in the bonus HW handout.</p>
+        {{#each bonus_paper_groups}}
+        <h3 class="h6 mt-4">{{#if (eq this.number "general")}}{{ this.title }}{{else}}{{ this.number }}: {{ this.title }}{{#if this.date}} <span class="text-muted fw-normal">({{ this.date }})</span>{{/if}}{{/if}}</h3>
+        <div class="table-responsive">
+            <table class="table table-sm align-middle bonus-papers">
+                <thead><tr><th style="width:12rem">Paper key</th><th>Paper</th><th style="width:4rem">PDF</th></tr></thead>
+                <tbody>
+                    {{#each this.papers}}
+                    <tr id="bonus-{{ this.key }}">
+                        <td><code>{{ this.key }}</code></td>
+                        <td>"{{ this.title }}"<br><small class="text-muted">{{ authorsShort this.authors 6 }} · <i>{{ this.venue }}</i>, {{ this.year }}</small></td>
+                        <td>{{#each this.resources}}{{#if (eq this.resourcename "Paper")}}{{#each this.links}}{{#if @first}}<a href="{{ this.url }}"><i class="fa fa-file-pdf"></i></a>{{/if}}{{/each}}{{/if}}{{/each}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        {{/each}}
+        {{/if}}
         </div>
         <div class="col-12 col-lg-4 col-xl-3">
             {{> sidebar }}

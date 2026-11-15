@@ -16,6 +16,10 @@
 //     ] },
 //   ],
 
+// `bonus: true` puts a reading on the bonus-HW paper list (homeworks.html#bonus-papers).
+// The list is dynamic: add the flag when the paper's lecture is delivered, and update
+// `bonus_list_updated` in metadata-comparch-fall_2026.js.
+
 module.exports = {
   readings: [
     {
@@ -64,6 +68,7 @@ module.exports = {
     },
     {
       key: 'patt1985critical',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Critical Issues Regarding HPS, a High Performance Microarchitecture',
       authors: [
         { firstname: 'Yale N.', lastname: 'Patt' },
@@ -108,6 +113,7 @@ module.exports = {
     },
     {
       key: 'ebcioglu1997daisy',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'DAISY: Dynamic Compilation for 100% Architectural Compatibility',
       authors: [
         { firstname: 'Kemal', lastname: 'Ebcioğlu'},
@@ -165,6 +171,7 @@ module.exports = {
     },
     {
       key: 'jouppi2017indatacenter',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'In-Datacenter Performance Analysis of a Tensor Processing Unit',
       authors: [
         { firstname: 'Norman P.', lastname: 'Jouppi' },
@@ -267,6 +274,7 @@ module.exports = {
     },
     {
       key: 'lee2013tiered',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Tiered-Latency DRAM: A Low Latency and Low Cost DRAM Architecture',
       authors: [
         { firstname: 'Donghyuk', lastname: 'Lee' },
@@ -300,6 +308,7 @@ module.exports = {
     },
     {
       key: 'kim2014flipping',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors',
       authors: [
         { firstname: 'Yoongu', lastname: 'Kim' },
@@ -400,6 +409,7 @@ module.exports = {
     },
     {
       key: 'gonzalez1996energy',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Energy Dissipation in General Purpose Microprocessors',
       authors: [
         { firstname: 'Ricardo', lastname: 'Gonzalez' },
@@ -443,6 +453,7 @@ module.exports = {
     },
     {
       key: 'chrysos1998memory',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Memory Dependence Prediction Using Store Sets',
       authors: [
         { firstname: 'George Z.', lastname: 'Chrysos' },
@@ -471,6 +482,7 @@ module.exports = {
     },
     {
       key: 'gurd1985manchester',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'The Manchester Prototype Dataflow Computer',
       authors: [
         { firstname: 'John R.', lastname: 'Gurd' },
@@ -513,6 +525,7 @@ module.exports = {
     },
     {
       key: 'pan1992improving',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Improving the Accuracy of Dynamic Branch Prediction Using Branch Correlation',
       authors: [
         { firstname: 'Shien-Tai', lastname: 'Pan' },
@@ -528,6 +541,7 @@ module.exports = {
     },
     {
       key: 'mcfarling1993combining',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Combining Branch Predictors',
       authors: [
         { firstname: 'Scott', lastname: 'McFarling' },
@@ -541,6 +555,7 @@ module.exports = {
     },
     {
       key: 'lee1997bimode',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'The Bi-Mode Branch Predictor',
       authors: [
         { firstname: 'Chih-Chieh', lastname: 'Lee' },
@@ -556,6 +571,7 @@ module.exports = {
     },
     {
       key: 'sprangle1997agree',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'The Agree Predictor: A Mechanism for Reducing Negative Branch History Interference',
       authors: [
         { firstname: 'Eric', lastname: 'Sprangle' },
@@ -585,6 +601,7 @@ module.exports = {
     },
     {
       key: 'jimenez2001dynamic',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Dynamic Branch Prediction with Perceptrons',
       authors: [
         { firstname: 'Daniel A.', lastname: 'Jiménez' },
@@ -599,6 +616,7 @@ module.exports = {
     },
     {
       key: 'seznec2006case',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'A Case for (Partially) TAgged GEometric History Length Branch Prediction',
       authors: [
         { firstname: 'André', lastname: 'Seznec' },
@@ -640,6 +658,7 @@ module.exports = {
     },
     {
       key: 'liptay1968structural',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Structural Aspects of the System/360 Model 85, II: The Cache',
       authors: [
         { firstname: 'J. S.', lastname: 'Liptay' },
@@ -653,6 +672,7 @@ module.exports = {
     },
     {
       key: 'belady1966study',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'A Study of Replacement Algorithms for a Virtual-Storage Computer',
       authors: [
         { firstname: 'László A.', lastname: 'Belady' },
@@ -666,6 +686,7 @@ module.exports = {
     },
     {
       key: 'qureshi2006case',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'A Case for MLP-Aware Cache Replacement',
       authors: [
         { firstname: 'Moinuddin K.', lastname: 'Qureshi' },
@@ -683,6 +704,7 @@ module.exports = {
     },
     {
       key: 'jouppi1990improving',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Improving Direct-Mapped Cache Performance by the Addition of a Small Fully-Associative Cache and Prefetch Buffers',
       authors: [
         { firstname: 'Norman P.', lastname: 'Jouppi' },
@@ -696,6 +718,7 @@ module.exports = {
     },
     {
       key: 'baer1991effective',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'An Effective On-Chip Preloading Scheme to Reduce Data Access Penalty',
       authors: [
         { firstname: 'Jean-Loup', lastname: 'Baer' },
@@ -710,6 +733,7 @@ module.exports = {
     },
     {
       key: 'srinath2007feedback',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Feedback Directed Prefetching: Improving the Performance and Bandwidth-Efficiency of Hardware Prefetchers',
       authors: [
         { firstname: 'Santhosh', lastname: 'Srinath' },
@@ -727,6 +751,7 @@ module.exports = {
     },
     {
       key: 'dundas1997improving',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Improving Data Cache Performance by Pre-executing Instructions Under a Cache Miss',
       authors: [
         { firstname: 'James', lastname: 'Dundas' },
@@ -741,6 +766,7 @@ module.exports = {
     },
     {
       key: 'mutlu2003runahead',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Runahead Execution: An Alternative to Very Large Instruction Windows for Out-of-order Processors',
       authors: [
         { firstname: 'Onur', lastname: 'Mutlu' },
@@ -758,6 +784,7 @@ module.exports = {
     },
     {
       key: 'kim2012case',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM',
       authors: [
         { firstname: 'Yoongu', lastname: 'Kim' },
@@ -775,6 +802,7 @@ module.exports = {
     },
     {
       key: 'meza2015revisiting',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Revisiting Memory Errors in Large-Scale Production Data Centers: Analysis and Modeling of New Trends from the Field',
       authors: [
         { firstname: 'Justin', lastname: 'Meza' },
@@ -794,6 +822,7 @@ module.exports = {
     },
     {
       key: 'liu2012raidr',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'RAIDR: Retention-Aware Intelligent DRAM Refresh',
       authors: [
         { firstname: 'Jamie', lastname: 'Liu' },
@@ -810,6 +839,7 @@ module.exports = {
     },
     {
       key: 'qureshi2015avatar',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'AVATAR: A Variable-Retention-Time (VRT) Aware Refresh for DRAM Systems',
       authors: [
         { firstname: 'Moinuddin K.', lastname: 'Qureshi' },
@@ -830,6 +860,7 @@ module.exports = {
     },
     {
       key: 'ipek2008self',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Self-Optimizing Memory Controllers: A Reinforcement Learning Approach',
       authors: [
         { firstname: 'Engin', lastname: 'Ipek' },
@@ -846,6 +877,7 @@ module.exports = {
     },
     {
       key: 'hassan2024self',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations',
       authors: [
         { firstname: 'Hasan', lastname: 'Hassan' },
@@ -863,6 +895,7 @@ module.exports = {
     },
     {
       key: 'moscibroda2007memory',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Memory Performance Attacks: Denial of Memory Service in Multi-Core Systems',
       authors: [
         { firstname: 'Thomas', lastname: 'Moscibroda' },
@@ -895,6 +928,7 @@ module.exports = {
     },
     {
       key: 'mutlu2007stall',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Stall-Time Fair Memory Access Scheduling for Chip Multiprocessors',
       authors: [
         { firstname: 'Onur', lastname: 'Mutlu' },
@@ -910,6 +944,7 @@ module.exports = {
     },
     {
       key: 'mutlu2008parallelism',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Parallelism-Aware Batch Scheduling: Enhancing both Performance and Fairness of Shared DRAM Systems',
       authors: [
         { firstname: 'Onur', lastname: 'Mutlu' },
@@ -925,6 +960,7 @@ module.exports = {
     },
     {
       key: 'kim2010atlas',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'ATLAS: A Scalable and High-Performance Scheduling Algorithm for Multiple Memory Controllers',
       authors: [
         { firstname: 'Yoongu', lastname: 'Kim' },
@@ -942,6 +978,7 @@ module.exports = {
     },
     {
       key: 'kim2010thread',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Thread Cluster Memory Scheduling: Exploiting Differences in Memory Access Behavior',
       authors: [
         { firstname: 'Yoongu', lastname: 'Kim' },
@@ -961,6 +998,7 @@ module.exports = {
     },
     {
       key: 'muralidhara2011reducing',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Reducing Memory Interference in Multicore Systems via Application-Aware Memory Channel Partitioning',
       authors: [
         { firstname: 'Sai Prashanth', lastname: 'Muralidhara' },
@@ -978,6 +1016,7 @@ module.exports = {
     },
     {
       key: 'subramanian2014blacklisting',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'The Blacklisting Memory Scheduler: Achieving High Performance and Fairness at Low Cost',
       authors: [
         { firstname: 'Lavanya', lastname: 'Subramanian' },
@@ -1043,6 +1082,7 @@ module.exports = {
     },
     {
       key: 'bostanci2026cleaning',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Cleaning up the Mess: Re-Evaluating the Real-System Modeling Accuracy of Ramulator 2.0',
       authors: [
         { firstname: 'F. Nisa', lastname: 'Bostancı' },

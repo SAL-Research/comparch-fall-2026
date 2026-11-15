@@ -87,13 +87,15 @@ module.exports = {
   },
 
   homework_intro: 'Four homework assignments (40% total) plus one bonus homework. Handouts, git repositories, and submission links will be posted here when each homework is assigned.',
-  homework_note: 'You lose 10\% of your grade for each week late. Late submission cut-off for all homeworks: December 27, 2026, 23:59 (Ankara time).',
+  homework_note: 'You lose 10\% of your grade for each week late. Late submission cut-off for all homeworks: December 27, 2026, 23:59 (Ankara time). The bonus homework has no late submissions: its deadline is the cut-off.',
+  // Date shown on the bonus-HW paper list; update it whenever a reading gets `bonus: true`.
+  bonus_list_updated: 'November 16, 2026',
   homeworks: [
     { key: 'hw1', id: 'HW 1', topic: 'In-Order Pipeline', assigned: 'Sep 25', deadline: 'Oct 18', handout: 'TBA', repo: 'TBA', submission: 'https://moodle.bilkent.edu.tr/current/mod/assign/view.php?id=21222&forceview=1', discussion: 'https://github.com/SAL-Research/comparch-fall-2026/discussions/categories/hw1' },
     { key: 'hw2', id: 'HW 2', topic: 'Predicting the Future: Branch Prediction and Prefetching', assigned: 'Oct 23', deadline: 'Nov 8', handout: 'https://github.com/SAL-Research/cs423-fall2026-homeworks/blob/main/hw2/handout.pdf', repo: 'https://github.com/SAL-Research/cs423-fall2026-homeworks/tree/main/hw2', submission: 'https://moodle.bilkent.edu.tr/current/mod/assign/view.php?id=30624', discussion: 'https://github.com/SAL-Research/comparch-fall-2026/discussions/categories/hw2' },
     { key: 'hw3', id: 'HW 3', topic: 'Main Memory: DRAM and Memory Request Scheduling', assigned: 'Nov 5', deadline: 'Nov 26', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
     { key: 'hw4', id: 'HW 4', topic: 'Memory Robustness: Refresh and Read Disturbance', assigned: 'Nov 26', deadline: 'Dec 17', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
-    { key: 'bonus1', id: 'Bonus HW', topic: 'Paper Reviews', assigned: 'Oct 8', deadline: 'Dec 27', handout: 'TBA', repo: 'TBA', submission: 'TBA', discussion: 'TBA' },
+    { key: 'bonus1', id: 'Bonus HW', topic: 'Paper Reviews', list_anchor: 'bonus-papers', assigned: 'Nov 16', deadline: 'Dec 27 (no late submissions)', handout: 'https://github.com/SAL-Research/cs423-fall2026-homeworks/blob/main/bonus1/handout.pdf', repo: 'https://github.com/SAL-Research/cs423-fall2026-homeworks/tree/main/bonus1', submission: 'https://moodle.bilkent.edu.tr/current/mod/assign/view.php?id=35307', discussion: 'TBA' },
   ],
 
   footer_notes: [

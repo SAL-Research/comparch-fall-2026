@@ -465,6 +465,7 @@ module.exports = {
           lectures: [
             { title: 'DRAM Read Disturbance: RowHammer, RowPress, and ColumnDisturb', pptx: 'TBA', pdf: 'TBA'},
           ],
+          events: [{ type: 'assigned', hw: 'bonus1' }],
         },
         {
           date: 'Nov 19',
