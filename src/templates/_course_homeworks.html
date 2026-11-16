@@ -52,7 +52,8 @@
             {{#if bonus_list_updated}}<br><strong>Last updated:</strong> {{ bonus_list_updated }} · {{ bonus_paper_count }} papers{{/if}}
         </div>
         <p>Write the <strong>paper key</strong> (e.g., <code>kim2014flipping</code>) in your review and in the file name
-            <code>review_&lt;studentID&gt;_&lt;paperkey&gt;.pdf</code>. The rules are in the bonus HW handout.</p>
+            <code>review_&lt;studentID&gt;_&lt;paperkey&gt;.pdf</code>. The rules are in the bonus HW handout.
+            Questions go to the <a href="https://github.com/SAL-Research/comparch-fall-2026/discussions/categories/bonus-hw-paper-reviews"><i class="fa fa-comments"></i> Bonus HW discussion forum</a>.</p>
         {{#each bonus_paper_groups}}
         <h3 class="h6 mt-4">{{#if (eq this.number "general")}}{{ this.title }}{{else}}{{ this.number }}: {{ this.title }}{{#if this.date}} <span class="text-muted fw-normal">({{ this.date }})</span>{{/if}}{{/if}}</h3>
         <div class="table-responsive">
