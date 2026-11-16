@@ -446,13 +446,6 @@ module.exports = {
           date: 'Nov 12',
           video: 'TBA',
           exam: 'Midterm Exam',
-        },
-        {
-          date: 'Nov 15',
-          video: 'TBA',
-          events: [
-            { type: 'assigned', hw: 'hw3' },
-          ]
         }
       ],
     },
@@ -461,9 +454,18 @@ module.exports = {
       days: [
         {
           date: 'Nov 16',
-          video: 'TBA',
+          video: 'https://youtube.com/live/ZcFpE7EA-tQ',
           lectures: [
-            { title: 'DRAM Read Disturbance: RowHammer, RowPress, and ColumnDisturb', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'Virtual Memory and TLB', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13a-virtual_memory_and_tlb-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13a-virtual_memory_and_tlb-before_lecture.pdf'
+            },
+            {
+              title: 'DRAM Read Disturbance I: RowHammer',
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-before_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-before_lecture.pdf'
+            }
           ],
           events: [{ type: 'assigned', hw: 'bonus1' }],
         },
