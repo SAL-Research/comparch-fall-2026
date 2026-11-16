@@ -459,15 +459,66 @@ module.exports = {
             { 
               title: 'Virtual Memory and TLB', 
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13a-virtual_memory_and_tlb-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13a-virtual_memory_and_tlb-before_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13a-virtual_memory_and_tlb-before_lecture.pdf',
+              required_readings: [
+                { key: 'hennessy2012computer', part: 'Appendix B.4' },
+                { key: 'hennessy2012computer', part: 'Appendix B.5' },
+                { key: 'hennessy2012computer', part: 'Chapter 2.4' }
+              ],
+              optional_readings: [
+                'zhao2023contiguitas',
+                'kanellopoulos2023utopia',
+                'margaritov2021ptemagnet',
+                'fatima2023vpim',
+                'sonmez2024fleximem',
+                'kanellopoulos2025virtuoso',
+                'gras2017aslr',
+                'gras2018translation',
+                'wang2025peek',
+                'seaborn2015exploiting',
+                'mutlu2023fundamentally'
+              ]
             },
             {
               title: 'DRAM Read Disturbance I: RowHammer',
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-before_lecture.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-before_lecture.pdf'
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-before_lecture.pdf',
+              required_readings: [
+                'kim2014flipping',
+                'mutlu2023fundamentally'
+              ],
+              optional_readings: [
+                'meza2015revisiting',
+                'seaborn2015exploiting',
+                'gruss2016rowhammerjs',
+                'vanderveen2016drammer',
+                'frigo2018grand',
+                'tatar2018throwhammer',
+                'lipp2020nethammer',
+                'kwong2020rambleed',
+                'hong2019terminal',
+                'yao2020deephammer',
+                'kogler2022halfdouble',
+                'loughlin2022moesi',
+                'cojocar2019exploiting',
+                'hassan2021uncovering',
+                'mutlu2019rowhammer',
+                'mutlu2023flipping',
+                'qazi2024soothsayer',
+                'jattke2024zenhammer',
+                'kim2020revisiting',
+                'orosa2021deeper',
+                'yaglikci2022understanding',
+                'olgun2023experimental',
+                'olgun2024read',
+                'yaglikci2024spatial',
+                'yaglikci2024enabling',
+                'olgun2023drambender'
+              ]
             }
           ],
           events: [{ type: 'assigned', hw: 'bonus1' }],
+          note: 'Livestream is broken in the first half of the lecture. Here is a <a href="https://www.youtube.com/live/oEo_kCDwKtE?si=K-HrWNN6tchn_HK2">replacement</a> from one of the virtual memory experts, Konstantinos Kanellopoulos.'
         },
         {
           date: 'Nov 19',
