@@ -437,8 +437,8 @@ module.exports = {
             { 
               number: 'LR1', 
               title: 'Review Session', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-lr1-review_session-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-lr1-review_session-before_lecture.pdf'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-lr1-review_session-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-lr1-review_session-after_lecture.pdf'
             },
           ],
         },
@@ -481,8 +481,8 @@ module.exports = {
             },
             {
               title: 'DRAM Read Disturbance I: RowHammer',
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-before_lecture.pptx',
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-before_lecture.pdf',
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-after_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l13b-dram_read_disturbance_rowhammer-after_lecture.pdf',
               required_readings: [
                 'kim2014flipping',
                 'mutlu2023fundamentally'
