@@ -524,8 +524,8 @@ module.exports = {
           date: 'Nov 19',
           video: 'TBA',
           lectures: [
-            { title: 'DRAM Read Disturbance Mitigations', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Memory Performance and Cold Boot Attacks', pptx: 'TBA', pdf: 'TBA'},
+            { title: 'DRAM Read Disturbance II: RowPress, ColumnDisturb, and Variable Read Disturbance', pptx: 'TBA', pdf: 'TBA'},
+            { title: 'Read Disturbance Mitigations', pptx: 'TBA', pdf: 'TBA'},
           ]
         },
       ],
