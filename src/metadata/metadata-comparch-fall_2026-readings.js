@@ -566,7 +566,7 @@ module.exports = {
       venue: 'International Symposium on Microarchitecture (MICRO)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/MICRO.1997.645792' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://tnm.engin.umich.edu/wp-content/uploads/sites/353/2024/04/1997.12.The_Bi-Mode_Branch_Predictor.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/MICRO.1997.645792' }] },
       ],
     },
     {
@@ -583,7 +583,7 @@ module.exports = {
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/264107.264210' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'ps', url: 'https://web.archive.org/web/20060714005633/http://www.eecs.umich.edu/HPS/pub/agree_isca24.ps' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/264107.264210' }] },
       ],
     },
     {
@@ -611,7 +611,7 @@ module.exports = {
       venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA.2001.903263' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://people.engr.tamu.edu/djimenez/pdfs/hpca7_dist.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA.2001.903263' }] },
       ],
     },
     {
@@ -658,7 +658,6 @@ module.exports = {
     },
     {
       key: 'liptay1968structural',
-      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Structural Aspects of the System/360 Model 85, II: The Cache',
       authors: [
         { firstname: 'J. S.', lastname: 'Liptay' },
@@ -713,7 +712,7 @@ module.exports = {
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/ISCA.1990.134547' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://web.archive.org/web/20220116200142/https://www.hpl.hp.com/techreports/Compaq-DEC/WRL-TN-14.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/ISCA.1990.134547' }] },
       ],
     },
     {
