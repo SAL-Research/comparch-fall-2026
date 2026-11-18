@@ -80,7 +80,7 @@ module.exports = {
       type: 'conference',
       year: 1985,
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/18927.18917' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://dl.acm.org/doi/pdf/10.1145/18927.18917' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/18927.18917' }] },
       ],
     },
     {
@@ -493,7 +493,7 @@ module.exports = {
       venue: 'Communications of the ACM, vol. 28, no. 1',
       type: 'journal',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/2465.2468' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://dl.acm.org/doi/pdf/10.1145/2465.2468' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/2465.2468' }] },
       ],
     },
     {
@@ -536,7 +536,7 @@ module.exports = {
       venue: 'International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/143365.143490' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://dl.acm.org/doi/pdf/10.1145/143365.143490' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/143365.143490' }] },
       ],
     },
     {
@@ -583,7 +583,7 @@ module.exports = {
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'ps', url: 'https://web.archive.org/web/20060714005633/http://www.eecs.umich.edu/HPS/pub/agree_isca24.ps' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/264107.264210' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://dl.acm.org/doi/pdf/10.1145/264107.264210' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/264107.264210' }] },
       ],
     },
     {
@@ -680,7 +680,7 @@ module.exports = {
       venue: 'IBM Systems Journal, vol. 5, no. 2',
       type: 'journal',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1147/sj.52.0078' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://users.informatik.uni-halle.de/~hinnebur/Lehre/Web_DBIIb/uebung3_belady_opt_buffer.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1147/sj.52.0078' }] },
       ],
     },
     {
@@ -727,7 +727,7 @@ module.exports = {
       venue: 'ACM/IEEE Conference on Supercomputing (Supercomputing)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/125826.125932' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://dl.acm.org/doi/pdf/10.1145/125826.125932' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/125826.125932' }] },
       ],
     },
     {
@@ -760,7 +760,7 @@ module.exports = {
       venue: 'International Conference on Supercomputing (ICS)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/263580.263597' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://dl.acm.org/doi/pdf/10.1145/263580.263597' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/263580.263597' }] },
       ],
     },
     {
