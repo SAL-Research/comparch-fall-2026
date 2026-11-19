@@ -524,8 +524,11 @@ module.exports = {
           date: 'Nov 19',
           video: 'TBA',
           lectures: [
-            { title: 'DRAM Read Disturbance II: RowPress, ColumnDisturb, and Variable Read Disturbance', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Read Disturbance Mitigations', pptx: 'TBA', pdf: 'TBA'},
+            {
+              title: 'DRAM Read Disturbance II',
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l14-dram_read_disturbance_ii-before_lecture.pptx',
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l14-dram_read_disturbance_ii-before_lecture.pdf',
+            },
           ]
         },
       ],
