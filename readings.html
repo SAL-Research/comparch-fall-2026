@@ -83,7 +83,9 @@
                 <option value="L12">L12 — Memory Scheduling</option>
                 <option value="L13a">L13a — Virtual Memory and TLB</option>
                 <option value="L13b">L13b — DRAM Read Disturbance I: RowHammer</option>
-                <option value="L19b">L19b — Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW</option>
+                <option value="L14">L14 — DRAM Read Disturbance II</option>
+                <option value="L15">L15 — DRAM Read Disturbance Solutions and Self-Managing DRAM</option>
+                <option value="L16a">L16a — Parallel Execution in Processor-Centric View</option>
             </select>
         </div>
 
@@ -1816,8 +1818,903 @@
 </li>
                 </ul>
             </section>
-            <section class="lecture-group" id="lecture-L19b" data-lecture="L19b">
-                <h3 class="section-title">L19b: Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW <span class="text-muted fw-normal">(Dec 7)</span></h3>
+            <section class="lecture-group" id="lecture-L14" data-lecture="L14">
+                <h3 class="section-title">L14: DRAM Read Disturbance II <span class="text-muted fw-normal">(Nov 19)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"RowPress: Amplifying Read Disturbance in Modern DRAM Chips"</div>
+        <div class="authors">Haocong Luo, Ataberk Olgun, A. Giray Yağlıkçı, Yahya Can Tuğrul, Steve Rhyner, Meryem Banu Cavlak, Joel Lindegger, Mohammad Sadrosadati, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23.pdf">[pdf]</a>
+                <a href="https://arxiv.org/pdf/2306.17061.pdf">[link]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;PMM_XuLDFFo">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/RowPress">[github]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Revisiting RowHammer: An Experimental Analysis of Modern DRAM Devices and Mitigation Techniques"</div>
+        <div class="authors">Jeremie S. Kim, Minesh Patel, A. Giray Yağlıkçı, Hasan Hassan, Roknoddin Azizi, Lois Orosa, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2020</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Revisiting-RowHammer_isca20.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Revisiting-RowHammer_isca20-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Revisiting-RowHammer_isca20-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://youtu.be/Lqxc4_ToMUw">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"A Deeper Look into RowHammer&#x27;s Sensitivities: Experimental Analysis of Real DRAM Chips and Implications on Future Attacks and Defenses"</div>
+        <div class="authors">Lois Orosa, A. Giray Yağlıkçı, Haocong Luo, Ataberk Olgun, Jisung Park, Hasan Hassan, Minesh Patel, Jeremie S. Kim, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ADeeperLookIntoRowhammer_micro21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ADeeperLookIntoRowhammer_micro21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ADeeperLookIntoRowhammer_micro21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;fkM32oA0u6U">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Understanding RowHammer Under Reduced Wordline Voltage: An Experimental Study Using Real DRAM Devices"</div>
+        <div class="authors">A. Giray Yağlıkçı, Haocong Luo, Geraldo F. de Oliveira, Ataberk Olgun, Minesh Patel, Jisung Park, Hasan Hassan, Jeremie S. Kim, Lois Orosa, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2022</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowHammerUnderReducedWordlineVoltage_dsn22.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowHammerUnderReducedWordlineVoltage_dsn22-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowHammerUnderReducedWordlineVoltage_dsn22-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;CJoBROgFbwc">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"An Experimental Analysis of RowHammer in HBM2 DRAM Chips"</div>
+        <div class="authors">Ataberk Olgun, Majd Osseiran, A. Giray Yağlıkçı, Yahya Can Tuğrul, Haocong Luo, Steve Rhyner, Behzad Salami, Juan Gómez-Luna, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN), Disrupt Track</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2305.17918">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HBM_RowHammer_dsn-disrupt23-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HBM_RowHammer_dsn-disrupt23-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;0OkYwavtrMc">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Read Disturbance in High Bandwidth Memory: A Detailed Experimental Study on HBM2 DRAM Chips"</div>
+        <div class="authors">Ataberk Olgun, Majd Osseiran, A. Giray Yağlıkçı, Yahya Can Tuğrul, Haocong Luo, Steve Rhyner, Behzad Salami, Juan Gómez-Luna, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2310.14665">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Spatial Variation-Aware Read Disturbance Defenses: Experimental Analysis of Real DRAM Chips and Implications on Future Solutions"</div>
+        <div class="authors">A. Giray Yağlıkçı, Yahya Can Tuğrul, Geraldo F. de Oliveira, İsmail Emir Yüksel, Ataberk Olgun, Haocong Luo, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2402.18652">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Enabling Efficient and Scalable DRAM Read Disturbance Mitigation via New Experimental Insights into Modern DRAM Chips"</div>
+        <div class="authors">A. Giray Yağlıkçı</div>
+        <div class="venue"><i>PhD Thesis, ETH Zürich</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2408.15044">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://safari.ethz.ch/wp-content/uploads/giray-phd-defense-slides-short.pptx">[pptx]</a>
+                <a href="https://safari.ethz.ch/wp-content/uploads/giray-phd-defense-slides-short.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"DRAM Bender: An Extensible and Versatile FPGA-based Infrastructure to Easily Test State-of-the-art DRAM Chips"</div>
+        <div class="authors">Ataberk Olgun, Hasan Hassan, A. Giray Yağlıkçı, Yahya Can Tuğrul, Lois Orosa, Haocong Luo, Minesh Patel, Oğuz Ergin, Onur Mutlu</div>
+        <div class="venue"><i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2211.05838">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/DRAM-Bender">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+        <div class="authors">Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_isca14.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;KDy632z23UE">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"TRRespass: Exploiting the Many Sides of Target Row Refresh"</div>
+        <div class="authors">Pietro Frigo, Emanuele Vannacci, Hasan Hassan, Victor van der Veen, Onur Mutlu, Cristiano Giuffrida, Herbert Bos, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>IEEE Symposium on Security and Privacy (S&amp;P)</i>, 2020</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;pwRw7QqK_qA">[video]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/vusec/trrespass">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Uncovering In-DRAM RowHammer Protection Mechanisms: A New Methodology, Custom RowHammer Patterns, and Implications"</div>
+        <div class="authors">Hasan Hassan, Yahya Can Tuğrul, Jeremie S. Kim, Victor van der Veen, Kaveh Razavi, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/U-TRR-uncovering-RowHammer-protection-mechanisms_micro21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/U-TRR-uncovering-RowHammer-protection-mechanisms_micro21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/U-TRR-uncovering-RowHammer-protection-mechanisms_micro21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;YkBR9yeLHRs">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"ColumnDisturb: Understanding Column-based Read Disturbance in Real DRAM Chips and Implications for Future Systems"</div>
+        <div class="authors">İsmail Emir Yüksel, Ataberk Olgun, F. Nisa Bostancı, Haocong Luo, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2510.14750">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/columndisturb_micro25_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/columndisturb_micro25_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Variable Read Disturbance: An Experimental Analysis of Temporal Variation in DRAM Read Disturbance"</div>
+        <div class="authors">Ataberk Olgun, F. Nisa Bostancı, İsmail Emir Yüksel, A. Giray Yağlıkçı, Geraldo F. de Oliveira, Haocong Luo, Oğuzhan Canpolat, Minesh Patel, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2502.13075">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/VRD_hpca25-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/VRD_hpca25-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"BlockHammer: Preventing RowHammer at Low Cost by Blacklisting Rapidly-Accessed DRAM Rows"</div>
+        <div class="authors">A. Giray Yağlıkçı, Minesh Patel, Jeremie S. Kim, Roknoddin Azizi, Ataberk Olgun, Lois Orosa, Hasan Hassan, Jisung Park, Konstantinos Kanellopoulos, Taha Shahroodi, Saugata Ghose, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer_preventing-DRAM-rowhammer-at-low-cost_hpca21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer-preventing-rowhammer-at-low-cost-by-blacklisting-rapidly-accessed-dram-rows_hpca21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer-preventing-rowhammer-at-low-cost-by-blacklisting-rapidly-accessed-dram-rows_hpca21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;4Y01N1BhWv4">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/BlockHammer">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"BreakHammer: Enhancing RowHammer Mitigations by Carefully Throttling Suspect Threads"</div>
+        <div class="authors">Oğuzhan Canpolat, A. Giray Yağlıkçı, Ataberk Olgun, İsmail Emir Yüksel, Yahya Can Tuğrul, Konstantinos Kanellopoulos, Oğuz Ergin, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2404.13477">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BreakHammer_micro24-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BreakHammer_micro24-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/BreakHammer">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance"</div>
+        <div class="authors">Oğuzhan Canpolat, A. Giray Yağlıkçı, Geraldo F. de Oliveira, Ataberk Olgun, F. Nisa Bostancı, İsmail Emir Yüksel, Haocong Luo, Oğuz Ergin, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2502.12650">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Chronus_hpca25-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Chronus_hpca25-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/Chronus">[github]</a>
+            </span>
+            <span>Paper (DRAMSec 2024 version):
+                <a href="https://arxiv.org/pdf/2406.19094">[pdf]</a>
+            </span>
+            <span>Slides (DRAMSec 2024 version):
+                <a href="https://safari.ethz.ch/wp-content/uploads/UnderstandingPRAC_slides.pptx">[pptx]</a>
+                <a href="https://safari.ethz.ch/wp-content/uploads/UnderstandingPRAC_slides.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Security Analysis of the Silver Bullet Technique for RowHammer Prevention"</div>
+        <div class="authors">A. Giray Yağlıkçı, Jeremie S. Kim, Fabrice Devaux, Onur Mutlu</div>
+        <div class="venue"><i>arXiv preprint</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2106.07084.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Counter-Based Tree Structure for Row Hammering Mitigation in DRAM"</div>
+        <div class="authors">Seyed Mohammad Seyedzadeh, Alex K. Jones, Rami Melhem</div>
+        <div class="venue"><i>IEEE Computer Architecture Letters (CAL)</i>, 2017</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.cs.pitt.edu/~seyedzadeh/download/CAL16.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense"</div>
+        <div class="authors">Moinuddin K. Qureshi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2026</div>
+        <div class="links">
+            <span>Web:
+                <a href="https://2026.hpca-conf.org/details/hpca-2026-main-conference/12/SALT-Track-and-Mitigate-Subarrays-Not-Rows-for-Blast-Radius-Free-Rowhammer-Defense">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"ColumnKeeper: Efficient Solutions to the ColumnDisturb Vulnerability in DRAM-based Systems"</div>
+        <div class="authors">Andreas Kosmas Kakolyris, F. Nisa Bostancı, Ataberk Olgun, İsmail Emir Yüksel, Harsh Songara, Konstantinos Marios Sgouras, Umut Başer, Konstantinos Kanellopoulos, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2606.22632">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ColumnKeeper-isca26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ColumnKeeper-isca26-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/ColumnKeeper">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+        <div class="authors">Hasan Hassan, Ataberk Olgun, A. Giray Yağlıkçı, Haocong Luo, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2207.13358">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
+            <section class="lecture-group" id="lecture-L15" data-lecture="L15">
+                <h3 class="section-title">L15: DRAM Read Disturbance Solutions and Self-Managing DRAM <span class="text-muted fw-normal">(Nov 23)</span></h3>
+                <h4 class="h6 text-muted mt-2">Required</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+        <div class="authors">Hasan Hassan, Ataberk Olgun, A. Giray Yağlıkçı, Haocong Luo, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2207.13358">[pdf]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+                <h4 class="h6 text-muted mt-2">Optional</h4>
+                <ul class="reading-list">
+                    <li class="reading-item">        <div class="title">"Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+        <div class="authors">Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_isca14.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-row-hammer_kim_talk_isca14.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;KDy632z23UE">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Revisiting RowHammer: An Experimental Analysis of Modern DRAM Devices and Mitigation Techniques"</div>
+        <div class="authors">Jeremie S. Kim, Minesh Patel, A. Giray Yağlıkçı, Hasan Hassan, Roknoddin Azizi, Lois Orosa, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2020</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Revisiting-RowHammer_isca20.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Revisiting-RowHammer_isca20-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Revisiting-RowHammer_isca20-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://youtu.be/Lqxc4_ToMUw">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"RowPress: Amplifying Read Disturbance in Modern DRAM Chips"</div>
+        <div class="authors">Haocong Luo, Ataberk Olgun, A. Giray Yağlıkçı, Yahya Can Tuğrul, Steve Rhyner, Meryem Banu Cavlak, Joel Lindegger, Mohammad Sadrosadati, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23.pdf">[pdf]</a>
+                <a href="https://arxiv.org/pdf/2306.17061.pdf">[link]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;PMM_XuLDFFo">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/RowPress">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"TRRespass: Exploiting the Many Sides of Target Row Refresh"</div>
+        <div class="authors">Pietro Frigo, Emanuele Vannacci, Hasan Hassan, Victor van der Veen, Onur Mutlu, Cristiano Giuffrida, Herbert Bos, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>IEEE Symposium on Security and Privacy (S&amp;P)</i>, 2020</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;pwRw7QqK_qA">[video]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/vusec/trrespass">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Uncovering In-DRAM RowHammer Protection Mechanisms: A New Methodology, Custom RowHammer Patterns, and Implications"</div>
+        <div class="authors">Hasan Hassan, Yahya Can Tuğrul, Jeremie S. Kim, Victor van der Veen, Kaveh Razavi, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/U-TRR-uncovering-RowHammer-protection-mechanisms_micro21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/U-TRR-uncovering-RowHammer-protection-mechanisms_micro21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/U-TRR-uncovering-RowHammer-protection-mechanisms_micro21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;YkBR9yeLHRs">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"ColumnDisturb: Understanding Column-based Read Disturbance in Real DRAM Chips and Implications for Future Systems"</div>
+        <div class="authors">İsmail Emir Yüksel, Ataberk Olgun, F. Nisa Bostancı, Haocong Luo, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2510.14750">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/columndisturb_micro25_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/columndisturb_micro25_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Variable Read Disturbance: An Experimental Analysis of Temporal Variation in DRAM Read Disturbance"</div>
+        <div class="authors">Ataberk Olgun, F. Nisa Bostancı, İsmail Emir Yüksel, A. Giray Yağlıkçı, Geraldo F. de Oliveira, Haocong Luo, Oğuzhan Canpolat, Minesh Patel, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2502.13075">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/VRD_hpca25-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/VRD_hpca25-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance"</div>
+        <div class="authors">Oğuzhan Canpolat, A. Giray Yağlıkçı, Geraldo F. de Oliveira, Ataberk Olgun, F. Nisa Bostancı, İsmail Emir Yüksel, Haocong Luo, Oğuz Ergin, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2502.12650">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Chronus_hpca25-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Chronus_hpca25-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/Chronus">[github]</a>
+            </span>
+            <span>Paper (DRAMSec 2024 version):
+                <a href="https://arxiv.org/pdf/2406.19094">[pdf]</a>
+            </span>
+            <span>Slides (DRAMSec 2024 version):
+                <a href="https://safari.ethz.ch/wp-content/uploads/UnderstandingPRAC_slides.pptx">[pptx]</a>
+                <a href="https://safari.ethz.ch/wp-content/uploads/UnderstandingPRAC_slides.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"CROW: A Low-Cost Substrate for Improving DRAM Performance, Energy Efficiency, and Reliability"</div>
+        <div class="authors">Hasan Hassan, Minesh Patel, Jeremie S. Kim, A. Giray Yağlıkçı, Nandita Vijaykumar, Nika Mansouri Ghiasi, Saugata Ghose, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2019</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CROW-DRAM-substrate-for-performance-energy-reliability_isca19.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CROW-DRAM-substrate-for-performance-energy-reliability_isca19-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CROW-DRAM-substrate-for-performance-energy-reliability_isca19-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;FckbkwW1u_E">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/CROW">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Randomized Row-Swap: Mitigating Row Hammer by Breaking Spatial Correlation between Aggressor and Victim Rows"</div>
+        <div class="authors">Gururaj Saileshwar, Bolin Wang, Moinuddin K. Qureshi, Prashant J. Nair</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)</i>, 2022</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://dl.acm.org/doi/10.1145/3503222.3507716">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"AQUA: Scalable Rowhammer Mitigation by Quarantining Aggressor Rows at Runtime"</div>
+        <div class="authors">Anish Saxena, Gururaj Saileshwar, Prashant J. Nair, Moinuddin K. Qureshi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2022</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MICRO56248.2022.00022">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Scalable and Secure Row-Swap: Efficient and Safe Row Hammer Mitigation in Memory Systems"</div>
+        <div class="authors">Jeonghyun Woo, Gururaj Saileshwar, Prashant J. Nair</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/abs/2212.12613">[link]</a>
+                <a href="https://doi.org/10.1109/HPCA56546.2023.10070999">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"SHADOW: Preventing Row Hammer in DRAM with Intra-Subarray Row Shuffling"</div>
+        <div class="authors">Minbok Wi, Jaehyun Park, Seoyoung Ko, Michael Jaemin Kim, Nam Sung Kim, Eojin Lee, Jung Ho Ahn</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/HPCA56546.2023.10070966">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"RowClone: Fast and Energy-Efficient In-DRAM Bulk Data Copy and Initialization"</div>
+        <div class="authors">Vivek Seshadri, Yoongu Kim, Chris Fallin, Donghyuk Lee, Rachata Ausavarungnirun, Gennady Pekhimenko, Yixin Luo, Onur Mutlu, Michael A. Kozuch, Phillip B. Gibbons, Todd C. Mowry</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2013</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowclone_micro13.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowclone_seshadri_micro13-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowclone_seshadri_micro13-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;FYwOyapck3M">[video]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"CAn&#x27;t Touch This: Software-only Mitigation against Rowhammer Attacks targeting Kernel Memory"</div>
+        <div class="authors">Ferdinand Brasser, Lucas Davi, David Gens, Christopher Liebchen, Ahmad-Reza Sadeghi</div>
+        <div class="venue">in Proceedings of the <i>USENIX Security Symposium</i>, 2017</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-brasser.pdf">[pdf]</a>
+                <a href="https://arxiv.org/pdf/1611.08396.pdf">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"GuardION: Practical Mitigation of DMA-Based Rowhammer Attacks on ARM"</div>
+        <div class="authors">Victor van der Veen, Martina Lindorfer, Yanick Fratantonio, Harikrishnan Padmanabha Pillai, Giovanni Vigna, Christopher Kruegel, Herbert Bos, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)</i>, 2018</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://sites.cs.ucsb.edu/~chris/research/doc/dimva18_guardion.pdf">[pdf]</a>
+                <a href="https://doi.org/10.1007/978-3-319-93411-2_5">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"ZebRAM: Comprehensive and Compatible Software Protection Against Rowhammer Attacks"</div>
+        <div class="authors">Radhesh Krishnan Konoth, Marco Oliverio, Andrei Tatar, Dennis Andriesse, Herbert Bos, Cristiano Giuffrida, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>USENIX Symposium on Operating Systems Design and Implementation (OSDI)</i>, 2018</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://www.usenix.org/system/files/osdi18-konoth.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Siloz: Leveraging DRAM Isolation Domains to Prevent Inter-VM Rowhammer"</div>
+        <div class="authors">Kevin Loughlin, Jonah Rosenblum, Stefan Saroiu, Alec Wolman, Dimitrios Skarlatos, Baris Kasikci</div>
+        <div class="venue">in Proceedings of the <i>ACM Symposium on Operating Systems Principles (SOSP)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/3600006.3613143">[doi]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/efeslab/siloz">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"BlockHammer: Preventing RowHammer at Low Cost by Blacklisting Rapidly-Accessed DRAM Rows"</div>
+        <div class="authors">A. Giray Yağlıkçı, Minesh Patel, Jeremie S. Kim, Roknoddin Azizi, Ataberk Olgun, Lois Orosa, Hasan Hassan, Jisung Park, Konstantinos Kanellopoulos, Taha Shahroodi, Saugata Ghose, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer_preventing-DRAM-rowhammer-at-low-cost_hpca21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer-preventing-rowhammer-at-low-cost-by-blacklisting-rapidly-accessed-dram-rows_hpca21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer-preventing-rowhammer-at-low-cost-by-blacklisting-rapidly-accessed-dram-rows_hpca21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;4Y01N1BhWv4">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/BlockHammer">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Graphene: Strong yet Lightweight Row Hammer Protection"</div>
+        <div class="authors">Yeonhong Park, Woosuk Kwon, Eojin Lee, Tae Jun Ham, Jung Ho Ahn, Jae W. Lee</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2020</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://www.microarch.org/micro53/papers/738300a001.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Hydra: Enabling Low-Overhead Mitigation of Row-Hammer at Ultra-Low Thresholds via Hybrid Tracking"</div>
+        <div class="authors">Moinuddin K. Qureshi, Aditya Rohan, Gururaj Saileshwar, Prashant J. Nair</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2022</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/3470496.3527421">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"REGA: Scalable Rowhammer Mitigation with Refresh-Generating Activations"</div>
+        <div class="authors">Michele Marazzi, Flavien Solt, Patrick Jattke, Kubo Takashi, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>IEEE Symposium on Security and Privacy (S&amp;P)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/SP46215.2023.10179327">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Counter-Based Tree Structure for Row Hammering Mitigation in DRAM"</div>
+        <div class="authors">Seyed Mohammad Seyedzadeh, Alex K. Jones, Rami Melhem</div>
+        <div class="venue"><i>IEEE Computer Architecture Letters (CAL)</i>, 2017</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.cs.pitt.edu/~seyedzadeh/download/CAL16.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"TWiCe: Preventing Row-Hammering by Exploiting Time Window Counters"</div>
+        <div class="authors">Eojin Lee, Ingab Kang, Sukhan Lee, G. Edward Suh, Jung Ho Ahn</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2019</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://bpb-us-w2.wpmucdn.com/sites.coecis.cornell.edu/dist/7/89/files/2019/06/isca19-334.pdf">[pdf]</a>
+                <a href="https://doi.org/10.1145/3307650.3322232">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Security Analysis of the Silver Bullet Technique for RowHammer Prevention"</div>
+        <div class="authors">A. Giray Yağlıkçı, Jeremie S. Kim, Fabrice Devaux, Onur Mutlu</div>
+        <div class="venue"><i>arXiv preprint</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2106.07084.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Understanding and Mitigating Covert Channel and Side Channel Vulnerabilities Introduced by RowHammer Defenses"</div>
+        <div class="authors">F. Nisa Bostancı, Oğuzhan Canpolat, Ataberk Olgun, İsmail Emir Yüksel, Konstantinos Kanellopoulos, Mohammad Sadrosadati, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2503.17891">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/LeakyHammer_micro25_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/LeakyHammer_micro25_talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/LeakyHammer">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"BreakHammer: Enhancing RowHammer Mitigations by Carefully Throttling Suspect Threads"</div>
+        <div class="authors">Oğuzhan Canpolat, A. Giray Yağlıkçı, Ataberk Olgun, İsmail Emir Yüksel, Yahya Can Tuğrul, Konstantinos Kanellopoulos, Oğuz Ergin, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2404.13477">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BreakHammer_micro24-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BreakHammer_micro24-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/BreakHammer">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Ramulator: A Fast and Extensible DRAM Simulator"</div>
+        <div class="authors">Yoongu Kim, Weikun Yang, Onur Mutlu</div>
+        <div class="venue"><i>IEEE Computer Architecture Letters (CAL)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ramulator_dram_simulator-ieee-cal15.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/ramulator">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense"</div>
+        <div class="authors">Moinuddin K. Qureshi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2026</div>
+        <div class="links">
+            <span>Web:
+                <a href="https://2026.hpca-conf.org/details/hpca-2026-main-conference/12/SALT-Track-and-Mitigate-Subarrays-Not-Rows-for-Blast-Radius-Free-Rowhammer-Defense">[link]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"ColumnKeeper: Efficient Solutions to the ColumnDisturb Vulnerability in DRAM-based Systems"</div>
+        <div class="authors">Andreas Kosmas Kakolyris, F. Nisa Bostancı, Ataberk Olgun, İsmail Emir Yüksel, Harsh Songara, Konstantinos Marios Sgouras, Umut Başer, Konstantinos Kanellopoulos, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2606.22632">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ColumnKeeper-isca26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ColumnKeeper-isca26-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/ColumnKeeper">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"HARP: Practically and Effectively Identifying Uncorrectable Errors in Memory Chips That Use On-Die Error-Correcting Codes"</div>
+        <div class="authors">Minesh Patel, Geraldo F. de Oliveira, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HARP-memory-error-profiling_micro21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HARP-memory-error-profiling_micro21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HARP-memory-error-profiling_micro21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/HARP">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+        <div class="authors">Yoongu Kim, Vivek Seshadri, Donghyuk Lee, Jamie Liu, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/salp-dram_isca12.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"CREAM: A Concurrent-Refresh-Aware DRAM Memory Architecture"</div>
+        <div class="authors">Tao Zhang, Matt Poremba, Cong Xu, Guangyu Sun, Yuan Xie</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/HPCA.2014.6835947">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Improving DRAM Performance by Parallelizing Refreshes with Accesses"</div>
+        <div class="authors">Kevin K. Chang, Donghyuk Lee, Zeshan Chishti, Alaa R. Alameldeen, Chris Wilkerson, Yoongu Kim, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-access-refresh-parallelization_hpca14.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-access-refresh-parallelization_chang_hpca14-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-access-refresh-parallelization_chang_hpca14-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"PuDHammer: Experimental Analysis of Read Disturbance Effects of Processing-using-DRAM in Real DRAM Chips"</div>
+        <div class="authors">İsmail Emir Yüksel, Akash Sood, Ataberk Olgun, Oğuzhan Canpolat, Haocong Luo, F. Nisa Bostancı, Mohammad Sadrosadati, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2506.12947">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/pudhammer_isca25_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/pudhammer_isca25_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"PuDGhost: Experimental Analysis of Computation Result Corruption in Processing-using-DRAM Operations on Real DRAM Chips and Implications for Future Systems"</div>
+        <div class="authors">Daichi Tokuda, İsmail Emir Yüksel, Tatsuya Kubo, Ataberk Olgun, Haocong Luo, F. Nisa Bostancı, Jikun Wang, A. Giray Yağlıkçı, Shinya Takamaeda-Yamazaki, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2606.19119">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/PuDGhost-isca26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/PuDGhost-isca26-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Understanding and Modeling On-Die Error Correction in Modern DRAM: An Experimental Study Using Real Devices"</div>
+        <div class="authors">Minesh Patel, Jeremie S. Kim, Hasan Hassan, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2019</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/EIN-understanding-and-modeling-in-DRAM-ECC_dsn19.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/EIN-understanding-and-modeling-in-DRAM-ECC_dsn19-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/EIN-understanding-and-modeling-in-DRAM-ECC_dsn19-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/EINSim">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully"</div>
+        <div class="authors">Haocong Luo, İsmail Emir Yüksel, Ataberk Olgun, F. Nisa Bostancı, Orhun Ecemis, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2606.22297">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/DejaVu-isca26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/DejaVu-isca26-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/DejaVu">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Ambit: In-Memory Accelerator for Bulk Bitwise Operations Using Commodity DRAM Technology"</div>
+        <div class="authors">Vivek Seshadri, Donghyuk Lee, Thomas Mullins, Hasan Hassan, Amirali Boroumand, Jeremie Kim, Michael A. Kozuch, Onur Mutlu, Phillip B. Gibbons, Todd C. Mowry</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2017</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ambit-bulk-bitwise-dram_micro17.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ambit-bulk-bitwise-dram_micro17-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ambit-bulk-bitwise-dram_micro17-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Fast Bulk Bitwise AND and OR in DRAM"</div>
+        <div class="authors">Vivek Seshadri, Kevin Hsieh, Amirali Boroumand, Donghyuk Lee, Michael A. Kozuch, Onur Mutlu, Phillip B. Gibbons, Todd C. Mowry</div>
+        <div class="venue"><i>IEEE Computer Architecture Letters (CAL)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/in-DRAM-bulk-AND-OR-ieee_cal15.pdf">[pdf]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"Finding Repeated Elements"</div>
+        <div class="authors">J. Misra, David Gries</div>
+        <div class="venue"><i>Science of Computer Programming, vol. 2, no. 2</i>, 1982</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1016/0167-6423(82)90012-0">[doi]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"CoMeT: Count-Min-Sketch-based Row Tracking to Mitigate RowHammer at Low Cost"</div>
+        <div class="authors">F. Nisa Bostancı, İsmail Emir Yüksel, Ataberk Olgun, Konstantinos Kanellopoulos, Yahya Can Tuğrul, A. Giray Yağlıkçı, Mohammad Sadrosadati, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2402.18769">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://safari.ethz.ch/wp-content/uploads/CoMeT_HPCA24.pptx">[pptx]</a>
+                <a href="https://safari.ethz.ch/wp-content/uploads/CoMeT_HPCA24.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/CoMeT">[github]</a>
+            </span>
+        </div>
+</li>
+                    <li class="reading-item">        <div class="title">"ImPress: Securing DRAM Against Data-Disturbance Errors via Implicit Row-Press Mitigation"</div>
+        <div class="authors">Anish Saxena, Aamer Jaleel, Moinuddin K. Qureshi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2407.16006">[pdf]</a>
+                <a href="https://fast.cc.gatech.edu/papers/MICRO_2024_2.pdf">[link]</a>
+            </span>
+        </div>
+</li>
+                </ul>
+            </section>
+            <section class="lecture-group" id="lecture-L16a" data-lecture="L16a">
+                <h3 class="section-title">L16a: Parallel Execution in Processor-Centric View <span class="text-muted fw-normal">(Nov 26)</span></h3>
                 <h4 class="h6 text-muted mt-2">Optional</h4>
                 <ul class="reading-list">
                     <li class="reading-item">        <div class="title">"DAISY: Dynamic Compilation for 100% Architectural Compatibility" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
@@ -1940,6 +2837,18 @@
         <div class="lectures">Relevant lectures:
             <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · optional) · 
             <span class="badge">L2a</span> ISA Design Principles (Sep 21 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="misra1982finding" data-lectures="L15">        <div class="title">"Finding Repeated Elements"</div>
+        <div class="authors">J. Misra, David Gries</div>
+        <div class="venue"><i>Science of Computer Programming, vol. 2, no. 2</i>, 1982</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1016/0167-6423(82)90012-0">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="patt1985critical" data-lectures="L6b">        <div class="title">"Critical Issues Regarding HPS, a High Performance Microarchitecture" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
@@ -2123,7 +3032,7 @@
             <span class="badge">L3a</span> Performance Evaluation (Sep 24 · optional)
         </div>
 </li>
-                <li class="reading-item" id="ebcioglu1997daisy" data-lectures="L19b">        <div class="title">"DAISY: Dynamic Compilation for 100% Architectural Compatibility" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+                <li class="reading-item" id="ebcioglu1997daisy" data-lectures="L16a">        <div class="title">"DAISY: Dynamic Compilation for 100% Architectural Compatibility" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
         <div class="authors">Kemal Ebcioğlu, Erik R. Altman</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 1997</div>
         <div class="links">
@@ -2135,7 +3044,7 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L19b</span> Parallelism, Heterogeneity, Flynn&#x27;s Taxonomy, VLIW (Dec 7 · optional)
+            <span class="badge">L16a</span> Parallel Execution in Processor-Centric View (Nov 26 · optional)
         </div>
 </li>
                 <li class="reading-item" id="dundas1997improving" data-lectures="L7b">        <div class="title">"Improving Data Cache Performance by Pre-executing Instructions Under a Cache Miss" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
@@ -2441,7 +3350,7 @@
             <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
         </div>
 </li>
-                <li class="reading-item" id="kim2012case" data-lectures="L9">        <div class="title">"A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+                <li class="reading-item" id="kim2012case" data-lectures="L9 L15">        <div class="title">"A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
         <div class="authors">Yoongu Kim, Vivek Seshadri, Donghyuk Lee, Jamie Liu, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2012</div>
         <div class="links">
@@ -2450,7 +3359,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional)
+            <span class="badge">L9</span> DRAM Architecture (Oct 22 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="hennessy2012computer" data-lectures="L1b L2a L2b L3a L4a L4b L4b L4b L4b L4b L4b L4b L4b L5a L5a L5b L5b L5b L6a L6b L6b L7a L7a L7a L7a L7b L9 L9 L10 L13a L13a L13a">        <div class="title">"Computer Architecture: A Quantitative Approach, 5th Edition"</div>
@@ -2510,6 +3420,25 @@
             <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
         </div>
 </li>
+                <li class="reading-item" id="seshadri2013rowclone" data-lectures="L15">        <div class="title">"RowClone: Fast and Energy-Efficient In-DRAM Bulk Data Copy and Initialization"</div>
+        <div class="authors">Vivek Seshadri, Yoongu Kim, Chris Fallin, Donghyuk Lee, Rachata Ausavarungnirun, Gennady Pekhimenko, Yixin Luo, Onur Mutlu, Michael A. Kozuch, Phillip B. Gibbons, Todd C. Mowry</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2013</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowclone_micro13.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowclone_seshadri_micro13-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowclone_seshadri_micro13-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;FYwOyapck3M">[video]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="lee2013tiered" data-lectures="L1b">        <div class="title">"Tiered-Latency DRAM: A Low Latency and Low Cost DRAM Architecture" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
         <div class="authors">Donghyuk Lee, Yoongu Kim, Vivek Seshadri, Jamie Liu, Lavanya Subramanian, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2013</div>
@@ -2525,7 +3454,19 @@
             <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · optional)
         </div>
 </li>
-                <li class="reading-item" id="kim2014flipping" data-lectures="L1b L13b">        <div class="title">"Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+                <li class="reading-item" id="zhang2014cream" data-lectures="L15">        <div class="title">"CREAM: A Concurrent-Refresh-Aware DRAM Memory Architecture"</div>
+        <div class="authors">Tao Zhang, Matt Poremba, Cong Xu, Guangyu Sun, Yuan Xie</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/HPCA.2014.6835947">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kim2014flipping" data-lectures="L1b L13b L14 L15">        <div class="title">"Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
         <div class="authors">Yoongu Kim, Ross Daly, Jeremie Kim, Chris Fallin, Ji Hye Lee, Donghyuk Lee, Chris Wilkerson, Konrad Lai, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2014</div>
         <div class="links">
@@ -2542,7 +3483,25 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L1b</span> Computer Organization and Design Principles: Introduction and Basics (Sep 17 · optional) · 
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · required)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · required) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="chang2014improving" data-lectures="L15">        <div class="title">"Improving DRAM Performance by Parallelizing Refreshes with Accesses"</div>
+        <div class="authors">Kevin K. Chang, Donghyuk Lee, Zeshan Chishti, Alaa R. Alameldeen, Chris Wilkerson, Yoongu Kim, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2014</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-access-refresh-parallelization_hpca14.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-access-refresh-parallelization_chang_hpca14-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/dram-access-refresh-parallelization_chang_hpca14-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="kim2014memory" data-lectures="L7a">        <div class="title">"Memory Systems"</div>
@@ -2612,6 +3571,33 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
+                <li class="reading-item" id="seshadri2015fast" data-lectures="L15">        <div class="title">"Fast Bulk Bitwise AND and OR in DRAM"</div>
+        <div class="authors">Vivek Seshadri, Kevin Hsieh, Amirali Boroumand, Donghyuk Lee, Michael A. Kozuch, Onur Mutlu, Phillip B. Gibbons, Todd C. Mowry</div>
+        <div class="venue"><i>IEEE Computer Architecture Letters (CAL)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/in-DRAM-bulk-AND-OR-ieee_cal15.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kim2015ramulator" data-lectures="L15">        <div class="title">"Ramulator: A Fast and Extensible DRAM Simulator"</div>
+        <div class="authors">Yoongu Kim, Weikun Yang, Onur Mutlu</div>
+        <div class="venue"><i>IEEE Computer Architecture Letters (CAL)</i>, 2015</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ramulator_dram_simulator-ieee-cal15.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/ramulator">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="meza2015revisiting" data-lectures="L9 L13b">        <div class="title">"Revisiting Memory Errors in Large-Scale Production Data Centers: Analysis and Modeling of New Trends from the Field" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
         <div class="authors">Justin Meza, Qiang Wu, Sanjeev Kumar, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2015</div>
@@ -2653,6 +3639,22 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
+                <li class="reading-item" id="seshadri2017ambit" data-lectures="L15">        <div class="title">"Ambit: In-Memory Accelerator for Bulk Bitwise Operations Using Commodity DRAM Technology"</div>
+        <div class="authors">Vivek Seshadri, Donghyuk Lee, Thomas Mullins, Hasan Hassan, Amirali Boroumand, Jeremie Kim, Michael A. Kozuch, Onur Mutlu, Phillip B. Gibbons, Todd C. Mowry</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2017</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ambit-bulk-bitwise-dram_micro17.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ambit-bulk-bitwise-dram_micro17-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ambit-bulk-bitwise-dram_micro17-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="gras2017aslr" data-lectures="L13a">        <div class="title">"ASLR on the Line: Practical Cache Attacks on the MMU"</div>
         <div class="authors">Ben Gras, Kaveh Razavi, Erik Bosman, Herbert Bos, Cristiano Giuffrida</div>
         <div class="venue">in Proceedings of the <i>Network and Distributed System Security Symposium (NDSS)</i>, 2017</div>
@@ -2663,6 +3665,32 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L13a</span> Virtual Memory and TLB (Nov 16 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="brasser2017cant" data-lectures="L15">        <div class="title">"CAn&#x27;t Touch This: Software-only Mitigation against Rowhammer Attacks targeting Kernel Memory"</div>
+        <div class="authors">Ferdinand Brasser, Lucas Davi, David Gens, Christopher Liebchen, Ahmad-Reza Sadeghi</div>
+        <div class="venue">in Proceedings of the <i>USENIX Security Symposium</i>, 2017</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-brasser.pdf">[pdf]</a>
+                <a href="https://arxiv.org/pdf/1611.08396.pdf">[link]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="seyedzadeh2017counter" data-lectures="L14 L15">        <div class="title">"Counter-Based Tree Structure for Row Hammering Mitigation in DRAM"</div>
+        <div class="authors">Seyed Mohammad Seyedzadeh, Alex K. Jones, Rami Melhem</div>
+        <div class="venue"><i>IEEE Computer Architecture Letters (CAL)</i>, 2017</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.cs.pitt.edu/~seyedzadeh/download/CAL16.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="jouppi2017indatacenter" data-lectures="L1b">        <div class="title">"In-Datacenter Performance Analysis of a Tensor Processing Unit" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
@@ -2692,6 +3720,19 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
+                <li class="reading-item" id="vanderveen2018guardion" data-lectures="L15">        <div class="title">"GuardION: Practical Mitigation of DMA-Based Rowhammer Attacks on ARM"</div>
+        <div class="authors">Victor van der Veen, Martina Lindorfer, Yanick Fratantonio, Harikrishnan Padmanabha Pillai, Giovanni Vigna, Christopher Kruegel, Herbert Bos, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA)</i>, 2018</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://sites.cs.ucsb.edu/~chris/research/doc/dimva18_guardion.pdf">[pdf]</a>
+                <a href="https://doi.org/10.1007/978-3-319-93411-2_5">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="tatar2018throwhammer" data-lectures="L13b">        <div class="title">"Throwhammer: Rowhammer Attacks over the Network and Defenses"</div>
         <div class="authors">Andrei Tatar, Radhesh Krishnan Konoth, Elias Athanasopoulos, Cristiano Giuffrida, Herbert Bos, Kaveh Razavi</div>
         <div class="venue">in Proceedings of the <i>USENIX Annual Technical Conference (ATC)</i>, 2018</div>
@@ -2714,6 +3755,40 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L13a</span> Virtual Memory and TLB (Nov 16 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="konoth2018zebram" data-lectures="L15">        <div class="title">"ZebRAM: Comprehensive and Compatible Software Protection Against Rowhammer Attacks"</div>
+        <div class="authors">Radhesh Krishnan Konoth, Marco Oliverio, Andrei Tatar, Dennis Andriesse, Herbert Bos, Cristiano Giuffrida, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>USENIX Symposium on Operating Systems Design and Implementation (OSDI)</i>, 2018</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://www.usenix.org/system/files/osdi18-konoth.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="hassan2019crow" data-lectures="L15">        <div class="title">"CROW: A Low-Cost Substrate for Improving DRAM Performance, Energy Efficiency, and Reliability"</div>
+        <div class="authors">Hasan Hassan, Minesh Patel, Jeremie S. Kim, A. Giray Yağlıkçı, Nandita Vijaykumar, Nika Mansouri Ghiasi, Saugata Ghose, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2019</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CROW-DRAM-substrate-for-performance-energy-reliability_isca19.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CROW-DRAM-substrate-for-performance-energy-reliability_isca19-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/CROW-DRAM-substrate-for-performance-energy-reliability_isca19-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;FckbkwW1u_E">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/CROW">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="cojocar2019exploiting" data-lectures="L13b">        <div class="title">"Exploiting Correcting Codes: On the Effectiveness of ECC Memory Against Rowhammer Attacks"</div>
@@ -2740,6 +3815,38 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
+                <li class="reading-item" id="lee2019twice" data-lectures="L15">        <div class="title">"TWiCe: Preventing Row-Hammering by Exploiting Time Window Counters"</div>
+        <div class="authors">Eojin Lee, Ingab Kang, Sukhan Lee, G. Edward Suh, Jung Ho Ahn</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2019</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://bpb-us-w2.wpmucdn.com/sites.coecis.cornell.edu/dist/7/89/files/2019/06/isca19-334.pdf">[pdf]</a>
+                <a href="https://doi.org/10.1145/3307650.3322232">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="patel2019understanding" data-lectures="L15">        <div class="title">"Understanding and Modeling On-Die Error Correction in Modern DRAM: An Experimental Study Using Real Devices"</div>
+        <div class="authors">Minesh Patel, Jeremie S. Kim, Hasan Hassan, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2019</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/EIN-understanding-and-modeling-in-DRAM-ECC_dsn19.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/EIN-understanding-and-modeling-in-DRAM-ECC_dsn19-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/EIN-understanding-and-modeling-in-DRAM-ECC_dsn19-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/EINSim">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="yao2020deephammer" data-lectures="L13b">        <div class="title">"DeepHammer: Depleting the Intelligence of Deep Neural Networks through Targeted Chain of Bit Flips"</div>
         <div class="authors">Fan Yao, Adnan Siraj Rakin, Deliang Fan</div>
         <div class="venue">in Proceedings of the <i>USENIX Security Symposium</i>, 2020</div>
@@ -2750,6 +3857,18 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="park2020graphene" data-lectures="L15">        <div class="title">"Graphene: Strong yet Lightweight Row Hammer Protection"</div>
+        <div class="authors">Yeonhong Park, Woosuk Kwon, Eojin Lee, Tae Jun Ham, Jung Ho Ahn, Jae W. Lee</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2020</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://www.microarch.org/micro53/papers/738300a001.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="lipp2020nethammer" data-lectures="L13b">        <div class="title">"Nethammer: Inducing Rowhammer Faults through Network Requests"</div>
@@ -2776,7 +3895,7 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
-                <li class="reading-item" id="kim2020revisiting" data-lectures="L13b">        <div class="title">"Revisiting RowHammer: An Experimental Analysis of Modern DRAM Devices and Mitigation Techniques"</div>
+                <li class="reading-item" id="kim2020revisiting" data-lectures="L13b L14 L15">        <div class="title">"Revisiting RowHammer: An Experimental Analysis of Modern DRAM Devices and Mitigation Techniques"</div>
         <div class="authors">Jeremie S. Kim, Minesh Patel, A. Giray Yağlıkçı, Hasan Hassan, Roknoddin Azizi, Lois Orosa, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2020</div>
         <div class="links">
@@ -2792,7 +3911,9 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="mutlu2019rowhammer" data-lectures="L13b">        <div class="title">"RowHammer: A Retrospective"</div>
@@ -2807,7 +3928,30 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
-                <li class="reading-item" id="orosa2021deeper" data-lectures="L13b">        <div class="title">"A Deeper Look into RowHammer&#x27;s Sensitivities: Experimental Analysis of Real DRAM Chips and Implications on Future Attacks and Defenses"</div>
+                <li class="reading-item" id="frigo2020trrespass" data-lectures="L14 L15">        <div class="title">"TRRespass: Exploiting the Many Sides of Target Row Refresh"</div>
+        <div class="authors">Pietro Frigo, Emanuele Vannacci, Hasan Hassan, Victor van der Veen, Onur Mutlu, Cristiano Giuffrida, Herbert Bos, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>IEEE Symposium on Security and Privacy (S&amp;P)</i>, 2020</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-TRRespass_ieee_security_privacy20-talk.pdf">[pdf]</a>
+            </span>
+            <span>Lecture:
+                <a href="https://www.youtube.com/watch?v&#x3D;pwRw7QqK_qA">[video]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/vusec/trrespass">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="orosa2021deeper" data-lectures="L13b L14">        <div class="title">"A Deeper Look into RowHammer&#x27;s Sensitivities: Experimental Analysis of Real DRAM Chips and Implications on Future Attacks and Defenses"</div>
         <div class="authors">Lois Orosa, A. Giray Yağlıkçı, Haocong Luo, Ataberk Olgun, Jisung Park, Hasan Hassan, Minesh Patel, Jeremie S. Kim, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2021</div>
         <div class="links">
@@ -2823,7 +3967,50 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="yaglikci2021blockhammer" data-lectures="L14 L15">        <div class="title">"BlockHammer: Preventing RowHammer at Low Cost by Blacklisting Rapidly-Accessed DRAM Rows"</div>
+        <div class="authors">A. Giray Yağlıkçı, Minesh Patel, Jeremie S. Kim, Roknoddin Azizi, Ataberk Olgun, Lois Orosa, Hasan Hassan, Jisung Park, Konstantinos Kanellopoulos, Taha Shahroodi, Saugata Ghose, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer_preventing-DRAM-rowhammer-at-low-cost_hpca21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer-preventing-rowhammer-at-low-cost-by-blacklisting-rapidly-accessed-dram-rows_hpca21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BlockHammer-preventing-rowhammer-at-low-cost-by-blacklisting-rapidly-accessed-dram-rows_hpca21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;4Y01N1BhWv4">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/BlockHammer">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="patel2021harp" data-lectures="L15">        <div class="title">"HARP: Practically and Effectively Identifying Uncorrectable Errors in Memory Chips That Use On-Die Error-Correcting Codes"</div>
+        <div class="authors">Minesh Patel, Geraldo F. de Oliveira, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HARP-memory-error-profiling_micro21.pdf">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HARP-memory-error-profiling_micro21-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/HARP-memory-error-profiling_micro21-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/HARP">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="margaritov2021ptemagnet" data-lectures="L13a">        <div class="title">"PTEMagnet: Fine-Grained Physical Memory Reservation for Faster Page Walks in Public Clouds"</div>
@@ -2838,7 +4025,20 @@
             <span class="badge">L13a</span> Virtual Memory and TLB (Nov 16 · optional)
         </div>
 </li>
-                <li class="reading-item" id="hassan2021uncovering" data-lectures="L13b">        <div class="title">"Uncovering In-DRAM RowHammer Protection Mechanisms: A New Methodology, Custom RowHammer Patterns, and Implications"</div>
+                <li class="reading-item" id="yaglikci2021security" data-lectures="L14 L15">        <div class="title">"Security Analysis of the Silver Bullet Technique for RowHammer Prevention"</div>
+        <div class="authors">A. Giray Yağlıkçı, Jeremie S. Kim, Fabrice Devaux, Onur Mutlu</div>
+        <div class="venue"><i>arXiv preprint</i>, 2021</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2106.07084.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="hassan2021uncovering" data-lectures="L13b L14 L15">        <div class="title">"Uncovering In-DRAM RowHammer Protection Mechanisms: A New Methodology, Custom RowHammer Patterns, and Implications"</div>
         <div class="authors">Hasan Hassan, Yahya Can Tuğrul, Jeremie S. Kim, Victor van der Veen, Kaveh Razavi, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2021</div>
         <div class="links">
@@ -2854,7 +4054,21 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="saxena2022aqua" data-lectures="L15">        <div class="title">"AQUA: Scalable Rowhammer Mitigation by Quarantining Aggressor Rows at Runtime"</div>
+        <div class="authors">Anish Saxena, Gururaj Saileshwar, Prashant J. Nair, Moinuddin K. Qureshi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2022</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/MICRO56248.2022.00022">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="kogler2022halfdouble" data-lectures="L13b">        <div class="title">"Half-Double: Hammering From the Next Row Over"</div>
@@ -2872,6 +4086,18 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
+                <li class="reading-item" id="qureshi2022hydra" data-lectures="L15">        <div class="title">"Hydra: Enabling Low-Overhead Mitigation of Row-Hammer at Ultra-Low Thresholds via Hybrid Tracking"</div>
+        <div class="authors">Moinuddin K. Qureshi, Aditya Rohan, Gururaj Saileshwar, Prashant J. Nair</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2022</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/3470496.3527421">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="loughlin2022moesi" data-lectures="L13b">        <div class="title">"MOESI-prime: Preventing Coherence-Induced Hammering in Commodity Workloads"</div>
         <div class="authors">Kevin Loughlin, Stefan Saroiu, Alec Wolman, Yatin A. Manerkar, Baris Kasikci</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2022</div>
@@ -2884,7 +4110,19 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
-                <li class="reading-item" id="yaglikci2022understanding" data-lectures="L13b">        <div class="title">"Understanding RowHammer Under Reduced Wordline Voltage: An Experimental Study Using Real DRAM Devices"</div>
+                <li class="reading-item" id="saileshwar2022randomized" data-lectures="L15">        <div class="title">"Randomized Row-Swap: Mitigating Row Hammer by Breaking Spatial Correlation between Aggressor and Victim Rows"</div>
+        <div class="authors">Gururaj Saileshwar, Bolin Wang, Moinuddin K. Qureshi, Prashant J. Nair</div>
+        <div class="venue">in Proceedings of the <i>International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)</i>, 2022</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://dl.acm.org/doi/10.1145/3503222.3507716">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="yaglikci2022understanding" data-lectures="L13b L14">        <div class="title">"Understanding RowHammer Under Reduced Wordline Voltage: An Experimental Study Using Real DRAM Devices"</div>
         <div class="authors">A. Giray Yağlıkçı, Haocong Luo, Geraldo F. de Oliveira, Ataberk Olgun, Minesh Patel, Jisung Park, Hasan Hassan, Jeremie S. Kim, Lois Orosa, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2022</div>
         <div class="links">
@@ -2900,10 +4138,11 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional)
         </div>
 </li>
-                <li class="reading-item" id="olgun2023experimental" data-lectures="L13b">        <div class="title">"An Experimental Analysis of RowHammer in HBM2 DRAM Chips"</div>
+                <li class="reading-item" id="olgun2023experimental" data-lectures="L13b L14">        <div class="title">"An Experimental Analysis of RowHammer in HBM2 DRAM Chips"</div>
         <div class="authors">Ataberk Olgun, Majd Osseiran, A. Giray Yağlıkçı, Yahya Can Tuğrul, Haocong Luo, Steve Rhyner, Behzad Salami, Juan Gómez-Luna, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN), Disrupt Track</i>, 2023</div>
         <div class="links">
@@ -2919,7 +4158,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional)
         </div>
 </li>
                 <li class="reading-item" id="zhao2023contiguitas" data-lectures="L13a">        <div class="title">"Contiguitas: The Pursuit of Physical Memory Contiguity in Datacenters"</div>
@@ -2934,7 +4174,7 @@
             <span class="badge">L13a</span> Virtual Memory and TLB (Nov 16 · optional)
         </div>
 </li>
-                <li class="reading-item" id="olgun2023drambender" data-lectures="L13b">        <div class="title">"DRAM Bender: An Extensible and Versatile FPGA-based Infrastructure to Easily Test State-of-the-art DRAM Chips"</div>
+                <li class="reading-item" id="olgun2023drambender" data-lectures="L13b L14">        <div class="title">"DRAM Bender: An Extensible and Versatile FPGA-based Infrastructure to Easily Test State-of-the-art DRAM Chips"</div>
         <div class="authors">Ataberk Olgun, Hasan Hassan, A. Giray Yağlıkçı, Yahya Can Tuğrul, Lois Orosa, Haocong Luo, Minesh Patel, Oğuz Ergin, Onur Mutlu</div>
         <div class="venue"><i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</i>, 2023</div>
         <div class="links">
@@ -2946,7 +4186,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional)
         </div>
 </li>
                 <li class="reading-item" id="mutlu2023fundamentally" data-lectures="L13a L13b">        <div class="title">"Fundamentally Understanding and Solving RowHammer"</div>
@@ -2969,6 +4210,18 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · required)
         </div>
 </li>
+                <li class="reading-item" id="marazzi2023rega" data-lectures="L15">        <div class="title">"REGA: Scalable Rowhammer Mitigation with Refresh-Generating Activations"</div>
+        <div class="authors">Michele Marazzi, Flavien Solt, Patrick Jattke, Kubo Takashi, Kaveh Razavi</div>
+        <div class="venue">in Proceedings of the <i>IEEE Symposium on Security and Privacy (S&amp;P)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/SP46215.2023.10179327">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="mutlu2023flipping" data-lectures="L13b">        <div class="title">"Retrospective: Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors"</div>
         <div class="authors">Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>ISCA@50 25-Year Retrospective: 1996-2020 (ACM SIGARCH and IEEE TCCA)</i>, 2023</div>
@@ -2980,6 +4233,70 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="luo2023rowpress" data-lectures="L14 L15">        <div class="title">"RowPress: Amplifying Read Disturbance in Modern DRAM Chips"</div>
+        <div class="authors">Haocong Luo, Ataberk Olgun, A. Giray Yağlıkçı, Yahya Can Tuğrul, Steve Rhyner, Meryem Banu Cavlak, Joel Lindegger, Mohammad Sadrosadati, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23.pdf">[pdf]</a>
+                <a href="https://arxiv.org/pdf/2306.17061.pdf">[link]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/RowPress_isca23-talk.pdf">[pdf]</a>
+            </span>
+            <span>Video:
+                <a href="https://www.youtube.com/watch?v&#x3D;PMM_XuLDFFo">[youtube]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/RowPress">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · required) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="woo2023scalable" data-lectures="L15">        <div class="title">"Scalable and Secure Row-Swap: Efficient and Safe Row Hammer Mitigation in Memory Systems"</div>
+        <div class="authors">Jeonghyun Woo, Gururaj Saileshwar, Prashant J. Nair</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/abs/2212.12613">[link]</a>
+                <a href="https://doi.org/10.1109/HPCA56546.2023.10070999">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="wi2023shadow" data-lectures="L15">        <div class="title">"SHADOW: Preventing Row Hammer in DRAM with Intra-Subarray Row Shuffling"</div>
+        <div class="authors">Minbok Wi, Jaehyun Park, Seoyoung Ko, Michael Jaemin Kim, Nam Sung Kim, Eojin Lee, Jung Ho Ahn</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1109/HPCA56546.2023.10070966">[doi]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="loughlin2023siloz" data-lectures="L15">        <div class="title">"Siloz: Leveraging DRAM Isolation Domains to Prevent Inter-VM Rowhammer"</div>
+        <div class="authors">Kevin Loughlin, Jonah Rosenblum, Stefan Saroiu, Alec Wolman, Dimitrios Skarlatos, Baris Kasikci</div>
+        <div class="venue">in Proceedings of the <i>ACM Symposium on Operating Systems Principles (SOSP)</i>, 2023</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://doi.org/10.1145/3600006.3613143">[doi]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/efeslab/siloz">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="kanellopoulos2023utopia" data-lectures="L13a">        <div class="title">"Utopia: Fast and Efficient Address Translation via Hybrid Restrictive &amp; Flexible Virtual-to-Physical Address Mappings"</div>
@@ -3018,7 +4335,46 @@
             <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
         </div>
 </li>
-                <li class="reading-item" id="yaglikci2024enabling" data-lectures="L13b">        <div class="title">"Enabling Efficient and Scalable DRAM Read Disturbance Mitigation via New Experimental Insights into Modern DRAM Chips"</div>
+                <li class="reading-item" id="canpolat2024breakhammer" data-lectures="L14 L15">        <div class="title">"BreakHammer: Enhancing RowHammer Mitigations by Carefully Throttling Suspect Threads"</div>
+        <div class="authors">Oğuzhan Canpolat, A. Giray Yağlıkçı, Ataberk Olgun, İsmail Emir Yüksel, Yahya Can Tuğrul, Konstantinos Kanellopoulos, Oğuz Ergin, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2404.13477">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BreakHammer_micro24-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/BreakHammer_micro24-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/BreakHammer">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="bostanci2024comet" data-lectures="L15">        <div class="title">"CoMeT: Count-Min-Sketch-based Row Tracking to Mitigate RowHammer at Low Cost"</div>
+        <div class="authors">F. Nisa Bostancı, İsmail Emir Yüksel, Ataberk Olgun, Konstantinos Kanellopoulos, Yahya Can Tuğrul, A. Giray Yağlıkçı, Mohammad Sadrosadati, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2402.18769">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://safari.ethz.ch/wp-content/uploads/CoMeT_HPCA24.pptx">[pptx]</a>
+                <a href="https://safari.ethz.ch/wp-content/uploads/CoMeT_HPCA24.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/CoMeT">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="yaglikci2024enabling" data-lectures="L13b L14">        <div class="title">"Enabling Efficient and Scalable DRAM Read Disturbance Mitigation via New Experimental Insights into Modern DRAM Chips"</div>
         <div class="authors">A. Giray Yağlıkçı</div>
         <div class="venue"><i>PhD Thesis, ETH Zürich</i>, 2024</div>
         <div class="links">
@@ -3031,7 +4387,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional)
         </div>
 </li>
                 <li class="reading-item" id="sonmez2024fleximem" data-lectures="L13a">        <div class="title">"FlexiMem: Flexible Shared Virtual Memory for PCIe-attached FPGAs"</div>
@@ -3046,6 +4403,19 @@
             <span class="badge">L13a</span> Virtual Memory and TLB (Nov 16 · optional)
         </div>
 </li>
+                <li class="reading-item" id="saxena2024impress" data-lectures="L15">        <div class="title">"ImPress: Securing DRAM Against Data-Disturbance Errors via Implicit Row-Press Mitigation"</div>
+        <div class="authors">Anish Saxena, Aamer Jaleel, Moinuddin K. Qureshi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2407.16006">[pdf]</a>
+                <a href="https://fast.cc.gatech.edu/papers/MICRO_2024_2.pdf">[link]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="patt2024randomthoughts" data-lectures="L6b">        <div class="title">"Random Thoughts after 60 years in the trenches"</div>
         <div class="authors">Yale Patt</div>
         <div class="venue"><i>EFCL Summer School</i>, 2024</div>
@@ -3058,7 +4428,7 @@
             <span class="badge">L6b</span> Precise Exceptions, Interrupts, HPS, and Checkpoint Repair (Oct 12 · optional)
         </div>
 </li>
-                <li class="reading-item" id="olgun2024read" data-lectures="L13b">        <div class="title">"Read Disturbance in High Bandwidth Memory: A Detailed Experimental Study on HBM2 DRAM Chips"</div>
+                <li class="reading-item" id="olgun2024read" data-lectures="L13b L14">        <div class="title">"Read Disturbance in High Bandwidth Memory: A Detailed Experimental Study on HBM2 DRAM Chips"</div>
         <div class="authors">Ataberk Olgun, Majd Osseiran, A. Giray Yağlıkçı, Yahya Can Tuğrul, Haocong Luo, Steve Rhyner, Behzad Salami, Juan Gómez-Luna, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Conference on Dependable Systems and Networks (DSN)</i>, 2024</div>
         <div class="links">
@@ -3067,10 +4437,11 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional)
         </div>
 </li>
-                <li class="reading-item" id="hassan2024self" data-lectures="L10">        <div class="title">"Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
+                <li class="reading-item" id="hassan2024self" data-lectures="L10 L14 L15">        <div class="title">"Self-Managing DRAM: A Low-Cost Framework for Enabling Autonomous and Efficient DRAM Maintenance Operations" <a class="badge bonus-badge" href="homeworks.html#bonus-papers" title="On the paper list of the Bonus Homework (critical paper reviews)"><i class="fa fa-star"></i> Bonus HW</a></div>
         <div class="authors">Hasan Hassan, Ataberk Olgun, A. Giray Yağlıkçı, Haocong Luo, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2024</div>
         <div class="links">
@@ -3079,7 +4450,9 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional)
+            <span class="badge">L10</span> Memory Controllers and Memory Request Scheduling (Oct 26 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · required)
         </div>
 </li>
                 <li class="reading-item" id="qazi2024soothsayer" data-lectures="L13b">        <div class="title">"SoothSayer: Bypassing DSAC Mitigation by Predicting Counter Replacement"</div>
@@ -3094,7 +4467,7 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
-                <li class="reading-item" id="yaglikci2024spatial" data-lectures="L13b">        <div class="title">"Spatial Variation-Aware Read Disturbance Defenses: Experimental Analysis of Real DRAM Chips and Implications on Future Solutions"</div>
+                <li class="reading-item" id="yaglikci2024spatial" data-lectures="L13b L14">        <div class="title">"Spatial Variation-Aware Read Disturbance Defenses: Experimental Analysis of Real DRAM Chips and Implications on Future Solutions"</div>
         <div class="authors">A. Giray Yağlıkçı, Yahya Can Tuğrul, Geraldo F. de Oliveira, İsmail Emir Yüksel, Ataberk Olgun, Haocong Luo, Onur Mutlu</div>
         <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2024</div>
         <div class="links">
@@ -3103,7 +4476,8 @@
             </span>
         </div>
         <div class="lectures">Relevant lectures:
-            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
+            <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional) · 
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional)
         </div>
 </li>
                 <li class="reading-item" id="jattke2024zenhammer" data-lectures="L13b">        <div class="title">"ZenHammer: Rowhammer Attacks on AMD Zen-based Platforms"</div>
@@ -3118,6 +4492,50 @@
             <span class="badge">L13b</span> DRAM Read Disturbance I: RowHammer (Nov 16 · optional)
         </div>
 </li>
+                <li class="reading-item" id="canpolat2025chronus" data-lectures="L14 L15">        <div class="title">"Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance"</div>
+        <div class="authors">Oğuzhan Canpolat, A. Giray Yağlıkçı, Geraldo F. de Oliveira, Ataberk Olgun, F. Nisa Bostancı, İsmail Emir Yüksel, Haocong Luo, Oğuz Ergin, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2502.12650">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Chronus_hpca25-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/Chronus_hpca25-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/Chronus">[github]</a>
+            </span>
+            <span>Paper (DRAMSec 2024 version):
+                <a href="https://arxiv.org/pdf/2406.19094">[pdf]</a>
+            </span>
+            <span>Slides (DRAMSec 2024 version):
+                <a href="https://safari.ethz.ch/wp-content/uploads/UnderstandingPRAC_slides.pptx">[pptx]</a>
+                <a href="https://safari.ethz.ch/wp-content/uploads/UnderstandingPRAC_slides.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="yuksel2025columndisturb" data-lectures="L14 L15">        <div class="title">"ColumnDisturb: Understanding Column-based Read Disturbance in Real DRAM Chips and Implications for Future Systems"</div>
+        <div class="authors">İsmail Emir Yüksel, Ataberk Olgun, F. Nisa Bostancı, Haocong Luo, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2510.14750">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/columndisturb_micro25_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/columndisturb_micro25_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
                 <li class="reading-item" id="wang2025peek" data-lectures="L13a">        <div class="title">"Peek-a-Walk: Leaking Secrets via Page Walk Side Channels"</div>
         <div class="authors">Alan Wang, Boru Chen, Yingchen Wang, Christopher W. Fletcher, Daniel Genkin, David Kohlbrenner, Riccardo Paccagnella</div>
         <div class="venue">in Proceedings of the <i>IEEE Symposium on Security and Privacy (S&amp;P)</i>, 2025</div>
@@ -3128,6 +4546,58 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L13a</span> Virtual Memory and TLB (Nov 16 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="yuksel2025pudhammer" data-lectures="L15">        <div class="title">"PuDHammer: Experimental Analysis of Read Disturbance Effects of Processing-using-DRAM in Real DRAM Chips"</div>
+        <div class="authors">İsmail Emir Yüksel, Akash Sood, Ataberk Olgun, Oğuzhan Canpolat, Haocong Luo, F. Nisa Bostancı, Mohammad Sadrosadati, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2506.12947">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/pudhammer_isca25_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/pudhammer_isca25_talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="bostanci2025understanding" data-lectures="L15">        <div class="title">"Understanding and Mitigating Covert Channel and Side Channel Vulnerabilities Introduced by RowHammer Defenses"</div>
+        <div class="authors">F. Nisa Bostancı, Oğuzhan Canpolat, Ataberk Olgun, İsmail Emir Yüksel, Konstantinos Kanellopoulos, Mohammad Sadrosadati, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Microarchitecture (MICRO)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2503.17891">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/LeakyHammer_micro25_talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/LeakyHammer_micro25_talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/LeakyHammer">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="olgun2025variable" data-lectures="L14 L15">        <div class="title">"Variable Read Disturbance: An Experimental Analysis of Temporal Variation in DRAM Read Disturbance"</div>
+        <div class="authors">Ataberk Olgun, F. Nisa Bostancı, İsmail Emir Yüksel, A. Giray Yağlıkçı, Geraldo F. de Oliveira, Haocong Luo, Oğuzhan Canpolat, Minesh Patel, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2025</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2502.13075">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/VRD_hpca25-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/VRD_hpca25-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="kanellopoulos2025virtuoso" data-lectures="L13a">        <div class="title">"Virtuoso: Enabling Fast and Accurate Virtual Memory Research via an Imitation-based Operating System Simulation Methodology"</div>
@@ -3162,6 +4632,74 @@
         </div>
         <div class="lectures">Relevant lectures:
             <span class="badge">L12</span> Memory Scheduling (Nov 5 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="kakolyris2026columnkeeper" data-lectures="L14 L15">        <div class="title">"ColumnKeeper: Efficient Solutions to the ColumnDisturb Vulnerability in DRAM-based Systems"</div>
+        <div class="authors">Andreas Kosmas Kakolyris, F. Nisa Bostancı, Ataberk Olgun, İsmail Emir Yüksel, Harsh Songara, Konstantinos Marios Sgouras, Umut Başer, Konstantinos Kanellopoulos, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2606.22632">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ColumnKeeper-isca26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/ColumnKeeper-isca26-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/ColumnKeeper">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="luo2026dejavu" data-lectures="L15">        <div class="title">"DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully"</div>
+        <div class="authors">Haocong Luo, İsmail Emir Yüksel, Ataberk Olgun, F. Nisa Bostancı, Orhun Ecemis, A. Giray Yağlıkçı, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2606.22297">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/DejaVu-isca26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/DejaVu-isca26-talk.pdf">[pdf]</a>
+            </span>
+            <span>Code:
+                <a href="https://github.com/CMU-SAFARI/DejaVu">[github]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="tokuda2026pudghost" data-lectures="L15">        <div class="title">"PuDGhost: Experimental Analysis of Computation Result Corruption in Processing-using-DRAM Operations on Real DRAM Chips and Implications for Future Systems"</div>
+        <div class="authors">Daichi Tokuda, İsmail Emir Yüksel, Tatsuya Kubo, Ataberk Olgun, Haocong Luo, F. Nisa Bostancı, Jikun Wang, A. Giray Yağlıkçı, Shinya Takamaeda-Yamazaki, Onur Mutlu</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on Computer Architecture (ISCA)</i>, 2026</div>
+        <div class="links">
+            <span>Paper:
+                <a href="https://arxiv.org/pdf/2606.19119">[pdf]</a>
+            </span>
+            <span>Presentation:
+                <a href="https://people.inf.ethz.ch/omutlu/pub/PuDGhost-isca26-talk.pptx">[pptx]</a>
+                <a href="https://people.inf.ethz.ch/omutlu/pub/PuDGhost-isca26-talk.pdf">[pdf]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
+        </div>
+</li>
+                <li class="reading-item" id="qureshi2026salt" data-lectures="L14 L15">        <div class="title">"SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense"</div>
+        <div class="authors">Moinuddin K. Qureshi</div>
+        <div class="venue">in Proceedings of the <i>International Symposium on High Performance Computer Architecture (HPCA)</i>, 2026</div>
+        <div class="links">
+            <span>Web:
+                <a href="https://2026.hpca-conf.org/details/hpca-2026-main-conference/12/SALT-Track-and-Mitigate-Subarrays-Not-Rows-for-Blast-Radius-Free-Rowhammer-Defense">[link]</a>
+            </span>
+        </div>
+        <div class="lectures">Relevant lectures:
+            <span class="badge">L14</span> DRAM Read Disturbance II (Nov 19 · optional) · 
+            <span class="badge">L15</span> DRAM Read Disturbance Solutions and Self-Managing DRAM (Nov 23 · optional)
         </div>
 </li>
                 <li class="reading-item" id="madhav2026spec" data-lectures="L3a">        <div class="title">"SPEC CPU: The Next Generation"</div>
