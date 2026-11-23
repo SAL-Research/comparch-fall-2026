@@ -522,19 +522,45 @@ module.exports = {
         },
         {
           date: 'Nov 19',
-          video: 'TBA',
+          video: 'https://www.youtube.com/live/tFkYN-LsRxM?si=xcIjqOH_gCbnwAws',
           lectures: [
             {
               title: 'DRAM Read Disturbance II',
               pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l14-dram_read_disturbance_ii-before_lecture.pptx',
               pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l14-dram_read_disturbance_ii-before_lecture.pdf',
+              required_readings: [
+                'luo2023rowpress'
+              ],
+              optional_readings: [
+                'kim2020revisiting',
+                'orosa2021deeper',
+                'yaglikci2022understanding',
+                'olgun2023experimental',
+                'olgun2024read',
+                'yaglikci2024spatial',
+                'yaglikci2024enabling',
+                'olgun2023drambender',
+                'kim2014flipping',
+                'frigo2020trrespass',
+                'hassan2021uncovering',
+                'yuksel2025columndisturb',
+                'olgun2025variable',
+                'yaglikci2021blockhammer',
+                'canpolat2024breakhammer',
+                'canpolat2025chronus',
+                'yaglikci2021security',
+                'seyedzadeh2017counter',
+                'qureshi2026salt',
+                'kakolyris2026columnkeeper',
+                'hassan2024self'
+              ]
             },
           ]
         },
       ],
     },
     {
-      theme: 'Emerging and Killed Memory Architectures',
+      theme: 'Robust Memory and Parallel Execution',
       days: [
         {
           date: 'Nov 23',
@@ -542,8 +568,56 @@ module.exports = {
           lectures: [
             { 
               title: 'DRAM Read Disturbance Solutions and Self-Managing DRAM', 
-              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l15-read_disturbance_solutions_and_self_managing_dram-before_lecture.pptx', 
-              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l15-read_disturbance_solutions_and_self_managing_dram-before_lecture.pdf'
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l15-read_disturbance_solutions_and_self_managing_dram-after_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l15-read_disturbance_solutions_and_self_managing_dram-after_lecture.pdf',
+              required_readings: [
+                'hassan2024self'
+              ],
+              optional_readings: [
+                'kim2014flipping',
+                'kim2020revisiting',
+                'luo2023rowpress',
+                'frigo2020trrespass',
+                'hassan2021uncovering',
+                'yuksel2025columndisturb',
+                'olgun2025variable',
+                'canpolat2025chronus',
+                'hassan2019crow',
+                'saileshwar2022randomized',
+                'saxena2022aqua',
+                'woo2023scalable',
+                'wi2023shadow',
+                'seshadri2013rowclone',
+                'brasser2017cant',
+                'vanderveen2018guardion',
+                'konoth2018zebram',
+                'loughlin2023siloz',
+                'yaglikci2021blockhammer',
+                'park2020graphene',
+                'qureshi2022hydra',
+                'marazzi2023rega',
+                'seyedzadeh2017counter',
+                'lee2019twice',
+                'yaglikci2021security',
+                'bostanci2025understanding',
+                'canpolat2024breakhammer',
+                'kim2015ramulator',
+                'qureshi2026salt',
+                'kakolyris2026columnkeeper',
+                'patel2021harp',
+                'kim2012case',
+                'zhang2014cream',
+                'chang2014improving',
+                'yuksel2025pudhammer',
+                'tokuda2026pudghost',
+                'patel2019understanding',
+                'luo2026dejavu',
+                'seshadri2017ambit',
+                'seshadri2015fast',
+                'misra1982finding',
+                'bostanci2024comet',
+                'saxena2024impress'
+              ]
             },
           ],
         },
@@ -551,11 +625,21 @@ module.exports = {
           date: 'Nov 26',
           video: 'TBA',
           lectures: [
-            { title: 'NAND Flash Memory', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: "Parallel Execution in Processor-Centric View", 
+              pptx: 'TBA', 
+              pdf: 'TBA',
+              optional_readings: ['ebcioglu1997daisy'] 
+            },
+            { 
+              title: "Parallel Execution in Memory-Centric View", 
+              pptx: 'TBA', 
+              pdf: 'TBA',
+              optional_readings: [] 
+            }
           ],
           events: [
-            { type: 'due', hw: 'hw3' },
-            { type: 'assigned', hw: 'hw4' },
+            { type: 'assigned', hw: 'hw3' },
           ]
         },
       ],
@@ -588,8 +672,7 @@ module.exports = {
           video: 'TBA',
           lectures: [
             { title: 'Memory Consistency', pptx: 'TBA', pdf: 'TBA'},
-            { title: "Parallelism, Heterogeneity, Flynn's Taxonomy, VLIW", pptx: 'TBA', pdf: 'TBA',
-              optional_readings: ['ebcioglu1997daisy'] },
+            
           ],
         },
         {
@@ -599,6 +682,10 @@ module.exports = {
             { title: 'GPU Architecture and Predicated Execution', pptx: 'TBA', pdf: 'TBA'},
             { title: 'On-Chip Networks', pptx: 'TBA', pdf: 'TBA'},
             // { title: 'Interrupts and Polling', pptx: 'TBA', pdf: 'TBA'},  // interrupts covered in L6b
+          ],
+          events: [
+            { type: 'due', hw: 'hw3' },
+            { type: 'release', hw: 'hw4' },
           ]
         },
       ],
@@ -623,7 +710,6 @@ module.exports = {
             { title: 'Graph Accelerators', pptx: 'TBA', pdf: 'TBA'},
             // { title: 'Agent-based Simulations', pptx: 'TBA', pdf: 'TBA'},
           ],
-          events: [{ type: 'due', hw: 'hw4' }],
         },
       ],
     },
@@ -643,7 +729,8 @@ module.exports = {
           note: 'Sunday, no lecture (deadline 23:59)',
           events: [
             { type: 'due', hw: 'bonus1' },
-            { type: 'note', icon: 'clock', text: 'Late Submission Cut-Off for All Labs' },
+            { type: 'due', hw: 'hw4' },
+            { type: 'note', icon: 'clock', text: 'Late Submission Cut-Off for All HWs' },
           ],
         },
       ],
