@@ -538,10 +538,13 @@ module.exports = {
       days: [
         {
           date: 'Nov 23',
-          video: 'TBA',
+          video: 'https://youtube.com/live/bjABtLDmBtg',
           lectures: [
-            { title: 'Phase-Change Memory, STT-MRAM, Resistive Memory', pptx: 'TBA', pdf: 'TBA'},
-            { title: 'Monolithic 3D Integration', pptx: 'TBA', pdf: 'TBA'},
+            { 
+              title: 'DRAM Read Disturbance Solutions and Self-Managing DRAM', 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l15-read_disturbance_solutions_and_self_managing_dram-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l15-read_disturbance_solutions_and_self_managing_dram-before_lecture.pdf'
+            },
           ],
         },
         {
