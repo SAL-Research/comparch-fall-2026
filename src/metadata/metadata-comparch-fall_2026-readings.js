@@ -1107,6 +1107,7 @@ module.exports = {
     // ---- L13a (Virtual Memory and TLB) and L13b (DRAM Read Disturbance I: RowHammer)
     {
       key: 'zhao2023contiguitas',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Contiguitas: The Pursuit of Physical Memory Contiguity in Datacenters',
       authors: [
         { firstname: 'Kaiyang', lastname: 'Zhao' },
@@ -1125,11 +1126,12 @@ module.exports = {
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1145/3579371.3589079' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.pdl.cmu.edu/ftp/associated/KZhao-Contiguitas.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1145/3579371.3589079' }] },
       ],
     },
     {
       key: 'kanellopoulos2023utopia',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Utopia: Fast and Efficient Address Translation via Hybrid Restrictive & Flexible Virtual-to-Physical Address Mappings',
       authors: [
         { firstname: 'Konstantinos', lastname: 'Kanellopoulos' },
@@ -1153,6 +1155,7 @@ module.exports = {
     },
     {
       key: 'sonmez2024fleximem',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'FlexiMem: Flexible Shared Virtual Memory for PCIe-attached FPGAs',
       authors: [
         { firstname: 'Canberk', lastname: 'Sönmez' },
@@ -1164,7 +1167,7 @@ module.exports = {
       venue: 'International Conference on Field-Programmable Logic and Applications (FPL)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1109/fpl64840.2024.00020' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.epfl.ch/labs/lap/wp-content/uploads/2024/09/SonmezSep24-FlexiMem-Flexible-Shared-Virtual-Memory-for-PCIe-attached-FPGAs-FPL24.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1109/fpl64840.2024.00020' }] },
       ],
     },
     {
@@ -1186,6 +1189,7 @@ module.exports = {
     },
     {
       key: 'margaritov2021ptemagnet',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'PTEMagnet: Fine-Grained Physical Memory Reservation for Faster Page Walks in Public Clouds',
       authors: [
         { firstname: 'Artemiy', lastname: 'Margaritov' },
@@ -1197,7 +1201,7 @@ module.exports = {
       venue: 'International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1145/3445814.3446704' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.research.ed.ac.uk/files/196157550/PTEMagnet_MARGARITOV_DOA19112020_AFV.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1145/3445814.3446704' }] },
       ],
     },
     {
@@ -1225,6 +1229,7 @@ module.exports = {
     },
     {
       key: 'gras2017aslr',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'ASLR on the Line: Practical Cache Attacks on the MMU',
       authors: [
         { firstname: 'Ben', lastname: 'Gras' },
@@ -1237,11 +1242,12 @@ module.exports = {
       venue: 'Network and Distributed System Security Symposium (NDSS)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.14722/ndss.2017.23271' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://download.vusec.net/papers/anc_ndss17.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.14722/ndss.2017.23271' }] },
       ],
     },
     {
       key: 'gras2018translation',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Translation Leak-aside Buffer: Defeating Cache Side-channel Protections with TLB Attacks',
       authors: [
         { firstname: 'Ben', lastname: 'Gras' },
@@ -1258,6 +1264,7 @@ module.exports = {
     },
     {
       key: 'wang2025peek',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Peek-a-Walk: Leaking Secrets via Page Walk Side Channels',
       authors: [
         { firstname: 'Alan', lastname: 'Wang' },
@@ -1272,7 +1279,7 @@ module.exports = {
       venue: 'IEEE Symposium on Security and Privacy (S&P)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1109/sp61157.2025.00023' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://gofetch.fail/files/peek-a-walk.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1109/sp61157.2025.00023' }] },
       ],
     },
     {
@@ -1293,6 +1300,7 @@ module.exports = {
     },
     {
       key: 'gruss2016rowhammerjs',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Rowhammer.js: A Remote Software-Induced Fault Attack in JavaScript',
       authors: [
         { firstname: 'Daniel', lastname: 'Gruss' },
@@ -1303,11 +1311,12 @@ module.exports = {
       venue: 'Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1007/978-3-319-40667-1_15' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/1507.06955' }, { fileformat: 'link', url: 'https://doi.org/10.1007/978-3-319-40667-1_15' }] },
       ],
     },
     {
       key: 'vanderveen2016drammer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Drammer: Deterministic Rowhammer Attacks on Mobile Platforms',
       authors: [
         { firstname: 'Victor', lastname: 'van der Veen' },
@@ -1324,11 +1333,12 @@ module.exports = {
       venue: 'ACM Conference on Computer and Communications Security (CCS)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1145/2976749.2978406' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://vvdveen.com/publications/drammer.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1145/2976749.2978406' }] },
       ],
     },
     {
       key: 'frigo2018grand',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Grand Pwning Unit: Accelerating Microarchitectural Attacks with the GPU',
       authors: [
         { firstname: 'Pietro', lastname: 'Frigo' },
@@ -1340,11 +1350,12 @@ module.exports = {
       venue: 'IEEE Symposium on Security and Privacy (S&P)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1109/sp.2018.00022' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://download.vusec.net/papers/glitch_sp18.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1109/sp.2018.00022' }] },
       ],
     },
     {
       key: 'tatar2018throwhammer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Throwhammer: Rowhammer Attacks over the Network and Defenses',
       authors: [
         { firstname: 'Andrei', lastname: 'Tatar' },
@@ -1358,11 +1369,12 @@ module.exports = {
       venue: 'USENIX Annual Technical Conference (ATC)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://www.usenix.org/conference/atc18/presentation/tatar' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.usenix.org/system/files/conference/atc18/atc18-tatar.pdf' }, { fileformat: 'link', url: 'https://www.usenix.org/conference/atc18/presentation/tatar' }] },
       ],
     },
     {
       key: 'lipp2020nethammer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Nethammer: Inducing Rowhammer Faults through Network Requests',
       authors: [
         { firstname: 'Moritz', lastname: 'Lipp' },
@@ -1377,11 +1389,12 @@ module.exports = {
       venue: 'IEEE European Symposium on Security and Privacy Workshops (EuroS&PW)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1109/eurospw51379.2020.00102' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/1805.04956' }, { fileformat: 'link', url: 'https://doi.org/10.1109/eurospw51379.2020.00102' }] },
       ],
     },
     {
       key: 'kwong2020rambleed',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'RAMBleed: Reading Bits in Memory Without Accessing Them',
       authors: [
         { firstname: 'Andrew', lastname: 'Kwong' },
@@ -1393,11 +1406,12 @@ module.exports = {
       venue: 'IEEE Symposium on Security and Privacy (S&P)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1109/sp40000.2020.00020' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://rambleed.com/docs/20190603-rambleed-web.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1109/sp40000.2020.00020' }] },
       ],
     },
     {
       key: 'hong2019terminal',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Terminal Brain Damage: Exposing the Graceless Degradation in Deep Neural Networks Under Hardware Fault Attacks',
       authors: [
         { firstname: 'Sanghyun', lastname: 'Hong' },
@@ -1410,11 +1424,12 @@ module.exports = {
       venue: 'USENIX Security Symposium',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://www.usenix.org/conference/usenixsecurity19/presentation/hong' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.usenix.org/system/files/sec19-hong.pdf' }, { fileformat: 'link', url: 'https://www.usenix.org/conference/usenixsecurity19/presentation/hong' }] },
       ],
     },
     {
       key: 'yao2020deephammer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'DeepHammer: Depleting the Intelligence of Deep Neural Networks through Targeted Chain of Bit Flips',
       authors: [
         { firstname: 'Fan', lastname: 'Yao' },
@@ -1425,11 +1440,12 @@ module.exports = {
       venue: 'USENIX Security Symposium',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://www.usenix.org/conference/usenixsecurity20/presentation/yao' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.usenix.org/system/files/sec20-yao.pdf' }, { fileformat: 'link', url: 'https://www.usenix.org/conference/usenixsecurity20/presentation/yao' }] },
       ],
     },
     {
       key: 'kogler2022halfdouble',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Half-Double: Hammering From the Next Row Over',
       authors: [
         { firstname: 'Andreas', lastname: 'Kogler' },
@@ -1452,6 +1468,7 @@ module.exports = {
     },
     {
       key: 'loughlin2022moesi',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'MOESI-prime: Preventing Coherence-Induced Hammering in Commodity Workloads',
       authors: [
         { firstname: 'Kevin', lastname: 'Loughlin' },
@@ -1469,6 +1486,7 @@ module.exports = {
     },
     {
       key: 'cojocar2019exploiting',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Exploiting Correcting Codes: On the Effectiveness of ECC Memory Against Rowhammer Attacks',
       authors: [
         { firstname: 'Lucian', lastname: 'Cojocar' },
@@ -1485,6 +1503,7 @@ module.exports = {
     },
     {
       key: 'hassan2021uncovering',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Uncovering In-DRAM RowHammer Protection Mechanisms: A New Methodology, Custom RowHammer Patterns, and Implications',
       authors: [
         { firstname: 'Hasan', lastname: 'Hassan' },
@@ -1550,6 +1569,7 @@ module.exports = {
     },
     {
       key: 'jattke2024zenhammer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'ZenHammer: Rowhammer Attacks on AMD Zen-based Platforms',
       authors: [
         { firstname: 'Patrick', lastname: 'Jattke' },
@@ -1568,6 +1588,7 @@ module.exports = {
     },
     {
       key: 'kim2020revisiting',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Revisiting RowHammer: An Experimental Analysis of Modern DRAM Devices and Mitigation Techniques',
       authors: [
         { firstname: 'Jeremie S.', lastname: 'Kim' },
@@ -1589,6 +1610,7 @@ module.exports = {
     },
     {
       key: 'orosa2021deeper',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'A Deeper Look into RowHammer\'s Sensitivities: Experimental Analysis of Real DRAM Chips and Implications on Future Attacks and Defenses',
       authors: [
         { firstname: 'Lois', lastname: 'Orosa' },
@@ -1612,6 +1634,7 @@ module.exports = {
     },
     {
       key: 'yaglikci2022understanding',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Understanding RowHammer Under Reduced Wordline Voltage: An Experimental Study Using Real DRAM Devices',
       authors: [
         { firstname: 'A. Giray', lastname: 'Yağlıkçı' },
@@ -1659,6 +1682,7 @@ module.exports = {
     },
     {
       key: 'olgun2024read',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Read Disturbance in High Bandwidth Memory: A Detailed Experimental Study on HBM2 DRAM Chips',
       authors: [
         { firstname: 'Ataberk', lastname: 'Olgun' },
@@ -1680,6 +1704,7 @@ module.exports = {
     },
     {
       key: 'yaglikci2024spatial',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Spatial Variation-Aware Read Disturbance Defenses: Experimental Analysis of Real DRAM Chips and Implications on Future Solutions',
       authors: [
         { firstname: 'A. Giray', lastname: 'Yağlıkçı' },
@@ -1761,6 +1786,7 @@ module.exports = {
     },
     {
       key: 'frigo2020trrespass',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'TRRespass: Exploiting the Many Sides of Target Row Refresh',
       authors: [
         { firstname: 'Pietro', lastname: 'Frigo' },
@@ -1784,6 +1810,7 @@ module.exports = {
     },
     {
       key: 'yuksel2025columndisturb',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'ColumnDisturb: Understanding Column-based Read Disturbance in Real DRAM Chips and Implications for Future Systems',
       authors: [
         { firstname: 'İsmail Emir', lastname: 'Yüksel' },
@@ -1803,6 +1830,7 @@ module.exports = {
     },
     {
       key: 'olgun2025variable',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Variable Read Disturbance: An Experimental Analysis of Temporal Variation in DRAM Read Disturbance',
       authors: [
         { firstname: 'Ataberk', lastname: 'Olgun' },
@@ -1825,6 +1853,7 @@ module.exports = {
     },
     {
       key: 'canpolat2025chronus',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance',
       authors: [
         { firstname: 'Oğuzhan', lastname: 'Canpolat' },
@@ -1850,6 +1879,7 @@ module.exports = {
     },
     {
       key: 'hassan2019crow',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'CROW: A Low-Cost Substrate for Improving DRAM Performance, Energy Efficiency, and Reliability',
       authors: [
         { firstname: 'Hasan', lastname: 'Hassan' },
@@ -1873,6 +1903,7 @@ module.exports = {
     },
     {
       key: 'saileshwar2022randomized',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Randomized Row-Swap: Mitigating Row Hammer by Breaking Spatial Correlation between Aggressor and Victim Rows',
       authors: [
         { firstname: 'Gururaj', lastname: 'Saileshwar' },
@@ -1884,11 +1915,12 @@ module.exports = {
       venue: 'International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://dl.acm.org/doi/10.1145/3503222.3507716' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://fast.cc.gatech.edu/papers/ASPLOS_2022_3.pdf' }, { fileformat: 'doi', url: 'https://dl.acm.org/doi/10.1145/3503222.3507716' }] },
       ],
     },
     {
       key: 'saxena2022aqua',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'AQUA: Scalable Rowhammer Mitigation by Quarantining Aggressor Rows at Runtime',
       authors: [
         { firstname: 'Anish', lastname: 'Saxena' },
@@ -1900,11 +1932,12 @@ module.exports = {
       venue: 'International Symposium on Microarchitecture (MICRO)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/MICRO56248.2022.00022' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://memlab.ece.gatech.edu/papers/MICRO_2022_1.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/MICRO56248.2022.00022' }] },
       ],
     },
     {
       key: 'woo2023scalable',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Scalable and Secure Row-Swap: Efficient and Safe Row Hammer Mitigation in Memory Systems',
       authors: [
         { firstname: 'Jeonghyun', lastname: 'Woo' },
@@ -1915,11 +1948,12 @@ module.exports = {
       venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://arxiv.org/abs/2212.12613' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA56546.2023.10070999' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://arxiv.org/pdf/2212.12613' }, { fileformat: 'link', url: 'https://arxiv.org/abs/2212.12613' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA56546.2023.10070999' }] },
       ],
     },
     {
       key: 'wi2023shadow',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'SHADOW: Preventing Row Hammer in DRAM with Intra-Subarray Row Shuffling',
       authors: [
         { firstname: 'Minbok', lastname: 'Wi' },
@@ -1934,11 +1968,12 @@ module.exports = {
       venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA56546.2023.10070966' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://scale.snu.ac.kr/papers/2023-02-Conference-HPCA-SHADOW.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA56546.2023.10070966' }] },
       ],
     },
     {
       key: 'seshadri2013rowclone',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'RowClone: Fast and Energy-Efficient In-DRAM Bulk Data Copy and Initialization',
       authors: [
         { firstname: 'Vivek', lastname: 'Seshadri' },
@@ -1964,6 +1999,7 @@ module.exports = {
     },
     {
       key: 'brasser2017cant',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'CAn\'t Touch This: Software-only Mitigation against Rowhammer Attacks targeting Kernel Memory',
       authors: [
         { firstname: 'Ferdinand', lastname: 'Brasser' },
@@ -1981,6 +2017,7 @@ module.exports = {
     },
     {
       key: 'vanderveen2018guardion',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'GuardION: Practical Mitigation of DMA-Based Rowhammer Attacks on ARM',
       authors: [
         { firstname: 'Victor', lastname: 'van der Veen' },
@@ -2001,6 +2038,7 @@ module.exports = {
     },
     {
       key: 'konoth2018zebram',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'ZebRAM: Comprehensive and Compatible Software Protection Against Rowhammer Attacks',
       authors: [
         { firstname: 'Radhesh Krishnan', lastname: 'Konoth' },
@@ -2020,6 +2058,7 @@ module.exports = {
     },
     {
       key: 'loughlin2023siloz',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Siloz: Leveraging DRAM Isolation Domains to Prevent Inter-VM Rowhammer',
       authors: [
         { firstname: 'Kevin', lastname: 'Loughlin' },
@@ -2033,12 +2072,13 @@ module.exports = {
       venue: 'ACM Symposium on Operating Systems Principles (SOSP)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/3600006.3613143' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://www.kevinloughlin.org/siloz.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/3600006.3613143' }] },
         { resourcename: 'Code', links: [{ fileformat: 'github', url: 'https://github.com/efeslab/siloz' }] },
       ],
     },
     {
       key: 'yaglikci2021blockhammer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'BlockHammer: Preventing RowHammer at Low Cost by Blacklisting Rapidly-Accessed DRAM Rows',
       authors: [
         { firstname: 'A. Giray', lastname: 'Yağlıkçı' },
@@ -2066,6 +2106,7 @@ module.exports = {
     },
     {
       key: 'park2020graphene',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Graphene: Strong yet Lightweight Row Hammer Protection',
       authors: [
         { firstname: 'Yeonhong', lastname: 'Park' },
@@ -2084,6 +2125,7 @@ module.exports = {
     },
     {
       key: 'qureshi2022hydra',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Hydra: Enabling Low-Overhead Mitigation of Row-Hammer at Ultra-Low Thresholds via Hybrid Tracking',
       authors: [
         { firstname: 'Moinuddin K.', lastname: 'Qureshi' },
@@ -2095,11 +2137,12 @@ module.exports = {
       venue: 'International Symposium on Computer Architecture (ISCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1145/3470496.3527421' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://gururaj-s.github.io/assets/pdf/ISCA22_Qureshi.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1145/3470496.3527421' }] },
       ],
     },
     {
       key: 'marazzi2023rega',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'REGA: Scalable Rowhammer Mitigation with Refresh-Generating Activations',
       authors: [
         { firstname: 'Michele', lastname: 'Marazzi' },
@@ -2112,7 +2155,7 @@ module.exports = {
       venue: 'IEEE Symposium on Security and Privacy (S&P)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/SP46215.2023.10179327' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://comsec.ethz.ch/wp-content/files/rega_sp23.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/SP46215.2023.10179327' }] },
       ],
     },
     {
@@ -2132,6 +2175,7 @@ module.exports = {
     },
     {
       key: 'lee2019twice',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'TWiCe: Preventing Row-Hammering by Exploiting Time Window Counters',
       authors: [
         { firstname: 'Eojin', lastname: 'Lee' },
@@ -2149,6 +2193,7 @@ module.exports = {
     },
     {
       key: 'yaglikci2021security',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Security Analysis of the Silver Bullet Technique for RowHammer Prevention',
       authors: [
         { firstname: 'A. Giray', lastname: 'Yağlıkçı' },
@@ -2165,6 +2210,7 @@ module.exports = {
     },
     {
       key: 'bostanci2025understanding',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Understanding and Mitigating Covert Channel and Side Channel Vulnerabilities Introduced by RowHammer Defenses',
       authors: [
         { firstname: 'F. Nisa', lastname: 'Bostancı' },
@@ -2225,6 +2271,7 @@ module.exports = {
     },
     {
       key: 'qureshi2026salt',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense',
       authors: [
         { firstname: 'Moinuddin K.', lastname: 'Qureshi' },
@@ -2233,11 +2280,13 @@ module.exports = {
       venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
       type: 'conference',
       resources: [
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://fast.cc.gatech.edu/papers/HPCA_2026_1.pdf' }] },
         { resourcename: 'Web', links: [{ fileformat: 'link', url: 'https://2026.hpca-conf.org/details/hpca-2026-main-conference/12/SALT-Track-and-Mitigate-Subarrays-Not-Rows-for-Blast-Radius-Free-Rowhammer-Defense' }] },
       ],
     },
     {
       key: 'kakolyris2026columnkeeper',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'ColumnKeeper: Efficient Solutions to the ColumnDisturb Vulnerability in DRAM-based Systems',
       authors: [
         { firstname: 'Andreas Kosmas', lastname: 'Kakolyris' },
@@ -2262,6 +2311,7 @@ module.exports = {
     },
     {
       key: 'patel2021harp',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'HARP: Practically and Effectively Identifying Uncorrectable Errors in Memory Chips That Use On-Die Error-Correcting Codes',
       authors: [
         { firstname: 'Minesh', lastname: 'Patel' },
@@ -2279,6 +2329,7 @@ module.exports = {
     },
     {
       key: 'zhang2014cream',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'CREAM: A Concurrent-Refresh-Aware DRAM Memory Architecture',
       authors: [
         { firstname: 'Tao', lastname: 'Zhang' },
@@ -2291,11 +2342,12 @@ module.exports = {
       venue: 'International Symposium on High Performance Computer Architecture (HPCA)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA.2014.6835947' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://ceca.pku.edu.cn/media/lw/40c1f98646e0ff4df37790400142b607.pdf' }, { fileformat: 'doi', url: 'https://doi.org/10.1109/HPCA.2014.6835947' }] },
       ],
     },
     {
       key: 'chang2014improving',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Improving DRAM Performance by Parallelizing Refreshes with Accesses',
       authors: [
         { firstname: 'Kevin K.', lastname: 'Chang' },
@@ -2316,6 +2368,7 @@ module.exports = {
     },
     {
       key: 'yuksel2025pudhammer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'PuDHammer: Experimental Analysis of Read Disturbance Effects of Processing-using-DRAM in Real DRAM Chips',
       authors: [
         { firstname: 'İsmail Emir', lastname: 'Yüksel' },
@@ -2338,6 +2391,7 @@ module.exports = {
     },
     {
       key: 'tokuda2026pudghost',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'PuDGhost: Experimental Analysis of Computation Result Corruption in Processing-using-DRAM Operations on Real DRAM Chips and Implications for Future Systems',
       authors: [
         { firstname: 'Daichi', lastname: 'Tokuda' },
@@ -2361,6 +2415,7 @@ module.exports = {
     },
     {
       key: 'patel2019understanding',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Understanding and Modeling On-Die Error Correction in Modern DRAM: An Experimental Study Using Real Devices',
       authors: [
         { firstname: 'Minesh', lastname: 'Patel' },
@@ -2379,6 +2434,7 @@ module.exports = {
     },
     {
       key: 'luo2026dejavu',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully',
       authors: [
         { firstname: 'Haocong', lastname: 'Luo' },
@@ -2400,6 +2456,7 @@ module.exports = {
     },
     {
       key: 'seshadri2017ambit',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Ambit: In-Memory Accelerator for Bulk Bitwise Operations Using Commodity DRAM Technology',
       authors: [
         { firstname: 'Vivek', lastname: 'Seshadri' },
@@ -2457,6 +2514,7 @@ module.exports = {
     },
     {
       key: 'bostanci2024comet',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'CoMeT: Count-Min-Sketch-based Row Tracking to Mitigate RowHammer at Low Cost',
       authors: [
         { firstname: 'F. Nisa', lastname: 'Bostancı' },
@@ -2479,6 +2537,7 @@ module.exports = {
     },
     {
       key: 'saxena2024impress',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'ImPress: Securing DRAM Against Data-Disturbance Errors via Implicit Row-Press Mitigation',
       authors: [
         { firstname: 'Anish', lastname: 'Saxena' },

@@ -626,16 +626,10 @@ module.exports = {
           video: 'TBA',
           lectures: [
             { 
-              title: "Parallel Execution in Processor-Centric View", 
-              pptx: 'TBA', 
-              pdf: 'TBA',
+              title: "Parallel Execution across CPU and Memory", 
+              pptx: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l16-parallel_execution_across_CPU_and_memory-before_lecture.pptx', 
+              pdf: 'https://github.com/SAL-Research/comparch-fall-2026/raw/refs/heads/main/assets/slides/giray-comparch-2026-fall-l16-parallel_execution_across_CPU_and_memory-before_lecture.pdf',
               optional_readings: ['ebcioglu1997daisy'] 
-            },
-            { 
-              title: "Parallel Execution in Memory-Centric View", 
-              pptx: 'TBA', 
-              pdf: 'TBA',
-              optional_readings: [] 
             }
           ],
           events: [
