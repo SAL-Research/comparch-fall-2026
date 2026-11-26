@@ -623,7 +623,7 @@ module.exports = {
         },
         {
           date: 'Nov 26',
-          video: 'TBA',
+          video: 'https://youtube.com/live/qXldktdKAGw',
           lectures: [
             { 
               title: "Parallel Execution across CPU and Memory", 
