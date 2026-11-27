@@ -1172,6 +1172,7 @@ module.exports = {
     },
     {
       key: 'fatima2023vpim',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'vPIM: Efficient Virtual Address Translation for Scalable Processing-in-Memory Architectures',
       authors: [
         { firstname: 'Amel', lastname: 'Fatima' },
@@ -1184,7 +1185,7 @@ module.exports = {
       venue: 'Design Automation Conference (DAC)',
       type: 'conference',
       resources: [
-        { resourcename: 'Paper', links: [{ fileformat: 'link', url: 'https://doi.org/10.1109/dac56929.2023.10247745' }] },
+        { resourcename: 'Paper', links: [{ fileformat: 'pdf', url: 'https://rausavar.github.io/pubs/vPIM_fatima.pdf' }, { fileformat: 'link', url: 'https://doi.org/10.1109/dac56929.2023.10247745' }] },
       ],
     },
     {
@@ -1555,6 +1556,7 @@ module.exports = {
     },
     {
       key: 'qazi2024soothsayer',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'SoothSayer: Bypassing DSAC Mitigation by Predicting Counter Replacement',
       authors: [
         { firstname: 'Salman', lastname: 'Qazi' },
@@ -2160,6 +2162,7 @@ module.exports = {
     },
     {
       key: 'seyedzadeh2017counter',
+      bonus: true,  // eligible for the bonus HW (paper reviews)
       title: 'Counter-Based Tree Structure for Row Hammering Mitigation in DRAM',
       authors: [
         { firstname: 'Seyed Mohammad', lastname: 'Seyedzadeh' },
